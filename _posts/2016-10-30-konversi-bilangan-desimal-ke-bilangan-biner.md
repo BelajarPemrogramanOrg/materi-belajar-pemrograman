@@ -18,7 +18,7 @@ Pada kesempatan ini, akan dibahas contoh program untuk konversi bilangan desimal
 
 Bilangan biner merupakan sistem bilangan yang digit-digitnya terdiri dari nilai 0 atau 1. Bilangan biner hanya terdiri dari 2 nilai, 0 atau 1, sehingga bilangan biner juga disebut sebagai bilangan basis 2. Bilangan biner digunakan dalam sistem digital, termasuk komputer digital. Karena komputer menggunakan bilangan biner untuk representasi informasi, dan kita menggunakan bilangan desimal untuk representasi angka dalam sehari-hari, seringkali kita membutuhkan pengkonversian bilangan dari desimal ke biner atau sebaliknya.
 <h2>KODE</h2>
-<pre><code class="language-c line-numbers">#include 
+<pre><code class="language-c line-numbers">#include <stdio.h>
 
 int main() {
     int desimal,                // Input bilangan desimal
@@ -29,12 +29,12 @@ int main() {
                                 // Dimulai dengan nilai awal 10^0 = 1
 
     printf("Masukkan bilangan desimal: ");
-    scanf("%d", &amp;desimal);
+    scanf("%d", &desimal);
 
     // Supaya `desimal` tidak berubah, simpan nilainya ke `desimal_tmp` 
     // yg akan dijadikan patokan berhentinya pengulangan
     desimal_tmp = desimal;
-    while(desimal_tmp &gt; 0) {
+    while(desimal_tmp > 0) {
         // Modulo 2 dari `desimal_tmp` menghasilkan nilai dari sebuah digit biner
         digit_biner = desimal_tmp % 2;
         biner += sepuluh_pangkat * digit_biner;
