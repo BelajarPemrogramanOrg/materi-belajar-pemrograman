@@ -18,38 +18,38 @@ Pada kesempatan ini, akan dibahas contoh program untuk konversi bilangan desimal
 
 Bilangan biner merupakan sistem bilangan yang digit-digitnya terdiri dari nilai 0 atau 1. Bilangan biner hanya terdiri dari 2 nilai, 0 atau 1, sehingga bilangan biner juga disebut sebagai bilangan basis 2. Bilangan biner digunakan dalam sistem digital, termasuk komputer digital. Karena komputer menggunakan bilangan biner untuk representasi informasi, dan kita menggunakan bilangan desimal untuk representasi angka dalam sehari-hari, seringkali kita membutuhkan pengkonversian bilangan dari desimal ke biner atau sebaliknya.
 <h2>KODE</h2>
-<pre><code class="language-c line-numbers">#include <stdio.h>
+<pre><code class="language-c line-numbers">#include &lt;stdio.h&gt;
 
 int main() {
-    int desimal,                // Input bilangan desimal
-        desimal_tmp,
-        biner = 0,              // Output bilangan biner
-        digit_biner,            // Sebuah digit biner hasil modulo 2
-        sepuluh_pangkat = 1;    // 10^0, 10^1, 10^2 ... sesuai banyaknya digit biner
-                                // Dimulai dengan nilai awal 10^0 = 1
+    int desimal,                // Input bilangan desimal
+        desimal_tmp,
+        biner = 0,              // Output bilangan biner
+        digit_biner,            // Sebuah digit biner hasil modulo 2
+        sepuluh_pangkat = 1;    // 10^0, 10^1, 10^2 ... sesuai banyaknya digit biner
+                                // Dimulai dengan nilai awal 10^0 = 1
 
-    printf("Masukkan bilangan desimal: ");
-    scanf("%d", &desimal);
+    printf("Masukkan bilangan desimal: ");
+    scanf("%d", &amp;desimal);
 
-    // Supaya `desimal` tidak berubah, simpan nilainya ke `desimal_tmp` 
-    // yg akan dijadikan patokan berhentinya pengulangan
-    desimal_tmp = desimal;
-    while(desimal_tmp > 0) {
-        // Modulo 2 dari `desimal_tmp` menghasilkan nilai dari sebuah digit biner
-        digit_biner = desimal_tmp % 2;
-        biner += sepuluh_pangkat * digit_biner;
+    // Supaya `desimal` tidak berubah, simpan nilainya ke `desimal_tmp` 
+    // yg akan dijadikan patokan berhentinya pengulangan
+    desimal_tmp = desimal;
+    while(desimal_tmp &gt; 0) {
+        // Modulo 2 dari `desimal_tmp` menghasilkan nilai dari sebuah digit biner
+        digit_biner = desimal_tmp % 2;
+        biner += sepuluh_pangkat * digit_biner;
 
-        // Kalikan 10 untuk menaikkan pangkat dari 10.
-        // 1   * 10 = 10^1 = 10
-        // 10  * 10 = 10^2 = 100
-        // 100 * 10 = 10^3 = 1000
-        sepuluh_pangkat *= 10;
-        desimal_tmp /= 2;
-    }
+        // Kalikan 10 untuk menaikkan pangkat dari 10.
+        // 1   * 10 = 10^1 = 10
+        // 10  * 10 = 10^2 = 100
+        // 100 * 10 = 10^3 = 1000
+        sepuluh_pangkat *= 10;
+        desimal_tmp /= 2;
+    }
 
-    printf("Bilangan desimal %d = %d dalam sistem bilangan biner\n", desimal, biner);
+    printf("Bilangan desimal %d = %d dalam sistem bilangan biner\n", desimal, biner);
 
-    return 0;
+    return 0;
 }</code></pre>
 <h2>OUTPUT</h2>
 <pre><code class="language-none">$ gcc 00000-konversi-desimal-ke-biner.c
