@@ -1,0 +1,25 @@
+---
+ID: 83
+post_title: 'Mengenal Sistem Operasi &#8211; Pengertian dan Perannya dalam Sistem Komputer'
+author: Muhammad Ikhsan
+post_date: 2014-12-31 00:24:12
+post_excerpt: |
+  Jika setiap programmer aplikasi komputer harus betul-betul mengerti bagaimana sebuah komputer bekerja secara mendetail (bagaimana kerja processor, bagaimana kerja monitor, bagaimana processor mengerjakan instruksi-instruksi, dll.), niscaya hanya segelintir orang saja yang dapat memprogram aplikasi komputer. Oleh karena alasan itulah terdapat perantara antara perangkat keras komputer dengan program aplikasi, yaitu <b>sistem operasi</b>.
+  <h2>Tugas Sistem Operasi</h2>
+  Dengan adanya sistem operasi, programmer aplikasi cukup bekerja membuat aplikasi yang berjalan di atas sistem operasi tersebut, tanpa harus memikirkan bagaimana aplikasi yang dibuat akan diproses oleh processor, disimpan di RAM saat dijalankan, proses perpindahan setiap bit program dari harddisk sampai dapat ditampilkan di layar monitor. Pada dasarnya sistem operasi mengerjakan dua tugas, yaitu menyediakan sumber daya bagi program aplikasi untuk dapat bekerja dengan hardware melalui perantara sistem operasi, dan juga bertugas untuk mengelola sumber daya hardware.
+layout: post
+permalink: >
+  http://belajarpemrograman.org/mengenal-sistem-operasi-pengertian-dan-perannya-dalam-sistem-komputer/
+published: true
+---
+Jika setiap programmer aplikasi komputer harus betul-betul mengerti bagaimana sebuah komputer bekerja secara mendetail (bagaimana kerja processor, bagaimana kerja monitor, bagaimana processor mengerjakan instruksi-instruksi, dll.), niscaya hanya segelintir orang saja yang dapat memprogram aplikasi komputer. Oleh karena alasan itulah terdapat perantara antara perangkat keras komputer dengan program aplikasi, yaitu <b>sistem operasi</b>.
+<h2>Tugas Sistem Operasi</h2>
+Dengan adanya sistem operasi, programmer aplikasi cukup bekerja membuat aplikasi yang berjalan di atas sistem operasi tersebut, tanpa harus memikirkan bagaimana aplikasi yang dibuat akan diproses oleh processor, disimpan di RAM saat dijalankan, proses perpindahan setiap bit program dari harddisk sampai dapat ditampilkan di layar monitor. Pada dasarnya sistem operasi mengerjakan dua tugas, yaitu menyediakan sumber daya bagi program aplikasi untuk dapat bekerja dengan hardware melalui perantara sistem operasi, dan juga bertugas untuk mengelola sumber daya hardware.
+<h2>Peran Sistem Operasi</h2>
+Seorang user berkomunikasi dengan komputer melalui sistem operasi melalui program antarmuka yang disediakan oleh sistem operasi. Program antarmuka tersebut dapat merupakan program antarmuka berbasis teks, biasanya disebut <b>shell</b>, atau merupakan program dengan <b>GUI (Graphical User Interface)</b>.
+
+<img class="aligncenter wp-image-85" title="Hubungan antara sistem operasi, software, hardware" src="http://belajarpemrograman.org/wp-content/uploads/2016/11/belajar-pemrograman-mengenal-os-hubungan-antara-sistem-operasi-software-hardware_bi34vi.png" alt="Belajar Pemrograman - Hubungan antara sistem operasi, software, hardware" width="505" height="285" />Gambar di atas menunjukkan hubungan antara hardware, sistem operasi <i>(operating system), </i>program antarmuka <i>(user interface program), </i>dan program aplikasi. Seperti yang kita ketahui bahwa hardware terdiri dari perangkat komputer secara fisik, baik CPU, harddisk, monitor, dll. Sistem operasi menjadi perantara antara program antarmuka dengan hardware. Sistem operasi merupakan software yang mengatur bagaimana apa dan bagaimana hardware seharusnya bekerja.
+
+Namun tentu saja sistem operasi tidak bekerja semaunya sendiri. Secara umum, diperlukan perintah dari seorang user yang berinteraksi dengan komputer melalui program antarmuka. Tugas dari program antarmuka hanyalah untuk memberikan antarmuka kepada user, tanpa harus mengetahui seluk-beluk kerja hardware yang merupakan kerja dari sistem operasi. Dua buah komputer menggunakan sistem operasi yang sama dapat memiliki interface yang berbeda. Meskipun menggunakan distro Linux yang sama, bisa jadi yang satu menggunakan desktop <a href="https://www.gnome.org/" target="_blank"><i>GNOME</i></a>, dan yang lain menggunakan desktop <a href="https://www.kde.org/" target="_blank"><i>KDE</i></a>.
+
+Lapisan paling atas pada gambar merupakan program aplikasi yang berjalan di atas program antarmuka. Tampilan antarmuka dari sebuah aplikasi bergantung dari antarmuka yang disediakan oleh program antarmuka dari sistem operasi. Misalnya, Mozilla Firefox di distro Linux yang menggunakan desktop GNOME akan menempatkan <i>minimize, restore, </i>dan <i>close button </i>di sisi kiri atas window, sedangkan yang menggunakan desktop KDE akan menempatkannya di sisi kanan atas window. Meskipun keduanya adalah program aplikasi yang sama, antarmukanya disesuaikan dengan program antarmuka yang digunakan oleh sistem operasi.
