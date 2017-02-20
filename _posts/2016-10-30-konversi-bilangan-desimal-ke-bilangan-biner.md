@@ -197,4 +197,4 @@ int main() {
 </code></pre>
 <h4>Output</h4>
 <pre>Masukkan bilangan desimal: 315141
-Bilangan desimal 354 = 1001100111100000101 dalam sistem bilangan biner</pre>
+Bilangan desimal 315141 = 1001100111100000101 dalam sistem bilangan biner</pre>
