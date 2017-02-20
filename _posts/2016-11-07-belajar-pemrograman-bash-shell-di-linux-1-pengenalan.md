@@ -3,14 +3,7 @@ ID: 39
 post_title: 'Belajar Pemrograman Bash Shell di Linux 1: Pengenalan'
 author: Muhammad Ikhsan
 post_date: 2016-11-07 07:23:15
-post_excerpt: |
-  Dalam tulisan ini Anda akan mengenal pemrograman bash shell di Linux. Dimulai dengan pengertian bash, memeriksa shell yang aktif sebagai langkah persiapan sebelum memulai pemrograman bash, dan akhirnya Anda akan membuat dua <em>bash script</em> sederhana dan menjalankannya.
-  <h2>Apa Itu bash?</h2>
-  Singkatnya, <code>bash</code> merupakan sebuah program komputer seperti halnya program-program lain pada komputer, namun bash didesain agar Anda dapat berkomunikasi dengannya melalui perintah yang Anda berikan dan respon yang Anda terima.
-  
-  Setiap program di komputer memiliki kemampuan untuk dapat mengerjakan tugas-tugas spesifik yang membantu memudahkan pekerjaan <em>user</em>, antara lain memutar lagu, mengakses website, melakukan penghitungan, dan lain sebagainya. Akan tetapi, bash tidak melakukan tugas-tugas tersebut. Bash berperan untuk menerima perintah dari Anda sebagai <em>user</em> dan mengerjakan perintah tersebut. Sehingga, agar Anda dapat memberikan perintah yang dapat dimengerti oleh bash dengan baik, diciptakanlah bahasa untuk komunikasi tersebut. Bahasa itulah yang disebut bahasa bash shell.
-  
-  <em>Bash (Bourne Again shell)</em> hanya merupakan salah satu dari beberapa program yang bertindak untuk menerima perintah dari <em>user</em> untuk berinteraksi dengan program lain. Program seperti ini dikenal sebagai program <strong><em>shell</em></strong>. Beberapa program shell yang terkemuka selain bash antarai lain C shell (<code>csh</code>), Bourne shell (<code>sh</code>), Korn shell (<code>ksh</code>), dan Zshell (<code>zsh</code>). Masing-masing shell memiliki bahasa yang berbeda, meskipun dijumpai banyak kesamaan perintah-perintah yang digunakan. Perlu diingat bahwa artikel ini akan membahas mengenai pemrograman bash shell, sehingga pastikan bahwa Anda mengeksekusi kode bash shell pada bash shell, bukan shell yang lain.
+post_excerpt: 'Dalam tulisan ini Anda akan mengenal pemrograman bash shell di Linux. Dimulai dengan pengertian bash, memeriksa shell yang aktif sebagai langkah persiapan sebelum memulai pemrograman bash, dan akhirnya Anda akan membuat dua <em>bash script</em> sederhana dan menjalankannya.'
 layout: post
 permalink: >
   http://belajarpemrograman.org/belajar-pemrograman-bash-shell-di-linux-1-pengenalan/
