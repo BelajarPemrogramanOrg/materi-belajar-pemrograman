@@ -11,7 +11,7 @@ post_excerpt: |
   Bilangan biner merupakan sistem bilangan yang digit-digitnya terdiri dari nilai 0 atau 1. Bilangan biner hanya terdiri dari 2 nilai, 0 atau 1, sehingga bilangan biner juga disebut sebagai bilangan basis 2. Bilangan biner digunakan dalam sistem digital, termasuk komputer digital. Karena komputer menggunakan bilangan biner untuk representasi informasi, dan kita menggunakan bilangan desimal untuk representasi angka dalam sehari-hari, seringkali kita membutuhkan pengkonversian bilangan dari desimal ke biner atau sebaliknya.
 layout: post
 permalink: >
-  http://belajarpemrograman.org/konversi-bilangan-desimal-ke-bilangan-biner/
+  https://belajarpemrograman.org/konversi-bilangan-desimal-ke-bilangan-biner/
 published: true
 ---
 Pada kesempatan ini, akan dibahas contoh program untuk melakukan konversi bilangan dalam representasi desimal ke bilangan dalam representasi biner.
