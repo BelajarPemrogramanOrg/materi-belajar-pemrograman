@@ -5,23 +5,7 @@ post_title: >
   (Menggunakan PHP)
 author: Muhammad Ikhsan
 post_date: 2017-01-28 14:13:58
-post_excerpt: |
-  Pemrograman berorientasi objek atau OOP (Object Oriented Programming) merupakan paradigma pemrograman yang <strong>memandang program sebagai kumpulan objek</strong> yang <strong>dapat menyimpan data</strong> dan <strong>dapat mengerjakan suatu tindakan</strong>.
-  <h2>Penjelasan</h2>
-  Ketika Anda melakukan pendaftaran akun baru di sebuah situs jejaring sosial, misalnya Facebook, biasanya Anda diminta untuk mengisi data diri Anda, seperti nama Anda, email, password akun yang Anda kehendaki, tanggal lahir Anda, dll. Setelah mengisikan semua data yg diminta dan menyelesaikan semua proses pendaftaran, maka Anda dapat login ke akun baru tersebut dan menggunakan berbagai fitur Facebook yg telah disediakan untuk Anda sebagai pengguna. Anda dapat menambahkan teman, menerima permintaan teman, membuat status baru, me-<em>like</em> status, membuat komentar pada status, dan masih banyak lagi.
-  
-  Jika kita anggap setiap pengguna Facebook merupakan sebuah objek, maka kita dapat merancang karakteristik objek <code>pengguna Facebook</code> sebagai berikut:
-  <pre>Setiap pengguna Facebook:
-  Memiliki data:
-  Nama
-  Email
-  Password
-  ....
-  Dapat melakukan:
-  Tambah teman
-  Buat status baru
-  Like status
-  ....</pre>
+post_excerpt: 'Pemrograman berorientasi objek atau OOP (Object Oriented Programming) merupakan paradigma pemrograman yang <strong>memandang program sebagai kumpulan objek</strong> yang <strong>dapat menyimpan data</strong> dan <strong>dapat mengerjakan suatu tindakan</strong>.'
 layout: post
 permalink: >
   http://belajarpemrograman.org/mengenal-pemrograman-berorientasi-objek-menggunakan-php/
