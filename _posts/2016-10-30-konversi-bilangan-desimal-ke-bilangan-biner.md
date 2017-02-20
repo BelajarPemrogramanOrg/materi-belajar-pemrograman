@@ -5,10 +5,20 @@ post_title: >
   Desimal ke Bilangan Biner
 author: Muhammad Ikhsan
 post_date: 2016-10-30 05:40:10
-post_excerpt: |
-  Bilangan desimal merupakan sistem bilangan yang umum kita pakai dalam kehidupan sehari-hari, yang mana satu digit angka dalam bilangan desimal dapat berupa angka 0, 1, 2, 3, 4, 5, 6, 7, 8, atau 9. Terdapat 10 nilai yang dapat kita gunakan dalam 1 digit bilangan desimal, oleh karenanya bilangan desimal juga disebut sebagai bilangan basis 10.
-  
-  Bilangan biner merupakan sistem bilangan yang digit-digitnya terdiri dari nilai 0 atau 1. Bilangan biner hanya terdiri dari 2 nilai, 0 atau 1, sehingga bilangan biner juga disebut sebagai bilangan basis 2. Bilangan biner digunakan dalam sistem digital, termasuk komputer digital. Karena komputer menggunakan bilangan biner untuk representasi informasi, dan kita menggunakan bilangan desimal untuk representasi angka dalam sehari-hari, seringkali kita membutuhkan pengkonversian bilangan dari desimal ke biner atau sebaliknya.
+post_excerpt: >
+  Pada kesempatan ini, akan dibahas contoh
+  program untuk melakukan konversi
+  bilangan dalam representasi desimal ke
+  bilangan dalam representasi biner.
+  Bilangan desimal merupakan sistem
+  bilangan yang umum kita pakai dalam
+  kehidupan sehari-hari, yang mana satu
+  digit angka dalam bilangan desimal dapat
+  berupa angka 0, 1, 2, 3, 4, 5, 6, 7, 8,
+  atau 9. Sedangkan bilangan biner
+  merupakan sistem bilangan yang
+  digit-digitnya terdiri dari nilai 0 dan
+  1.
 layout: post
 permalink: >
   https://belajarpemrograman.org/konversi-bilangan-desimal-ke-bilangan-biner/
