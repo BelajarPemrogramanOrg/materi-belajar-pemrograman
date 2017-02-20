@@ -3,27 +3,10 @@ ID: 42
 post_title: Perintah-Perintah Dasar Linux
 author: Muhammad Ikhsan
 post_date: 2016-11-04 21:53:59
-post_excerpt: |
-  Dalam artikel ini akan dibahas mengenai beberapa perintah-perintah dasar Linux berikut contoh-contoh penggunaannya.
-  <h2><code>cd</code> - Pindah lokasi direktori aktif <em>(change directory)</em></h2>
-  <ul class="pad-left">
-  <li>Pindah ke direktori/folder bernama Documents yang terdapat pada lokasi direktori aktif:
-  <pre>$ cd Documents</pre>
-  </li>
-  <li>Pindah ke direktori induk:
-  <pre>$ cd ..</pre>
-  </li>
-  <li>Pindah ke direktori root:
-  <pre>$ cd /</pre>
-  </li>
-  <li>Pindah ke direktori login atau <em>home directory</em> yang merupakan direktori yang pertama kali dibuka saat user login:
-  <pre>$ cd
-  $ cd ~</pre>
-  Anda dapat pindah direktori ke <em>home directory</em> dengan memanggil perintah <code>cd</code> dengan tanpa argumen atau dengan menggunakan <em>tilde</em> (<code>~</code>) sebagai direktori tujuan.</li>
-  </ul>
+post_excerpt: 'Dalam artikel ini akan dibahas mengenai beberapa perintah-perintah dasar Linux berikut contoh-contoh penggunaannya. Perintah-perintah dasar yang akan dibahas antara lain <code>cd</code> untuk mengganti direktori aktif, <code>pwd</code> menampilkan nama direktori aktif, <code>ls</code> untuk menampilkan isi sebuah direktori, dan lain-lain.'
 layout: post
 permalink: >
-  http://belajarpemrograman.org/perintah-perintah-dasar-linux/
+  https://belajarpemrograman.org/perintah-perintah-dasar-linux/
 published: true
 ---
 Dalam tulisan ini akan dibahas mengenai beberapa perintah-perintah dasar Linux berikut contoh-contoh penggunaannya.
