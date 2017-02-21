@@ -6,7 +6,7 @@ post_date: 2017-01-29 14:48:07
 post_excerpt: 'Dalam materi belajar ini, kita akan membuat dua buah program sederhana untuk menerapkan komunikasi client - server menggunakan socket. Aplikasi client yg akan kita buat berupa sebuah aplikasi Android, sedangkan aplikasi server berupa program yg ditulis dalam bahasa pemrograman Java yg dijalankan di komputer. Anda dapat mendownload source code aplikasi yg akan kita buat <a href="http://belajarpemrograman.org/belajar-pemrograman-socket-client-server-menggunakan-android-dan-java/#download-source-code">pada bagian akhir dari tulisan ini</a>.'
 layout: post
 permalink: >
-  http://belajarpemrograman.org/belajar-pemrograman-socket-client-server-menggunakan-android-dan-java/
+  https://belajarpemrograman.org/belajar-pemrograman-socket-client-server-menggunakan-android-dan-java/
 published: true
 ---
 Dalam materi belajar ini, kita akan membuat dua buah program sederhana untuk menerapkan komunikasi client - server menggunakan socket. Aplikasi client yg akan kita buat berupa sebuah aplikasi Android, sedangkan aplikasi server berupa program yg ditulis dalam bahasa pemrograman Java yg dijalankan di komputer. Anda dapat mendownload source code aplikasi yg akan kita buat <a href="http://belajarpemrograman.org/belajar-pemrograman-socket-client-server-menggunakan-android-dan-java/#download-source-code">pada bagian akhir dari tulisan ini</a>.
@@ -104,7 +104,7 @@ Mari kita <em>compile</em> dan jalankan kode di atas.
 PanggilSayaServer sedang berjalan, menunggu request dari client.
 
 </pre>
-Untuk menghentikan server, gunakan <strong>Ctrl+C</strong>.
+Untuk menghentikan server, gunakan <kbd>Ctrl+C</kbd>.
 <h3>Aplikasi Client</h3>
 Mari kita buat sebuah project Android baru dengan nama <strong>Panggil Saya</strong>. Saya menggunakan Android Studio 2.2 dan Java 1.8. Untuk nama package aplikasi, saya menggunakan <code>com.mikhsan.practice.panggilsaya</code>. Minimum SDK saya set API 16: Android 4.1 (Jelly Bean). Hal-hal tersebut, seperti nama aplikasi, bukanlah merupakan suatu ketentuan, silahkan dirubah sesuai keinginan Anda. Namun, jika Anda menggunakan nama package yg berbeda, pastikan Anda juga menyesuaikannya pada kode yg akan kita buat.
 
