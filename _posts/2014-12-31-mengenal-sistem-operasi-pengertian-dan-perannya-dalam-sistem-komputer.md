@@ -3,13 +3,10 @@ ID: 83
 post_title: 'Mengenal Sistem Operasi &#8211; Pengertian dan Perannya dalam Sistem Komputer'
 author: Muhammad Ikhsan
 post_date: 2014-12-31 00:24:12
-post_excerpt: |
-  Jika setiap programmer aplikasi komputer harus betul-betul mengerti bagaimana sebuah komputer bekerja secara mendetail (bagaimana kerja processor, bagaimana kerja monitor, bagaimana processor mengerjakan instruksi-instruksi, dll.), niscaya hanya segelintir orang saja yang dapat memprogram aplikasi komputer. Oleh karena alasan itulah terdapat perantara antara perangkat keras komputer dengan program aplikasi, yaitu <b>sistem operasi</b>.
-  <h2>Tugas Sistem Operasi</h2>
-  Dengan adanya sistem operasi, programmer aplikasi cukup bekerja membuat aplikasi yang berjalan di atas sistem operasi tersebut, tanpa harus memikirkan bagaimana aplikasi yang dibuat akan diproses oleh processor, disimpan di RAM saat dijalankan, proses perpindahan setiap bit program dari harddisk sampai dapat ditampilkan di layar monitor. Pada dasarnya sistem operasi mengerjakan dua tugas, yaitu menyediakan sumber daya bagi program aplikasi untuk dapat bekerja dengan hardware melalui perantara sistem operasi, dan juga bertugas untuk mengelola sumber daya hardware.
+post_excerpt: 'Jika setiap programmer aplikasi komputer harus betul-betul mengerti bagaimana sebuah komputer bekerja secara mendetail (bagaimana kerja processor, bagaimana kerja monitor, bagaimana processor mengerjakan instruksi-instruksi, dll.), niscaya hanya segelintir orang saja yang dapat memprogram aplikasi komputer. Oleh karena alasan itulah terdapat perantara antara perangkat keras komputer dengan program aplikasi, yaitu <b>sistem operasi</b>.'
 layout: post
 permalink: >
-  http://belajarpemrograman.org/mengenal-sistem-operasi-pengertian-dan-perannya-dalam-sistem-komputer/
+  https://belajarpemrograman.org/mengenal-sistem-operasi-pengertian-dan-perannya-dalam-sistem-komputer/
 published: true
 ---
 Jika setiap programmer aplikasi komputer harus betul-betul mengerti bagaimana sebuah komputer bekerja secara mendetail (bagaimana kerja processor, bagaimana kerja monitor, bagaimana processor mengerjakan instruksi-instruksi, dll.), niscaya hanya segelintir orang saja yang dapat memprogram aplikasi komputer. Oleh karena alasan itulah terdapat perantara antara perangkat keras komputer dengan program aplikasi, yaitu <b>sistem operasi</b>.
