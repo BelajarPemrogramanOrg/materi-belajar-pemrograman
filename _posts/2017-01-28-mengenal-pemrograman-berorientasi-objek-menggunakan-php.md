@@ -55,7 +55,7 @@ Kode di bawah ini akan melakukan hal-hal berikut:
  	<li>Mematikan mesin <code>mobil_A</code></li>
  	<li>Menampilkan kembali status mobil</li>
 </ol>
-<pre><code class="language-php line-numbers"><?php
+<pre><code class="language-php line-numbers">&lt;?php
 // Membuat rancangan Mobil
 class Mobil {
   // Beberapa property yg dimiliki oleh Mobil: warna, merek, kecepatan_maksimum, status_mesin (status mesin nyala atau mati)
@@ -68,14 +68,14 @@ class Mobil {
   function nyalakan_mesin() {
     // Kode untuk menyalakan mesin mobil
     // ...
-    $this->status_mesin = "nyala";
+    $this-&gt;status_mesin = "nyala";
   }
   
   // method untuk mematikan mesin mobil
   function matikan_mesin() {
     // Kode untuk mematikan mesin mobil
     // ...
-    $this->status_mesin = "mati";
+    $this-&gt;status_mesin = "mati";
   }
 }
 
@@ -84,19 +84,19 @@ $mobil_A = new Mobil();
 $mobil_B = new Mobil();
 
 // Menyalakan mesin mobil_A dan mobil_B
-$mobil_A->nyalakan_mesin();
-$mobil_B->nyalakan_mesin();
+$mobil_A-&gt;nyalakan_mesin();
+$mobil_B-&gt;nyalakan_mesin();
 
 // Menampilkan status mesin mobil_A dan mobil_B
-echo '#1 Status mesin mobil_A: ' . $mobil_A->status_mesin . '<br>';
-echo '#1 Status mesin mobil_B: ' . $mobil_B->status_mesin . '<br>';
+echo '#1 Status mesin mobil_A: ' . $mobil_A-&gt;status_mesin . '&lt;br&gt;';
+echo '#1 Status mesin mobil_B: ' . $mobil_B-&gt;status_mesin . '&lt;br&gt;';
 
 // Mematikan mesin mobil_A
-$mobil_A->matikan_mesin();
+$mobil_A-&gt;matikan_mesin();
 
 // Menampilkan kembali status mesin mobil_A dan mobil_B
-echo '#2 Status mesin mobil_A: ' . $mobil_A->status_mesin . '<br>';
-echo '#2 Status mesin mobil_B: ' . $mobil_B->status_mesin . '<br>';</code></pre>
+echo '#2 Status mesin mobil_A: ' . $mobil_A-&gt;status_mesin . '&lt;br&gt;';
+echo '#2 Status mesin mobil_B: ' . $mobil_B-&gt;status_mesin . '&lt;br&gt;';</code></pre>
 Contoh di atas akan memberikan hasil sebagai berikut:
 <pre>#1 Status mesin mobil_A: nyala
 #1 Status mesin mobil_B: nyala
