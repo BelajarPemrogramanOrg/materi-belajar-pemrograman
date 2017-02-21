@@ -8,7 +8,7 @@ post_date: 2017-01-28 14:13:58
 post_excerpt: 'Pemrograman berorientasi objek atau OOP (Object Oriented Programming) merupakan paradigma pemrograman yang <strong>memandang program sebagai kumpulan objek</strong> yang <strong>dapat menyimpan data</strong> dan <strong>dapat mengerjakan suatu tindakan</strong>.'
 layout: post
 permalink: >
-  http://belajarpemrograman.org/mengenal-pemrograman-berorientasi-objek-menggunakan-php/
+  https://belajarpemrograman.org/mengenal-pemrograman-berorientasi-objek-menggunakan-php/
 published: true
 ---
 Pemrograman berorientasi objek atau OOP (Object Oriented Programming) merupakan paradigma pemrograman yang <strong>memandang program sebagai kumpulan objek</strong> yang <strong>dapat menyimpan data</strong> dan <strong>dapat mengerjakan suatu tindakan</strong>.
@@ -55,8 +55,48 @@ Kode di bawah ini akan melakukan hal-hal berikut:
  	<li>Mematikan mesin <code>mobil_A</code></li>
  	<li>Menampilkan kembali status mobil</li>
 </ol>
-https://gist.github.com/alwayzmile/cfef0d5cc95d4c13f5189b183590efe3
+<pre><code class="language-php line-numbers"><?php
+// Membuat rancangan Mobil
+class Mobil {
+  // Beberapa property yg dimiliki oleh Mobil: warna, merek, kecepatan_maksimum, status_mesin (status mesin nyala atau mati)
+  public $warna;
+  public $merek;
+  public $kecepatan_maksimum;
+  public $status_mesin = "mati";
+  
+  // method untuk menyalakan mesin mobil
+  function nyalakan_mesin() {
+    // Kode untuk menyalakan mesin mobil
+    // ...
+    $this->status_mesin = "nyala";
+  }
+  
+  // method untuk mematikan mesin mobil
+  function matikan_mesin() {
+    // Kode untuk mematikan mesin mobil
+    // ...
+    $this->status_mesin = "mati";
+  }
+}
 
+// Membuat objek mobil berdasarkan rancangan yg telah dibuat dalam class Mobil
+$mobil_A = new Mobil();
+$mobil_B = new Mobil();
+
+// Menyalakan mesin mobil_A dan mobil_B
+$mobil_A->nyalakan_mesin();
+$mobil_B->nyalakan_mesin();
+
+// Menampilkan status mesin mobil_A dan mobil_B
+echo '#1 Status mesin mobil_A: ' . $mobil_A->status_mesin . '<br>';
+echo '#1 Status mesin mobil_B: ' . $mobil_B->status_mesin . '<br>';
+
+// Mematikan mesin mobil_A
+$mobil_A->matikan_mesin();
+
+// Menampilkan kembali status mesin mobil_A dan mobil_B
+echo '#2 Status mesin mobil_A: ' . $mobil_A->status_mesin . '<br>';
+echo '#2 Status mesin mobil_B: ' . $mobil_B->status_mesin . '<br>';</code></pre>
 Contoh di atas akan memberikan hasil sebagai berikut:
 <pre>#1 Status mesin mobil_A: nyala
 #1 Status mesin mobil_B: nyala
