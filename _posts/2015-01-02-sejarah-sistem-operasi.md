@@ -12,8 +12,6 @@ permalink: >
   https://belajarpemrograman.org/sejarah-sistem-operasi/
 published: true
 ---
-&nbsp;
-
 Sistem operasi telah melalui perjalanan yang panjang hingga menjadi seperti yang kita kenal pada masa kini. Sistem operasi memiliki hubungan yang erat dengan arsitektur mesin komputer di mana sistem operasi beroperasi. Oleh karena itu, kita akan turut membahas perkembangan dari mesin komputer dari masa ke masa beserta sistem operasi yang berjalan pada mesin komputer tersebut.
 
 Desain komputer digital pertama kali dibuat oleh seorang ahli matematika berkebangsaan Inggris bernama <b>Charles Babbage</b> (1792-1871). Meskipun Babbage menghabiskan sebagian besar waktunya untuk membuat mesin analitisnya, dia tidak dapat menghasilkan mesin seperti yang dia harapkan agar dapat bekerja seperti desain yang dia buat. Mesin yang dibuatnya masih betul-betul bekerja secara mekanik, dan teknologi pada zamannya belum memungkinkan untuk dibuatnya komponen-komponen berpresisi tinggi yang dibutuhkan untuk mesinnya.
