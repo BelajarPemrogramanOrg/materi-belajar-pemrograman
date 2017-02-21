@@ -1,6 +1,6 @@
 ---
 ID: 96
-post_title: Sejarah Sistem Operasi
+post_title: Sejarah Sistem Operasi Secara Singkat
 author: Muhammad Ikhsan
 post_date: 2015-01-02 22:17:36
 post_excerpt: |
@@ -9,10 +9,10 @@ post_excerpt: |
   Sistem operasi telah melalui perjalanan yang panjang hingga menjadi seperti yang kita kenal pada masa kini. Sistem operasi memiliki hubungan yang erat dengan arsitektur mesin komputer di mana sistem operasi beroperasi. Oleh karena itu, kita akan turut membahas perkembangan dari mesin komputer dari masa ke masa beserta sistem operasi yang berjalan pada mesin komputer tersebut.
 layout: post
 permalink: >
-  http://belajarpemrograman.org/sejarah-sistem-operasi/
+  https://belajarpemrograman.org/sejarah-sistem-operasi/
 published: true
 ---
-<img class="aligncenter wp-image-97" title="Charles Babbage (bapak komputer) &amp; Ada Lovelace (programmer pertama di dunia)" src="http://belajarpemrograman.org/wp-content/uploads/2016/11/sejarah-sistem-operasi-charles-babbage-and-ada-lovelace-belajar-pemrograman_p7ceff.jpg" alt="Charles Babbage (bapak komputer) &amp; Ada Lovelace (programmer pertama di dunia)" width="683" height="431" />
+&nbsp;
 
 Sistem operasi telah melalui perjalanan yang panjang hingga menjadi seperti yang kita kenal pada masa kini. Sistem operasi memiliki hubungan yang erat dengan arsitektur mesin komputer di mana sistem operasi beroperasi. Oleh karena itu, kita akan turut membahas perkembangan dari mesin komputer dari masa ke masa beserta sistem operasi yang berjalan pada mesin komputer tersebut.
 
