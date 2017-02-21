@@ -6,7 +6,7 @@ post_date: 2016-11-07 07:23:15
 post_excerpt: 'Dalam materi belajar ini Anda akan mengenal pemrograman bash shell di Linux. Dimulai dengan pengertian bash, memeriksa shell yang aktif sebagai langkah persiapan sebelum memulai pemrograman bash, dan akhirnya Anda akan membuat dua <em>bash script</em> sederhana dan menjalankannya.'
 layout: post
 permalink: >
-  http://belajarpemrograman.org/belajar-pemrograman-bash-shell-di-linux-1-pengenalan/
+  https://belajarpemrograman.org/belajar-pemrograman-bash-shell-di-linux-1-pengenalan/
 published: true
 ---
 Dalam materi belajar ini Anda akan mengenal pemrograman bash shell di Linux. Dimulai dengan pengertian bash, memeriksa shell yang aktif sebagai langkah persiapan sebelum memulai pemrograman bash, dan akhirnya Anda akan membuat dua <em>bash script</em> sederhana dan menjalankannya.
@@ -31,9 +31,10 @@ bash</pre>
 <h2>Membuat Shell Script</h2>
 <h3>Contoh 1</h3>
 Buat sebuah file dengan nama <code>hello</code>. Anda dapat menggunakan editor apa saja yang Anda kehendaki, <code>vi</code>, <code>vim</code>, <code>emacs</code>, <code>nano</code>, <code>gedit</code>, atau yang lainnya. Kemudian ketikkan script berikut:
-
-https://gist.github.com/alwayzmile/0138d8fb3f706354590c06af2e21440a#file-hello
-
+<pre><code class="language-bash line-numbers">#!/bin/bash
+echo "Hello World!"
+echo "Anda sedang berada di direktori $PWD"
+</code></pre>
 Simpan file, kemudian rubah hak akses file tersebut agar dapat dieksekusi:
 <pre>$ chmod 755 hello</pre>
 Jalankan shell script pertama kita:
@@ -50,9 +51,25 @@ Anda sedang berada di direktori /home/user/Documents/Writing/Code/bash</pre>
 </ul>
 <h3>Contoh 2</h3>
 Berikut merupakan sebuah contoh lain:
+<pre><code class="language-bash line-numbers">#!/bin/bash
+# Menampilkan beberapa informasi
 
-https://gist.github.com/alwayzmile/0138d8fb3f706354590c06af2e21440a#file-tampilkaninfo
+# Menampilkan nama user
+echo "Halo $USER!"
 
+# Menampilkan nama file shell script yang sedang dijalankan
+echo "Anda sedang menjalankan file bash script '$0'"
+
+# Menampilkan tanggal lokal
+echo -n "Hari ini tanggal "; date +"%d %B %Y"
+
+# Menampilkan nama direktori aktif
+echo -n "Anda sedang berada di lokasi "; pwd
+
+# Menampilkan isi direktori aktif
+echo "Berikut merupakan beberapa file yang terdapat pada direktori aktif:";
+ls
+</code></pre>
 Simpan file tersebut dengan nama <code>tampilkaninfo</code>, kemudian rubah hak akses file agar dapat dieksekusi, dan jalankan.
 <pre>$ chmod 755 tampilkaninfo
 $ ./tampilkaninfo
