@@ -1,7 +1,7 @@
 ---
 ID: 96
 post_title: Sejarah Sistem Operasi Secara Singkat
-author: Muhammad Ikhsan
+author: Administrator
 post_date: 2015-01-02 22:17:36
 post_excerpt: >
   Sistem operasi telah melalui perjalanan
@@ -16,7 +16,7 @@ post_excerpt: >
   berjalan pada mesin komputer tersebut.
 layout: post
 permalink: >
-  https://belajarpemrograman.org/sejarah-sistem-operasi/
+  http://belajarpemrograman.org/sejarah-sistem-operasi/
 published: true
 ---
 Sistem operasi telah melalui perjalanan yang panjang hingga menjadi seperti yang kita kenal pada masa kini. Sistem operasi memiliki hubungan yang erat dengan arsitektur mesin komputer di mana sistem operasi beroperasi. Oleh karena itu, kita akan turut membahas perkembangan dari mesin komputer dari masa ke masa beserta sistem operasi yang berjalan pada mesin komputer tersebut.
