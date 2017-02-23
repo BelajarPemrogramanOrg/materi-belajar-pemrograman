@@ -1,12 +1,12 @@
 ---
 ID: 83
 post_title: 'Mengenal Sistem Operasi &#8211; Pengertian dan Perannya dalam Sistem Komputer'
-author: Muhammad Ikhsan
+author: Administrator
 post_date: 2014-12-31 00:24:12
 post_excerpt: 'Jika setiap programmer aplikasi komputer harus betul-betul mengerti bagaimana sebuah komputer bekerja secara mendetail (bagaimana kerja processor, bagaimana kerja monitor, bagaimana processor mengerjakan instruksi-instruksi, dll.), niscaya hanya segelintir orang saja yang dapat memprogram aplikasi komputer. Oleh karena alasan itulah terdapat perantara antara perangkat keras komputer dengan program aplikasi, yaitu <b>sistem operasi</b>.'
 layout: post
 permalink: >
-  https://belajarpemrograman.org/mengenal-sistem-operasi-pengertian-dan-perannya-dalam-sistem-komputer/
+  http://belajarpemrograman.org/mengenal-sistem-operasi-pengertian-dan-perannya-dalam-sistem-komputer/
 published: true
 ---
 Jika setiap programmer aplikasi komputer harus betul-betul mengerti bagaimana sebuah komputer bekerja secara mendetail (bagaimana kerja processor, bagaimana kerja monitor, bagaimana processor mengerjakan instruksi-instruksi, dll.), niscaya hanya segelintir orang saja yang dapat memprogram aplikasi komputer. Oleh karena alasan itulah terdapat perantara antara perangkat keras komputer dengan program aplikasi, yaitu <b>sistem operasi</b>.
