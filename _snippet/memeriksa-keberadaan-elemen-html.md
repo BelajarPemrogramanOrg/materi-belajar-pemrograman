@@ -3,13 +3,13 @@ ID: 427
 post_title: Memeriksa Keberadaan Elemen HTML
 author: Muhammad Ikhsan
 post_date: 2017-02-23 07:55:01
-post_excerpt: "Seringkali diperlukan untuk mengecek apakah suatu elemen HTML <em>exist</em> sebelum melakukan suatu tindakan tertentu. Misalnya, kita hendak memeriksa keberadaan elemen dengan <em>selector</em> <code>#header .main-nav</code>. Dengan menggunakan jQuery, biasanya solusi untuk masalah ini adalah dengan memeriksa kondisi <code>($('#header .main-nav').length &gt; 0)</code>."
+post_excerpt: 'Seringkali perlu dilakukan pengecekan terlebih dahulu apakah suatu elemen HTML <em>exist</em>, sebelum melakukan suatu tindakan tertentu yang melibatkan elemen HTML tersebut. Misalnya, kita hendak memeriksa keberadaan elemen dengan <em>selector</em> <code>#header .main-nav</code>.'
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/memeriksa-keberadaan-elemen-html/
 published: true
 ---
-Seringkali diperlukan untuk mengecek apakah suatu elemen HTML <em>exist</em> sebelum melakukan suatu tindakan tertentu. Misalnya, kita hendak memeriksa keberadaan elemen dengan <em>selector</em> <code>#header .main-nav</code>. Dengan menggunakan jQuery, biasanya solusi untuk masalah ini adalah dengan memeriksa kondisi <code>($('#header .main-nav').length &gt; 0)</code>.
+Seringkali perlu dilakukan pengecekan terlebih dahulu apakah suatu elemen HTML <em>exist</em>, sebelum melakukan suatu tindakan tertentu yang melibatkan elemen HTML tersebut. Misalnya, kita hendak memeriksa keberadaan elemen dengan <em>selector</em> <code>#header .main-nav</code>. Dengan menggunakan jQuery, biasanya solusi untuk masalah ini adalah dengan memeriksa kondisi <code>($('#header .main-nav').length &gt; 0)</code>.
 <h2>Kode</h2>
 Karena hal tersebut sering diperlukan, mari kita buat sebuah plugin jQuery sederhana untuknya.
 <pre><code class="language-javascript">$.fn.exists = function() { return this.length &gt; 0 };</code></pre>
