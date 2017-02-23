@@ -1,12 +1,12 @@
 ---
 ID: 151
 post_title: 'Belajar Pemrograman Socket Client &#8211; Server Menggunakan Android dan Java'
-author: Muhammad Ikhsan
+author: Administrator
 post_date: 2017-01-29 14:48:07
 post_excerpt: 'Dalam materi belajar ini, kita akan membuat dua buah program sederhana untuk menerapkan komunikasi client - server menggunakan socket. Aplikasi client yg akan kita buat berupa sebuah aplikasi Android, sedangkan aplikasi server berupa program yg ditulis dalam bahasa pemrograman Java yg dijalankan di komputer. Anda dapat mendownload source code aplikasi yg akan kita buat <a href="http://belajarpemrograman.org/belajar-pemrograman-socket-client-server-menggunakan-android-dan-java/#download-source-code">pada bagian akhir dari tulisan ini</a>.'
 layout: post
 permalink: >
-  https://belajarpemrograman.org/belajar-pemrograman-socket-client-server-menggunakan-android-dan-java/
+  http://belajarpemrograman.org/belajar-pemrograman-socket-client-server-menggunakan-android-dan-java/
 published: true
 ---
 Dalam materi belajar ini, kita akan membuat dua buah program sederhana untuk menerapkan komunikasi client - server menggunakan socket. Aplikasi client yg akan kita buat berupa sebuah aplikasi Android, sedangkan aplikasi server berupa program yg ditulis dalam bahasa pemrograman Java yg dijalankan di komputer. Anda dapat mendownload source code aplikasi yg akan kita buat <a href="http://belajarpemrograman.org/belajar-pemrograman-socket-client-server-menggunakan-android-dan-java/#download-source-code">pada bagian akhir dari tulisan ini</a>.
