@@ -1,12 +1,12 @@
 ---
 ID: 42
 post_title: Perintah-Perintah Dasar Linux
-author: Muhammad Ikhsan
+author: Administrator
 post_date: 2016-11-04 21:53:59
 post_excerpt: 'Dalam artikel ini akan dibahas mengenai beberapa perintah-perintah dasar Linux berikut contoh-contoh penggunaannya. Perintah-perintah dasar yang akan dibahas antara lain <code>cd</code> untuk mengganti direktori aktif, <code>pwd</code> menampilkan nama direktori aktif, <code>ls</code> untuk menampilkan isi sebuah direktori, dan lain-lain.'
 layout: post
 permalink: >
-  https://belajarpemrograman.org/perintah-perintah-dasar-linux/
+  http://belajarpemrograman.org/perintah-perintah-dasar-linux/
 published: true
 ---
 Dalam tulisan ini akan dibahas mengenai beberapa perintah-perintah dasar Linux berikut contoh-contoh penggunaannya.
