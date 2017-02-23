@@ -3,7 +3,7 @@ ID: 7
 post_title: >
   Program C untuk Konversi Bilangan
   Desimal ke Bilangan Biner
-author: Muhammad Ikhsan
+author: Administrator
 post_date: 2016-10-30 05:40:10
 post_excerpt: >
   Pada kesempatan ini, akan dibahas contoh
@@ -21,7 +21,7 @@ post_excerpt: >
   1.
 layout: post
 permalink: >
-  https://belajarpemrograman.org/konversi-bilangan-desimal-ke-bilangan-biner/
+  http://belajarpemrograman.org/konversi-bilangan-desimal-ke-bilangan-biner/
 published: true
 ---
 Pada kesempatan ini, akan dibahas contoh program untuk melakukan konversi bilangan dalam representasi desimal ke bilangan dalam representasi biner.
