@@ -3,12 +3,12 @@ ID: 123
 post_title: >
   Mengenal Pemrograman Berorientasi Objek
   (Menggunakan PHP)
-author: Muhammad Ikhsan
+author: Administrator
 post_date: 2017-01-28 14:13:58
 post_excerpt: 'Pemrograman berorientasi objek atau OOP (Object Oriented Programming) merupakan paradigma pemrograman yang <strong>memandang program sebagai kumpulan objek</strong> yang <strong>dapat menyimpan data</strong> dan <strong>dapat mengerjakan suatu tindakan</strong>.'
 layout: post
 permalink: >
-  https://belajarpemrograman.org/mengenal-pemrograman-berorientasi-objek-menggunakan-php/
+  http://belajarpemrograman.org/mengenal-pemrograman-berorientasi-objek-menggunakan-php/
 published: true
 ---
 Pemrograman berorientasi objek atau OOP (Object Oriented Programming) merupakan paradigma pemrograman yang <strong>memandang program sebagai kumpulan objek</strong> yang <strong>dapat menyimpan data</strong> dan <strong>dapat mengerjakan suatu tindakan</strong>.
