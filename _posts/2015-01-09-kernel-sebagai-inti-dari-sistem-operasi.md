@@ -1,7 +1,7 @@
 ---
 ID: 118
 post_title: Kernel Sebagai Inti dari Sistem Operasi
-author: Muhammad Ikhsan
+author: Administrator
 post_date: 2015-01-09 00:26:56
 post_excerpt: |
   Istilah kernel biasanya mengacu pada pengertian sistem operasi sebagai perangkat lunak yang mengelola dan mengalokasikan sumber daya komputer (seperti CPU, RAM, dan perangkat lainnya). Meskipun memungkinkan untuk menjalankan sebuah program di mesin komputer tanpa adanya kernel, namun dengan adanya kernel akan sangat memudahkan bagi programmer dengan telah ditanganinya pengelolaan dan pengalokasian sumber daya komputer oleh kernel.
@@ -9,7 +9,7 @@ post_excerpt: |
   Kernel Linux biasanya berada pada lokasi /boot/vmlinuz atau yang menyerupai lokasi tersebut. Pada generasi awal UNIX, file kernel <i>executable </i>tersebut dinamai <i>unix.</i> Kemudian setelah UNIX mengimplementasikan virtual memory, nama kernel tersebut berubah menjadi <i>vmunix.</i> Sedangkan pada Linux, nama kernel menjadi sebagaimana nama sistemnya, <i>linux</i>, dengan mengganti huruf <i>x </i>dengan huruf <i>z</i>, sehingga menjadi <i>vmlinuz</i>.
 layout: post
 permalink: >
-  https://belajarpemrograman.org/kernel-sebagai-inti-dari-sistem-operasi/
+  http://belajarpemrograman.org/kernel-sebagai-inti-dari-sistem-operasi/
 published: true
 ---
 Istilah kernel biasanya mengacu pada pengertian sistem operasi sebagai perangkat lunak yang mengelola dan mengalokasikan sumber daya komputer (seperti CPU, RAM, dan perangkat lainnya). Meskipun memungkinkan untuk menjalankan sebuah program di mesin komputer tanpa adanya kernel, namun dengan adanya kernel akan sangat memudahkan bagi programmer dengan telah ditanganinya pengelolaan dan pengalokasian sumber daya komputer oleh kernel.
