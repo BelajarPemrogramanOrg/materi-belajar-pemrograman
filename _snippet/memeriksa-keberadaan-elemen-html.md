@@ -9,7 +9,7 @@ permalink: >
   http://belajarpemrograman.org/snippet/memeriksa-keberadaan-elemen-html/
 published: true
 ---
-Seringkali perlu dilakukan pengecekan terlebih dahulu apakah suatu elemen HTML <em>exist</em>, sebelum melakukan suatu tindakan tertentu yang melibatkan elemen HTML tersebut. Misalnya, kita hendak memeriksa keberadaan elemen dengan <em>selector</em> <code>#header .main-nav</code> pada sebuah dokumen HTML. Dengan menggunakan jQuery, biasanya solusi untuk masalah ini adalah dengan memeriksa kondisi <code>($('#header .main-nav').length &gt; 0)</code>.
+Seringkali perlu dilakukan pengecekan terlebih dahulu apakah suatu elemen HTML <em>exist</em>, sebelum melakukan suatu tindakan tertentu yang melibatkan elemen HTML tersebut. Misalnya, kita hendak memeriksa keberadaan elemen dengan <em>selector</em> <code>#header .main-nav</code> pada sebuah dokumen HTML. Dengan menggunakan jQuery, biasanya solusi untuk masalah ini adalah dengan menggunakan kondisi <code>($('#header .main-nav').length &gt; 0)</code>.
 <h2>Kode</h2>
 Karena hal tersebut sering diperlukan, mari kita buat sebuah plugin jQuery sederhana untuknya.
 <pre><code class="language-javascript">$.fn.exists = function() { return this.length &gt; 0 };</code></pre>
