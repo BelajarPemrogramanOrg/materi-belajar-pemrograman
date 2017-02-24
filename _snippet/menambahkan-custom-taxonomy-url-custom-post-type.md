@@ -5,7 +5,7 @@ post_title: >
   Custom Post Type
 author: Muhammad Ikhsan
 post_date: 2017-02-24 07:59:48
-post_excerpt: 'Saya telah membuat sebuah custom post type dengan nama snippet. Kemudian pada settingan rewrite untuk rewrite permalink, saya setting slug-nya dengan <code>snippet/%snippet_tag%</code>. Saya ingin <code>%snippet_tag%</code> otomatis berganti dengan nama tag snippet. Ternyata link yang dihasilkan berbentuk seperti <a href="https://example.com/snippet/%snippet_tag%/slug-dari-sebuah-custom-post" target="_blank"><code>https://example.com/snippet/%snippet_tag%/slug-dari-sebuah-custom-post</code></a>. Ini bukan seperti yang saya harapkan.'
+post_excerpt: 'Saya telah membuat sebuah custom post type dengan nama snippet. Kemudian pada settingan rewrite untuk rewrite permalink, saya setting slug-nya dengan <code>snippet/%snippet_tag%</code>. Saya ingin <code>%snippet_tag%</code> otomatis berganti dengan nama tag snippet. Ternyata link yang dihasilkan berbentuk seperti <a href="https://example.com/snippet/%snippet_tag%/slug-post" target="_blank"><code>https://example.com/snippet/%snippet_tag%/slug-post</code></a>. Ini bukan seperti yang saya harapkan.'
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/menambahkan-custom-taxonomy-url-custom-post-type/
