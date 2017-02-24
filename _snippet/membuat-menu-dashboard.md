@@ -14,7 +14,6 @@ Dalam pembuatan plugin WordPress, kita dapat menambahkan halaman untuk pengatura
 Jika plugin yang dibuat hanya membutuhkan satu halaman baru di dashboard, maka sebaiknya tidak membuat menu utama baru. Cukup buat saja sebuah submenu dari menu <em>default</em> dashboard WordPress.
 
 Dalam contoh ini, kita akan membuat sebuah halaman pengaturan plugin. Oleh karenanya, kita akan membuat sebuah submenu dari menu utama Settings dengan cara membuat fungsi yang memanggil fungsi <a href="https://developer.wordpress.org/reference/functions/add_submenu_page/" target="_blank"><code>add_submenu_page</code></a> yang di-<em>hook</em> ke action <code>admin_menu</code>. Selanjutnya, kita juga akan menentukan konten dari submenu tersebut dengan menempatkan konten tersebut ke dalam fungsi yang akan dipanggil ketika submenu diakses.
-
 <pre><code class="language-php">/**
  * Menambahkan submenu pengaturan materi BP
  */
