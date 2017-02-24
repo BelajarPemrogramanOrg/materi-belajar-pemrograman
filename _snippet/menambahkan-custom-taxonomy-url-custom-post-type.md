@@ -5,14 +5,14 @@ post_title: >
   Custom Post Type
 author: Muhammad Ikhsan
 post_date: 2017-02-24 07:59:48
-post_excerpt: 'Saya telah membuat sebuah custom post type dengan nama snippet. Kemudian pada settingan rewrite untuk rewrite permalink, saya setting slug-nya dengan <code>snippet/%snippet_tag%</code>. Saya ingin <code>%snippet_tag%</code> otomatis berganti dengan nama tag snippet. Ternyata link yang dihasilkan berbentuk seperti <a href="https://example.com/snippet/%snippet_tag%/slug-post" target="_blank"><code>https://example.com/snippet/%snippet_tag%/slug-post</code></a>. Ini bukan seperti yang saya harapkan.'
+post_excerpt: 'Saya telah membuat sebuah custom post type (CPT) dengan nama snippet. Pada pembuatan CPT, opsi <code>rewrite</code>, saya isikan dengan <code>snippet/%snippet_tag%</code>. Saya ingin <code>%snippet_tag%</code> otomatis berganti dengan nama tag snippet. Ternyata link yang dihasilkan berbentuk seperti <a href="https://example.com/snippet/%snippet_tag%/slug-post" target="_blank"><code>https://example.com/snippet/%snippet_tag%/slug-post</code></a>. Ini bukan seperti yang saya harapkan.'
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/menambahkan-custom-taxonomy-url-custom-post-type/
 published: true
 ---
 <h2>Kasus</h2>
-Saya telah membuat sebuah custom post type dengan nama <code>snippet</code>. Kemudian pada settingan <code>rewrite</code> untuk rewrite permalink, saya setting slug-nya dengan <code>snippet/%snippet_tag%</code>. Slug tersebut dibuat dengan pemikiran bahwa <code>%snippet_tag%</code> akan diganti dengan sebuah tag snippet. Sehingga permalink yang dihasilkan untuk custom post type snippet akan menjadi seperti <a href="https://example.com/snippet/sebuah-tag/slug-dari-sebuah-custom-post" target="_blank"><code>https://example.com/snippet/sebuah-tag/slug-dari-sebuah-custom-post</code></a>.
+Saya telah membuat sebuah custom post type dengan nama <code>snippet</code>. Pada opsi <code>rewrite</code> untuk rewrite permalink, saya atur slug-nya <code>snippet/%snippet_tag%</code>. Slug tersebut dibuat dengan harapan bahwa <code>%snippet_tag%</code> akan otomatis diganti dengan nama tag snippet. Sehingga permalink yang dihasilkan untuk custom post type snippet akan menjadi seperti <a href="https://example.com/snippet/sebuah-tag/slug-dari-sebuah-custom-post" target="_blank"><code>https://example.com/snippet/sebuah-tag/slug-dari-sebuah-custom-post</code></a>.
 
 Register custom post type dan taxonomy dilakukan dengan menggunakan kode berikut:
 <pre><code class="language-php line-numbers">/**
@@ -65,7 +65,7 @@ function bp_tutorial_snippet_tag_custom_taxonomy() {
     // Daftarkan custom taxonomy dan hubungkan dengan CPT snippet
     register_taxonomy( "snippet_tag", array( "snippet" ), $args );
 }</code></pre>
-Nah, jika berhenti sampai di situ saja, maka link yang dihasilkan akan berbentuk seperti <a href="https://example.com/snippet/%snippet_tag%/slug-dari-sebuah-custom-post" target="_blank"><code>https://example.com/snippet/%snippet_tag%/slug-dari-sebuah-custom-post</code></a>. Ini bukan yang saya harapkan.
+Nah, jika berhenti sampai di situ saja, maka link yang dihasilkan akan berbentuk seperti <a href="https://example.com/snippet/%snippet_tag%/slug-dari-sebuah-custom-post" target="_blank"><code>https://example.com/snippet/%snippet_tag%/slug-dari-sebuah-custom-post</code></a>. Ini bukan seperti yang saya harapkan.
 
 Lalu bagaimana agar saya bisa mengganti <code>%snippet_tag%</code> dengan nama tag snippet?
 <h2>Solusi</h2>
