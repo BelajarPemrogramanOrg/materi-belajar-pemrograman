@@ -1,8 +1,8 @@
 ---
 ID: 436
 post_title: >
-  Menambahkan Nama Custom Taxonomy pada
-  URL Custom Post Type
+  Menambahkan Custom Taxonomy pada URL
+  Custom Post Type
 author: Muhammad Ikhsan
 post_date: 2017-02-24 07:59:48
 post_excerpt: ""
