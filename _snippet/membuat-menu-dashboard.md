@@ -44,7 +44,7 @@ function bp_tutorial_setting_page() {
 }</code></pre>
 <h3>Keterangan</h3>
 <ul>
- 	<li><strong>Baris 6-13</strong> digunakan untuk menambahkan submenu <code>Materi BP</code>
+ 	<li><p><strong>Baris 6-13</strong> digunakan untuk menambahkan submenu <code>Materi BP</code></p>
 <pre data-start="6"><code class="language-php line-numbers">    add_submenu_page(
         'options-general.php',
         __( 'Pengaturan Materi BP', 'belajar-pemrograman' ),
@@ -135,7 +135,7 @@ function bp_tutorial_snippet_setting_page() {
 }</code></pre>
 <h3>Keterangan</h3>
 <ul>
- 	<li><strong>Baris 8 - 16</strong> digunakan untuk menambahkan menu utama <code>Materi BP</code>
+ 	<li><p><strong>Baris 8 - 16</strong> digunakan untuk menambahkan menu utama <code>Materi BP</code></p>
 <pre data-start="8"><code class="language-php line-numbers">    add_menu_page(
         __( 'Pengaturan Materi BP', 'belajar-pemrograman' ),
         __( 'Materi BP', 'belajar-pemrograman' ),
