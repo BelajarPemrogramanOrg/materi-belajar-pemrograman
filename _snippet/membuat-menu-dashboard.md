@@ -14,7 +14,7 @@ Dalam pembuatan plugin WordPress, kita dapat menambahkan halaman untuk pengatura
 Jika plugin yang dibuat hanya membutuhkan satu halaman baru di dashboard, maka sebaiknya tidak membuat menu utama baru. Cukup buat saja sebuah submenu dari menu <em>default</em> dashboard WordPress.
 
 Dalam contoh ini, kita akan membuat sebuah halaman pengaturan plugin. Oleh karenanya, kita akan membuat sebuah submenu dari menu utama Settings dengan cara membuat fungsi yang memanggil fungsi <a href="https://developer.wordpress.org/reference/functions/add_submenu_page/" target="_blank"><code>add_submenu_page</code></a> yang di-<em>hook</em> ke action <code>admin_menu</code>. Selanjutnya, kita juga akan menentukan konten dari submenu tersebut dengan menempatkan konten tersebut ke dalam fungsi yang akan dipanggil ketika submenu diakses.
-<pre data-line="6-13"><code class="language-php">/**
+<pre><code class="language-php line-numbers">/**
  * Menambahkan submenu pengaturan materi BP
  */
 add_action( 'admin_menu', 'bp_tutorial_setting_submenu' );
@@ -44,6 +44,16 @@ function bp_tutorial_setting_page() {
 }</code></pre>
 <h3>Keterangan</h3>
 <ul>
+ 	<li><strong>Baris 6-13</strong> digunakan untuk menambahkan submenu <code>Materi BP</code>
+<pre data-start="6"><code class="language-php line-numbers">    add_submenu_page(
+        'options-general.php',
+        __( 'Pengaturan Materi BP', 'belajar-pemrograman' ),
+        __( 'Materi BP', 'belajar-pemrograman' ),
+        'manage_options',
+        'bp-tutorial-setting',
+        'bp_tutorial_setting_page'
+    );</code></pre>
+</li>
  	<li><strong>Baris 7</strong>: <code>options-general.php</code> merupakan <em>slug</em> dari menu utama Settings alias Pengaturan</li>
  	<li><strong>Baris 8</strong>: menentukan judul halaman submenu. Judul ini akan digunakan pada tag <code>&lt;title&gt;&lt;/title&gt;</code> halaman pengaturan</li>
  	<li><strong>Baris 9</strong>: menentukan label submenu yang akan ditampilkan pada bilah menu dashboard</li>
@@ -125,6 +135,17 @@ function bp_tutorial_snippet_setting_page() {
 }</code></pre>
 <h3>Keterangan</h3>
 <ul>
+ 	<li><strong>Baris 8 - 16</strong> digunakan untuk menambahkan menu utama <code>Materi BP</code>
+<pre data-start="8"><code class="language-php line-numbers">    add_menu_page(
+        __( 'Pengaturan Materi BP', 'belajar-pemrograman' ),
+        __( 'Materi BP', 'belajar-pemrograman' ),
+        'manage_options',
+        $parent_slug,
+        'bp_tutorial_material_setting_page',
+        'dashicons-book-alt',
+        81
+    );</code></pre>
+</li>
  	<li><strong>Baris 9</strong>: menentukan judul halaman menu. Judul ini akan digunakan dalam tag <code>&lt;title&gt;&lt;/title&gt;</code></li>
  	<li><strong>Baris 10</strong>: menentukan label menu yang akan digunakan</li>
  	<li><strong>Baris 11</strong>: menentukan minimal <em>capability</em> yang harus dimiliki user untuk mengakses menu</li>
