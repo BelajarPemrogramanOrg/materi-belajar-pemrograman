@@ -27,7 +27,7 @@ Tulisan ini berisikan catatan-catatan yg bersifat sebagai referensi mengenai bah
 [/su_note]
 <h2>Tentang Java</h2>
 <ul>
- 	<li><em>Object-oriented (class based)</em>, penulisan program di Java mengharuskan pembuatan kelas dan objek. Meskipun kita hanya ingin membuat sebuah program Hello World, kita harus membuatkan sebuah kelas untuknya. [Pertanyaan, ada yang mengatakan bahwa di Java, segalanya adalah objek. Apakah benar begitu?]</li>
+ 	<li><em>Object-oriented (class based)</em>, penulisan program di Java mengharuskan pembuatan kelas dan objek. Meskipun kita hanya ingin membuat sebuah program Hello World, kita harus membuatkan sebuah kelas untuknya.</li>
  	<li><em>Case-sensitive</em>, maksudnya huruf besar dan huruf kecil dalam penulisan kode berpengaruh. Sehingga <code>helloWorld</code>, <code>HelloWorld</code>, <code>helloworld</code>, maupun <code>HELLOWORLD</code> dianggap berbeda.</li>
  	<li><em>Statically-typed</em>, maksudnya setiap variabel di Java harus dideklarasikan tipe variabelnya terlebih dahulu sebelum variabel tersebut dapat digunakan.</li>
 </ul>
