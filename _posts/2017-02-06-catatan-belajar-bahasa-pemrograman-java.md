@@ -76,55 +76,55 @@ Komentar tidak akan diproses oleh <em>compiler</em>.
 </ul>
 <h2>Tipe Data Primitif</h2>
 Sebuah tipe data merupakan metode pengklasifikasian nilai dari sebuah variabel. Dengan tipe data, kita dapat mengetahui nilai apa yg dapat disimpan dalam sebuah variabel dan operasi apa saja yg dapat diterapkan pada variabel. Tipe data primitif di Java merupakan tipe data dasar yang disediakan oleh Java.
-<table style="width: 825.767px;">
+<table style="width: 825.767px">
 <thead>
-<tr style="height: 24px;">
-<th style="height: 24px; width: 74px;">Tipe Data</th>
-<th style="height: 24px; width: 107px;">Ukuran Memori</th>
-<th style="height: 24px; width: 621.767px;">Catatan</th>
+<tr style="height: 24px">
+<th style="height: 24px;width: 74px">Tipe Data</th>
+<th style="height: 24px;width: 107px">Ukuran Memori</th>
+<th style="height: 24px;width: 621.767px">Catatan</th>
 </tr>
 </thead>
 <tbody>
-<tr style="height: 25px;">
-<td style="height: 25px; width: 74px;"><code>byte</code></td>
-<td style="height: 25px; width: 107px;">1 byte</td>
-<td style="height: 25px; width: 621.767px;">Rentang nilai: -128 sampai 127</td>
+<tr style="height: 25px">
+<td style="height: 25px;width: 74px"><code>byte</code></td>
+<td style="height: 25px;width: 107px">1 byte</td>
+<td style="height: 25px;width: 621.767px">Rentang nilai: -128 sampai 127</td>
 </tr>
-<tr style="height: 25.6833px;">
-<td style="height: 25.6833px; width: 74px;"><code>short</code></td>
-<td style="height: 25.6833px; width: 107px;">2 byte</td>
-<td style="height: 25.6833px; width: 621.767px;">Rentang nilai: -32.768 sampai 32.767</td>
+<tr style="height: 25.6833px">
+<td style="height: 25.6833px;width: 74px"><code>short</code></td>
+<td style="height: 25.6833px;width: 107px">2 byte</td>
+<td style="height: 25.6833px;width: 621.767px">Rentang nilai: -32.768 sampai 32.767</td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px; width: 74px;"><code>int</code></td>
-<td style="height: 25px; width: 107px;">4 byte</td>
-<td style="height: 25px; width: 621.767px;">Rentang nilai: -2.147.483.648 sampai 2.147.483.647</td>
+<tr style="height: 25px">
+<td style="height: 25px;width: 74px"><code>int</code></td>
+<td style="height: 25px;width: 107px">4 byte</td>
+<td style="height: 25px;width: 621.767px">Rentang nilai: -2.147.483.648 sampai 2.147.483.647</td>
 </tr>
-<tr style="height: 49px;">
-<td style="height: 49px; width: 74px;"><code>long</code></td>
-<td style="height: 49px; width: 107px;">8 byte</td>
-<td style="height: 49px; width: 621.767px;">Rentang nilai: -9.223.372.036.854.775.808 sampai 9.223.372.036.854.775.807.
+<tr style="height: 49px">
+<td style="height: 49px;width: 74px"><code>long</code></td>
+<td style="height: 49px;width: 107px">8 byte</td>
+<td style="height: 49px;width: 621.767px">Rentang nilai: -9.223.372.036.854.775.808 sampai 9.223.372.036.854.775.807.
 Literal-nya diakhiri dengan <code>L</code>, contoh <code>11L</code>.</td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px; width: 74px;"><code>float</code></td>
-<td style="height: 25px; width: 107px;">4 byte</td>
-<td style="height: 25px; width: 621.767px;">Rentang nilai: kurang lebih dari 1,18 x 10<sup>-38</sup> sampai 3.4 x 10<sup>38</sup>. Literalnya diakhiri dengan <code>F</code>, contoh <code>0.5F</code>.</td>
+<tr style="height: 25px">
+<td style="height: 25px;width: 74px"><code>float</code></td>
+<td style="height: 25px;width: 107px">4 byte</td>
+<td style="height: 25px;width: 621.767px">Rentang nilai: kurang lebih dari 1,18 x 10<sup>-38</sup> sampai 3.4 x 10<sup>38</sup>. Literalnya diakhiri dengan <code>F</code>, contoh <code>0.5F</code>.</td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px; width: 74px;"><code>double</code></td>
-<td style="height: 25px; width: 107px;">8 byte</td>
-<td style="height: 25px; width: 621.767px;">Rentang nilai: kurang lebih dari 2,23 x 10<sup>-308</sup> sampai 1.80 x 10<sup>308</sup>.</td>
+<tr style="height: 25px">
+<td style="height: 25px;width: 74px"><code>double</code></td>
+<td style="height: 25px;width: 107px">8 byte</td>
+<td style="height: 25px;width: 621.767px">Rentang nilai: kurang lebih dari 2,23 x 10<sup>-308</sup> sampai 1.80 x 10<sup>308</sup>.</td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px; width: 74px;"><code>boolean</code></td>
-<td style="height: 25px; width: 107px;"></td>
-<td style="height: 25px; width: 621.767px;">Memiliki nilai <code>true</code> atau <code>false</code></td>
+<tr style="height: 25px">
+<td style="height: 25px;width: 74px"><code>boolean</code></td>
+<td style="height: 25px;width: 107px"></td>
+<td style="height: 25px;width: 621.767px">Memiliki nilai <code>true</code> atau <code>false</code></td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px; width: 74px;"><code>char</code></td>
-<td style="height: 25px; width: 107px;">2 byte</td>
-<td style="height: 25px; width: 621.767px;">Rentang nilai: <code>'\u0000'</code> (atau 0) sampai <code>'\uffff'</code> (atau 65535). Yaitu sebuah 16-bit merepresentasikan karakter Unicode.</td>
+<tr style="height: 25px">
+<td style="height: 25px;width: 74px"><code>char</code></td>
+<td style="height: 25px;width: 107px">2 byte</td>
+<td style="height: 25px;width: 621.767px">Rentang nilai: <code>'\u0000'</code> (atau 0) sampai <code>'\uffff'</code> (atau 65535). Yaitu sebuah 16-bit merepresentasikan karakter Unicode.</td>
 </tr>
 </tbody>
 </table>
@@ -232,32 +232,32 @@ kembalian = uangDibayarkan - totalHarga;</pre>
 <h2>Konvensi Penamaan</h2>
 <table>
 <thead>
-<tr style="height: 24px;">
-<th style="height: 24px;">Penamaan</th>
-<th style="height: 24px;">Konvensi</th>
-<th style="height: 24px;">Contoh</th>
+<tr style="height: 24px">
+<th style="height: 24px">Penamaan</th>
+<th style="height: 24px">Konvensi</th>
+<th style="height: 24px">Contoh</th>
 </tr>
 </thead>
 <tbody>
-<tr style="height: 48px;">
-<td style="height: 48px;">Kelas dan interface</td>
-<td style="height: 48px;">Setiap kata diawali dengan huruf kapital</td>
-<td style="height: 48px;"><code>Chat</code>, <code>SimpleChat</code></td>
+<tr style="height: 48px">
+<td style="height: 48px">Kelas dan interface</td>
+<td style="height: 48px">Setiap kata diawali dengan huruf kapital</td>
+<td style="height: 48px"><code>Chat</code>, <code>SimpleChat</code></td>
 </tr>
-<tr style="height: 48px;">
-<td style="height: 48px;">Objek dan variabel</td>
-<td style="height: 48px;">Diawali dengan huruf kecil. Setiap kata berikutnya diawali dengan huruf kapital.</td>
-<td style="height: 48px;"><code>message</code>, <code>newMessage</code></td>
+<tr style="height: 48px">
+<td style="height: 48px">Objek dan variabel</td>
+<td style="height: 48px">Diawali dengan huruf kecil. Setiap kata berikutnya diawali dengan huruf kapital.</td>
+<td style="height: 48px"><code>message</code>, <code>newMessage</code></td>
 </tr>
-<tr style="height: 24.5667px;">
-<td style="height: 24.5667px;">Method</td>
-<td style="height: 24.5667px;">Sama seperti konvensi untuk objek dan variabel</td>
-<td style="height: 24.5667px;"><code>getMessages</code></td>
+<tr style="height: 24.5667px">
+<td style="height: 24.5667px">Method</td>
+<td style="height: 24.5667px">Sama seperti konvensi untuk objek dan variabel</td>
+<td style="height: 24.5667px"><code>getMessages</code></td>
 </tr>
-<tr style="height: 24px;">
-<td style="height: 24px;">Konstanta</td>
-<td style="height: 24px;">Gunakan huruf kapital semua. Setiap kata dipisahkan dengan <code>_</code></td>
-<td style="height: 24px;"><code>IMAGE_DIR</code>, <code>PORT</code></td>
+<tr style="height: 24px">
+<td style="height: 24px">Konstanta</td>
+<td style="height: 24px">Gunakan huruf kapital semua. Setiap kata dipisahkan dengan <code>_</code></td>
+<td style="height: 24px"><code>IMAGE_DIR</code>, <code>PORT</code></td>
 </tr>
 </tbody>
 </table>
@@ -265,75 +265,75 @@ kembalian = uangDibayarkan - totalHarga;</pre>
 Reserved keywords, maksudnya Kita tidak boleh menggunakannya sebagai nama <em>identifier</em>, seperti nama kelas, nama variable, atau nama method.
 <table border="0" summary="" width="100%" cellpadding="0">
 <tbody>
-<tr style="height: 25px;">
-<td style="height: 25px;" align="left" width="20%"><code>abstract</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>continue</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>for</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>new</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>switch</code></td>
+<tr style="height: 25px">
+<td style="height: 25px" align="left" width="20%"><code>abstract</code></td>
+<td style="height: 25px" align="left" width="20%"><code>continue</code></td>
+<td style="height: 25px" align="left" width="20%"><code>for</code></td>
+<td style="height: 25px" align="left" width="20%"><code>new</code></td>
+<td style="height: 25px" align="left" width="20%"><code>switch</code></td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px;" width="20%"><code>assert</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>default</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>goto</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>package</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>synchronized</code></td>
+<tr style="height: 25px">
+<td style="height: 25px" width="20%"><code>assert</code></td>
+<td style="height: 25px" align="left" width="20%"><code>default</code></td>
+<td style="height: 25px" align="left" width="20%"><code>goto</code></td>
+<td style="height: 25px" align="left" width="20%"><code>package</code></td>
+<td style="height: 25px" align="left" width="20%"><code>synchronized</code></td>
 </tr>
-<tr style="height: 25.0166px;">
-<td style="height: 25.0166px;" align="left" width="20%"><code>boolean</code></td>
-<td style="height: 25.0166px;" align="left" width="20%"><code>do</code></td>
-<td style="height: 25.0166px;" align="left" width="20%"><code>if</code></td>
-<td style="height: 25.0166px;" align="left" width="20%"><code>private</code></td>
-<td style="height: 25.0166px;" align="left" width="20%"><code>this</code></td>
+<tr style="height: 25.0166px">
+<td style="height: 25.0166px" align="left" width="20%"><code>boolean</code></td>
+<td style="height: 25.0166px" align="left" width="20%"><code>do</code></td>
+<td style="height: 25.0166px" align="left" width="20%"><code>if</code></td>
+<td style="height: 25.0166px" align="left" width="20%"><code>private</code></td>
+<td style="height: 25.0166px" align="left" width="20%"><code>this</code></td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px;" align="left" width="20%"><code>break</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>double</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>implements</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>protected</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>throw</code></td>
+<tr style="height: 25px">
+<td style="height: 25px" align="left" width="20%"><code>break</code></td>
+<td style="height: 25px" align="left" width="20%"><code>double</code></td>
+<td style="height: 25px" align="left" width="20%"><code>implements</code></td>
+<td style="height: 25px" align="left" width="20%"><code>protected</code></td>
+<td style="height: 25px" align="left" width="20%"><code>throw</code></td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px;" align="left" width="20%"><code>byte</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>else</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>import</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>public</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>throws</code></td>
+<tr style="height: 25px">
+<td style="height: 25px" align="left" width="20%"><code>byte</code></td>
+<td style="height: 25px" align="left" width="20%"><code>else</code></td>
+<td style="height: 25px" align="left" width="20%"><code>import</code></td>
+<td style="height: 25px" align="left" width="20%"><code>public</code></td>
+<td style="height: 25px" align="left" width="20%"><code>throws</code></td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px;" align="left" width="20%"><code>case</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>enum</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>instanceof</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>return</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>transient</code></td>
+<tr style="height: 25px">
+<td style="height: 25px" align="left" width="20%"><code>case</code></td>
+<td style="height: 25px" align="left" width="20%"><code>enum</code></td>
+<td style="height: 25px" align="left" width="20%"><code>instanceof</code></td>
+<td style="height: 25px" align="left" width="20%"><code>return</code></td>
+<td style="height: 25px" align="left" width="20%"><code>transient</code></td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px;" align="left" width="20%"><code>catch</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>extends</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>int</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>short</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>try</code></td>
+<tr style="height: 25px">
+<td style="height: 25px" align="left" width="20%"><code>catch</code></td>
+<td style="height: 25px" align="left" width="20%"><code>extends</code></td>
+<td style="height: 25px" align="left" width="20%"><code>int</code></td>
+<td style="height: 25px" align="left" width="20%"><code>short</code></td>
+<td style="height: 25px" align="left" width="20%"><code>try</code></td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px;" align="left" width="20%"><code>char</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>final</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>interface</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>static</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>void</code></td>
+<tr style="height: 25px">
+<td style="height: 25px" align="left" width="20%"><code>char</code></td>
+<td style="height: 25px" align="left" width="20%"><code>final</code></td>
+<td style="height: 25px" align="left" width="20%"><code>interface</code></td>
+<td style="height: 25px" align="left" width="20%"><code>static</code></td>
+<td style="height: 25px" align="left" width="20%"><code>void</code></td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px;" align="left" width="20%"><code>class</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>finally</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>long</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>strictfp</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>volatile</code></td>
+<tr style="height: 25px">
+<td style="height: 25px" align="left" width="20%"><code>class</code></td>
+<td style="height: 25px" align="left" width="20%"><code>finally</code></td>
+<td style="height: 25px" align="left" width="20%"><code>long</code></td>
+<td style="height: 25px" align="left" width="20%"><code>strictfp</code></td>
+<td style="height: 25px" align="left" width="20%"><code>volatile</code></td>
 </tr>
-<tr style="height: 25px;">
-<td style="height: 25px;" align="left" width="20%"><code>const</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>float</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>native</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>super</code></td>
-<td style="height: 25px;" align="left" width="20%"><code>while</code></td>
+<tr style="height: 25px">
+<td style="height: 25px" align="left" width="20%"><code>const</code></td>
+<td style="height: 25px" align="left" width="20%"><code>float</code></td>
+<td style="height: 25px" align="left" width="20%"><code>native</code></td>
+<td style="height: 25px" align="left" width="20%"><code>super</code></td>
+<td style="height: 25px" align="left" width="20%"><code>while</code></td>
 </tr>
 </tbody>
 </table>
@@ -404,6 +404,16 @@ do {
   System.out.println("Hello World!");
   random = Math.random() * 10 + 1;
 } while (random &lt; 8);</code></pre>
+<h2>Java Enum</h2>
+Enum digunakan untuk mendefinisikan daftar konstanta, untuk melambangkan nilai-nilai tetap yang saling berkaitan. Misalnya, dalam pembuatan game, daripada kita menyebut tingkat kesulitan game dengan nilai 1, 2, 3 dari yang termudah hingga yang tersulit, akan lebih mudah jika kita menyebutnya dengan EASY, MEDIUM, HARD. Contoh:
+<pre><code class="language-java line-numbers">public enum Difficulty {
+  EASY,
+  MEDIUM,
+  HARD
+}
+</code></pre>
+Selanjutnya, untuk merujuk pada tinggak kesulitan game tertentu pada enum Difficulty, dapat menggunakan:
+<pre><code class="language-java">Difficulty difficulty = Difficulty.MEDIUM;</code></pre>
 <h2>Package Standar</h2>
 <table>
 <tbody>
