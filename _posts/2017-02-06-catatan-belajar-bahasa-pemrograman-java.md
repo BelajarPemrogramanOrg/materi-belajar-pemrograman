@@ -19,12 +19,6 @@ permalink: >
 published: true
 ---
 Tulisan ini berisikan catatan-catatan yg bersifat sebagai referensi mengenai bahasa pemrograman Java yg dikumpulkan oleh penulis sembari mempelajarinya. Tujuan utamanya, sebenarnya untuk catatan pribadi, agar lebih mudah dalam me-<em>review</em>. Namun, penulis berharap catatan ini juga dapat bermanfaat bagi orang lain.
-
-[su_note]Catatan ini masih akan terus di-<em>update</em> secara berkala. InsyaAlloh diusahakan bisa tiap hari update. Akan di-<em>update</em> sampai pemberitahuan ini dihapus.
-
-<strong>Terakhir diupdate pada [bp_last_update_date]</strong>
-
-[/su_note]
 <h2>Tentang Java</h2>
 <ul>
  	<li><em>Object-oriented (class based)</em>, penulisan program di Java mengharuskan pembuatan kelas dan objek. Meskipun kita hanya ingin membuat sebuah program Hello World, kita harus membuatkan sebuah kelas untuknya.</li>
@@ -403,7 +397,8 @@ double random;
 do {
   System.out.println("Hello World!");
   random = Math.random() * 10 + 1;
-} while (random &lt; 8);</code></pre>
+} while (random &lt; 8);
+</code></pre>
 <h2>Java Enum</h2>
 Enum digunakan untuk mendefinisikan daftar konstanta, untuk melambangkan nilai-nilai tetap yang saling berkaitan. Misalnya, dalam pembuatan game, daripada kita menyebut tingkat kesulitan game dengan nilai 1, 2, 3 dari yang termudah hingga yang tersulit, akan lebih mudah jika kita menyebutnya dengan EASY, MEDIUM, HARD. Contoh:
 <pre><code class="language-java line-numbers">public enum Difficulty {
