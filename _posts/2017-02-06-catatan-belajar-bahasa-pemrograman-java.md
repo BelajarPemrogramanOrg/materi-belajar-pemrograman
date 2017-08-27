@@ -122,6 +122,16 @@ Literal-nya diakhiri dengan <code>L</code>, contoh <code>11L</code>.</td>
 </tr>
 </tbody>
 </table>
+<ul>
+ 	<li>Field dari sebuah kelas, jika tidak diinisialisasi dengan sebuah nilai, maka akan memiliki nilai default yang ditentukan oleh compiler. Nilai default tersebut, secara umum, adalah 0 atau null tergantung tipe datanya.</li>
+ 	<li>Variabel lokal harus diinisialisasi dengan sebuah nilai terlebih dahulu sebelum digunakan.</li>
+ 	<li>Asal-muasal rentang nilai tipe data <code>byte</code>, [-128, 127].
+<ul>
+ 	<li>1 byte = 8 bit</li>
+ 	<li>8 bit biner (basis 2) dapat digunakan untuk menghasilkan bilangan desimal (basis 10) sebanyak 256 angka. (256 didapat dari 2<sup>8</sup>). Sehingga 1 byte (= 8 bit) dapat merepresentasikan bilangan desimal dalam rentang 0 - 255. Dengan algoritma tertentu, 8 digit biner tersebut juga dapat turut merepresentasikan bilangan bulat negatif dengan rentang bilangan -128 - 127 (seperti pada tipe data <code>byte</code>). Yg mana jumlah hitungan bilangan yg direpresentasikannya tetap 256.</li>
+</ul>
+</li>
+</ul>
 <h2>Literal</h2>
 Literal merepresentasikan suatu nilai pada program. Misalnya, <code>354</code> dapat digunakan untuk merepresentasikan nilai bilangan "tiga ratus lima puluh empat" dalam kode Java untuk variabel dengan tipe <code>int</code>.
 <h4>Literal Integer (Bilangan Bulat)</h4>
