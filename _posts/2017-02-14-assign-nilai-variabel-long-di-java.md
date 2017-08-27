@@ -32,7 +32,6 @@ Untuk meng-<em>assign</em> sebuah nilai bilangan bulat dalam rentang nilai dari 
 
 Namun untuk meng-assign sebuh nilai bilangan bulat yang tidak berada dalam rentang nilai tipe data <code>int</code>, namun masih dalam rentang nilai tipe data <code>long</code>, kita harus menggunakan literal <code>long</code>. Yaitu dengan menambahkan <code>L</code> atau <code>l</code> di akhir penulisan bilangan.
 
-Baik <code>L</code> maupun <code>l</code> dapat digunakan dalam literal <code>long</code>, keduanya sama saja. Namun, untuk <em>readibility</em> alias supaya mudah dibaca, sebaiknya gunakan kapital <code>L</code>. Bilangan 313 ditulis dengan literal <code>long</code> menggunakan <code>313L</code> lebih mudah dikenali sebagai 313 daripada jika dituliskan <code>313l</code>. Gampang terbaca salah, dikira angka 3131.
 <pre><code class="language-java line-numbers">// Memasukkan nilai ke dalam variabel bertipe long menggunakan literal int.
 // Selama nilai tersebut masih dalam rentang nilai tipe data int, 
 // maka tidak terjadi error.
@@ -47,3 +46,11 @@ long longNumber  = 2147483648;
 // Karena 2147483648 masih berada di dalam rentang nilai tipe data long, 
 // maka tidak terjadi error.
 long longNumberL = 2147483648L;</code></pre>
+
+Baik <code>L</code> maupun <code>l</code> dapat digunakan dalam literal <code>long</code>, keduanya sama saja. Namun, untuk <em>readibility</em> alias supaya mudah dibaca, sebaiknya gunakan kapital <code>L</code>. Bilangan 313 ditulis dengan literal <code>long</code> menggunakan <code>313L</code> lebih mudah dikenali sebagai 313 daripada jika dituliskan <code>313l</code>. Gampang terbaca salah, dikira angka 3131.
+
+&nbsp;
+
+<hr />
+
+<em>Featured image</em> dimodifikasi dari gambar di <a href="http://maxpixel.freegreatpicture.com/Question-Hatena-The-Trouble-Think-About-Annoying-1184896" target="_blank">http://maxpixel.freegreatpicture.com/Question-Hatena-The-Trouble-Think-About-Annoying-1184896</a>
