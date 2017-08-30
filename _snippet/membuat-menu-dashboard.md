@@ -1,13 +1,43 @@
 ---
 ID: 430
-post_title: Membuat Menu di Dashboard
+post_title: >
+  Membuat Custom Menu di Dashboard
+  WordPress
 author: Muhammad Ikhsan
-post_date: 2017-02-23 18:36:45
-post_excerpt: 'Dalam pembuatan plugin WordPress, kita dapat menambahkan halaman untuk pengaturan plugin sebagai submenu dari menu <em>default</em> WordPress. Biasanya, diletakkan sebagai submenu dari menu Settings alias Pengaturan. Atau, kita juga bisa membuat menu sendiri khusus untuk plugin yang kita buat.'
+post_excerpt: |
+  <pre><code class="language-php line-numbers">/**
+  * Menambahkan submenu pengaturan materi BP
+  */
+  add_action( 'admin_menu', 'bp_tutorial_setting_submenu' );
+  function bp_tutorial_setting_submenu() {
+  add_submenu_page(
+  'options-general.php',
+  __( 'Pengaturan Materi BP', 'belajar-pemrograman' ),
+  __( 'Materi BP', 'belajar-pemrograman' ),
+  'manage_options',
+  'bp-tutorial-setting',
+  bp_tutorial_setting_page
+  );
+  }
+  
+  /**
+  * Konten halaman pengaturan materi BP
+  */
+  function bp_tutorial_setting_page() {
+  ?&gt;
+  
+  &lt;div class="wrap"&gt;
+  &lt;h1&gt;&lt;?php _e( 'Pengaturan Materi BP', 'belajar-pemrograman' ); ?&gt;&lt;/h1&gt;
+  &lt;p&gt;&lt;?php _e( 'Ini merupakan halaman pengaturan materi BP', 'belajar-pemrograman' ); ?&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;?php
+  }</code><div class="open-snippet">Lihat Snippet</div></pre>
 layout: snippet
 permalink: >
-  http://belajarpemrograman.org/snippet/membuat-menu-dashboard/
+  http://belajarpemrograman.org/snippet/wordpress/membuat-menu-dashboard/
 published: true
+post_date: 2017-02-23 18:36:45
 ---
 Dalam pembuatan plugin WordPress, kita dapat menambahkan halaman untuk pengaturan plugin sebagai submenu dari menu <em>default</em> WordPress. Biasanya, diletakkan sebagai submenu dari menu Settings alias Pengaturan. Atau, kita juga bisa membuat menu sendiri khusus untuk plugin yang kita buat. Kemudian, kita bisa tambahkan juga beberapa submenu yang dibutuhkan.
 <h2>Membuat Submenu dari Menu Utama Settings</h2>
