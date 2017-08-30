@@ -17,22 +17,7 @@ post_excerpt: |
   'manage_options',
   'bp-tutorial-setting',
   bp_tutorial_setting_page
-  );
-  }
-  
-  /**
-  * Konten halaman pengaturan materi BP
-  */
-  function bp_tutorial_setting_page() {
-  ?&gt;
-  
-  &lt;div class="wrap"&gt;
-  &lt;h1&gt;&lt;?php _e( 'Pengaturan Materi BP', 'belajar-pemrograman' ); ?&gt;&lt;/h1&gt;
-  &lt;p&gt;&lt;?php _e( 'Ini merupakan halaman pengaturan materi BP', 'belajar-pemrograman' ); ?&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  
-  &lt;?php
-  }</code><div class="open-snippet">Lihat Snippet</div></pre>
+  ); ...</code><div class="open-snippet">Lihat Snippet</div></pre>
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/wordpress/membuat-menu-dashboard/
