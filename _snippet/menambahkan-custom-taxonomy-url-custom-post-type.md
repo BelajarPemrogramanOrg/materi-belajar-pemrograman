@@ -4,12 +4,23 @@ post_title: >
   Menambahkan Custom Taxonomy pada URL
   Custom Post Type
 author: Muhammad Ikhsan
-post_date: 2017-02-24 07:59:48
-post_excerpt: 'Saya telah membuat sebuah custom post type (CPT) dengan nama snippet. Pada pembuatan CPT, opsi <code>rewrite</code>, saya isikan dengan <code>snippet/%snippet_tag%</code>. Saya ingin <code>%snippet_tag%</code> otomatis berganti dengan nama tag snippet. Ternyata link yang dihasilkan tidak begitu saja jadi seperti yang saya harapkan, <a href="https://example.com/snippet/%snippet_tag%/slug-post" target="_blank"><code>https://example.com/snippet/%snippet_tag%/slug-post</code></a>.'
+post_excerpt: |
+  <pre><code class="language-php line-numbers">/**
+  * Mengganti `%snippet_tag%` dengan nama tag pada link snippet
+  */
+  add_filter( 'post_type_link', 'bp_tutorial_snippet_link', 1, 2 );
+  function bp_tutorial_snippet_link( $post_link, $id = 0 ){
+  $post = get_post( $id );
+  
+  if ( is_object( $post ) &amp;&amp; $post-&gt;post_type == 'snippet' ) {
+  $terms = wp_get_object_terms( $post-&gt;ID, 'snippet_tag' );
+  if ( $terms ) {
+  foreach ( $terms as $term ){ ...</code><div class="open-snippet">Lihat Snippet</div></pre>
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/wordpress/menambahkan-custom-taxonomy-url-custom-post-type/
 published: true
+post_date: 2017-02-24 07:59:48
 ---
 <h2 class="no-mar-top">Kasus</h2>
 Saya telah membuat sebuah custom post type dengan nama <code>snippet</code>. Pada opsi <code>rewrite</code> untuk rewrite permalink, saya atur slug-nya <code>snippet/%snippet_tag%</code>. Slug tersebut dibuat dengan harapan bahwa <code>%snippet_tag%</code> akan otomatis diganti dengan nama tag snippet. Sehingga permalink yang dihasilkan untuk custom post type snippet akan menjadi seperti <a href="https://example.com/snippet/sebuah-tag/slug-dari-sebuah-custom-post" target="_blank"><code>https://example.com/snippet/sebuah-tag/slug-dari-sebuah-custom-post</code></a>.
