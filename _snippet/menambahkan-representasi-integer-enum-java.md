@@ -5,7 +5,8 @@ post_title: >
   Enum di Java
 author: Muhammad Ikhsan
 post_excerpt: |
-  <a href="http://belajarpemrograman.dev/snippet/java/menambahkan-representasi-integer-enum-java/" class="show"><pre><code class="line-numbers">public enum Difficulty {
+  <a href="http://belajarpemrograman.dev/snippet/java/menambahkan-representasi-integer-enum-java/" class="show">
+  <p><pre><code class="line-numbers">public enum Difficulty {
   LOW   (1), // Memanggil constructor dengan nilai 1
   MEDIUM(2),
   HARD  (3); // Diakhiri dengan ;
@@ -15,7 +16,7 @@ post_excerpt: |
   Level(int difficultyValue) {
   this.difficultyValue = difficultyValue;
   }
-  ...</code><div class="open-snippet">Lihat Snippet</div></pre></a>
+  ...</code><div class="open-snippet">Lihat Snippet</div></pre></p></a>
 layout: snippet
 permalink: >
   http://belajarpemrograman.dev/snippet/java/menambahkan-representasi-integer-enum-java/
