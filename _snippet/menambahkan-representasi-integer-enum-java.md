@@ -24,7 +24,7 @@ layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/java/menambahkan-representasi-integer-enum-java/
 published: true
-post_date: 2017-05-25 05:06:52
+post_date: 2017-02-10 05:06:52
 ---
 Terkadang kita perlu menambahkan representasi integer untuk suatu value pada sebuah enum di Java. Biasanya ini diperlukan ketika kita ingin melakukan suatu kalkulasi yang melibatkan nilai yang diwakilkan oleh konstan yang kita letakkan di enum. Kasus lain, misalnya ketika kita ingin menyimpan nilai pada sebuah enum ke database, yang mana di database nilai tersebut disimpan sebagai integer.
 
