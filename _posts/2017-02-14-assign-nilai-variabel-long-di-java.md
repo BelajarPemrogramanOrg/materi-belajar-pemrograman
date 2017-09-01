@@ -26,13 +26,13 @@ long longNumberL = 1000L;
 
 ## Jawaban
 
-- Rentang nilai dalam tipe data `int`:
-Minimal -2.147.483.648
-Maksimal 2.147.483.647
+-   Rentang nilai dalam tipe data `int`:
+    Minimal -2.147.483.648
+    Maksimal 2.147.483.647
 
-- Rentang nilai dalam tipe data `long`:
-Minimal -9.223.372.036.854.775.808
-Maksimal 9.223.372.036.854.775.807
+-   Rentang nilai dalam tipe data `long`:
+    Minimal -9.223.372.036.854.775.808
+    Maksimal 9.223.372.036.854.775.807
 
 Untuk meng-*assign* sebuah nilai bilangan bulat dalam rentang nilai dari -2.147.483.648 sampai 2.147.483.647 ke sebuah variabel bertipe `long`, kita dapat menggunakan literal `int`.
 
