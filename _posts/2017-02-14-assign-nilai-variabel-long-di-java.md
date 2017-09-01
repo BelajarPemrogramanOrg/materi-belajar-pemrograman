@@ -5,7 +5,6 @@ post_title: >
   Variabel long di Java Menggunakan L dan
   Tidak Menggunakannya?
 author: Muhammad Ikhsan
-post_date: 2017-02-14 09:19:17
 post_excerpt: |
   Di materi yang berjudul <a href="http://belajarpemrograman.org/catatan-belajar-bahasa-pemrograman-java/">Catatan Belajar Bahasa Pemrograman Java</a>, dijelaskan bahwa untuk mengekspresikan nilai dari sebuah variabel bertipe <code>long</code> dapat digunakan literal <code>int</code> (misal 1000) atau literal <code>long</code>, yaitu dengan menambahkan <code>L</code> atau <code>l</code> di akhir penulisan nilai bilangan (misal 1000L). Jika keduanya bisa digunakan, lalu apa bedanya?
   <pre>long longNumber  = 1000;
@@ -14,20 +13,27 @@ layout: post
 permalink: >
   http://belajarpemrograman.org/assign-nilai-variabel-long-di-java/
 published: true
+post_date: 2017-02-14 09:19:17
 ---
-<h2 class="no-mar-top">Pertanyaan</h2>
-Di materi yang berjudul <a href="http://belajarpemrograman.org/catatan-belajar-bahasa-pemrograman-java/">Catatan Belajar Bahasa Pemrograman Java</a>, dijelaskan bahwa untuk assign nilai variabel bertipe <code>long</code> di Java dapat digunakan literal <code>int</code> (misal 1000) atau literal <code>long</code>, yaitu dengan menambahkan <code>L</code> atau <code>l</code> di akhir penulisan nilai bilangan (misal 1000L). Jika keduanya bisa digunakan, lalu apa bedanya?
-<pre><code class="language-java line-numbers">long longNumber  = 1000;
-long longNumberL = 1000L;</code></pre>
+<h2>Pertanyaan</h2>
+
+Di materi yang berjudul <a href="http://belajarpemrograman.org/catatan-belajar-bahasa-pemrograman-java/">Catatan Belajar Bahasa Pemrograman Java</a>, dijelaskan bahwa untuk assign nilai variabel bertipe <code>long</code> di Java dapat digunakan literal <code>int</code> (misal <code>1000</code>) atau literal <code>long</code>, yaitu dengan menambahkan <code>L</code> atau <code>l</code> di akhir penulisan nilai bilangan (misal <code>1000L</code>). Namun, jika ternyata keduanya bisa digunakan, lalu apa bedanya?
+
+<pre><code class="java">long longNumber  = 1000;
+long longNumberL = 1000L;
+</code></pre>
+
 <h2>Jawaban</h2>
+
 <ul>
- 	<li>Rentang nilai dalam tipe data <code>int</code>:
+    <li>Rentang nilai dalam tipe data <code>int</code>:
 Minimal -2.147.483.648
 Maksimal 2.147.483.647</li>
- 	<li>Rentang nilai dalam tipe data <code>long</code>:
+    <li>Rentang nilai dalam tipe data <code>long</code>:
 Minimal -9.223.372.036.854.775.808
 Maksimal 9.223.372.036.854.775.807</li>
 </ul>
+
 Untuk meng-<em>assign</em> sebuah nilai bilangan bulat dalam rentang nilai dari -2.147.483.648 sampai 2.147.483.647 ke sebuah variabel bertipe <code>long</code>, kita dapat menggunakan literal <code>int</code>.
 
 Namun untuk meng-assign sebuh nilai bilangan bulat yang tidak berada dalam rentang nilai tipe data <code>int</code>, namun masih dalam rentang nilai tipe data <code>long</code>, kita harus menggunakan literal <code>long</code>. Yaitu dengan menambahkan <code>L</code> atau <code>l</code> di akhir penulisan bilangan.
@@ -53,4 +59,4 @@ Baik <code>L</code> maupun <code>l</code> dapat digunakan dalam literal <code>lo
 
 <hr />
 
-<em>Featured image</em> dimodifikasi dari gambar di <a href="http://maxpixel.freegreatpicture.com/Question-Hatena-The-Trouble-Think-About-Annoying-1184896" target="_blank">http://maxpixel.freegreatpicture.com/Question-Hatena-The-Trouble-Think-About-Annoying-1184896</a>
+<em>Featured image</em> dimodifikasi dari gambar di <a href="http://maxpixel.freegreatpicture.com/Question-Hatena-The-Trouble-Think-About-Annoying-1184896" target="_blank" rel="noopener">http://maxpixel.freegreatpicture.com/Question-Hatena-The-Trouble-Think-About-Annoying-1184896</a>
