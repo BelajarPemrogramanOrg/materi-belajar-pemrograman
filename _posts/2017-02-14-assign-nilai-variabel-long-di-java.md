@@ -17,10 +17,10 @@ post_date: 2017-02-14 09:19:17
 ---
 ## Pertanyaan
 Di materi yang berjudul [Catatan Belajar Bahasa Pemrograman Java](http://belajarpemrograman.org/catatan-belajar-bahasa-pemrograman-java/), dijelaskan bahwa untuk assign nilai variabel bertipe `long` di Java dapat digunakan literal `int` (misal `1000`) atau literal `long`, yaitu dengan menambahkan `L` atau `l` di akhir penulisan nilai bilangan (misal `1000L`). Namun, jika ternyata keduanya bisa digunakan, lalu apa bedanya?
-```java
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-java .line-numbers}
 long longNumber  = 1000;
 long longNumberL = 1000L;
-```
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Jawaban
 <ul>
