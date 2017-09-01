@@ -20,7 +20,7 @@ Di materi yang berjudul [Catatan Belajar Bahasa Pemrograman Java](http://belajar
 ```java
 long longNumber  = 1000;
 long longNumberL = 1000L;
-``` {.language-java .line-numbers}
+```
 
 ## Jawaban
 <ul>
