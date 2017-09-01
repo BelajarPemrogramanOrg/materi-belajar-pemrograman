@@ -2,7 +2,6 @@
 ID: 238
 post_title: Catatan Belajar Bahasa Pemrograman Java
 author: Muhammad Ikhsan
-post_date: 2017-02-06 11:31:16
 post_excerpt: >
   Tulisan ini berisikan catatan-catatan yg
   bersifat sebagai referensi mengenai
@@ -17,6 +16,7 @@ layout: post
 permalink: >
   http://belajarpemrograman.org/catatan-belajar-bahasa-pemrograman-java/
 published: true
+post_date: 2017-02-06 11:31:16
 ---
 Tulisan ini berisikan catatan-catatan yg bersifat sebagai referensi mengenai bahasa pemrograman Java yg dikumpulkan oleh penulis sembari mempelajarinya. Tujuan utamanya, sebenarnya untuk catatan pribadi, agar lebih mudah dalam me-<em>review</em>. Namun, penulis berharap catatan ini juga dapat bermanfaat bagi orang lain.
 <h2>Tentang Java</h2>
