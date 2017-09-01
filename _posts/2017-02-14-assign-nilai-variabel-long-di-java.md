@@ -25,18 +25,21 @@ long longNumberL = 1000L;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Jawaban
-<ul>
- 	<li>Rentang nilai dalam tipe data <code>int</code>:
-Minimal -2.147.483.648
-Maksimal 2.147.483.647</li>
- 	<li>Rentang nilai dalam tipe data <code>long</code>:
-Minimal -9.223.372.036.854.775.808
-Maksimal 9.223.372.036.854.775.807</li>
-</ul>
-Untuk meng-<em>assign</em> sebuah nilai bilangan bulat dalam rentang nilai dari -2.147.483.648 sampai 2.147.483.647 ke sebuah variabel bertipe <code>long</code>, kita dapat menggunakan literal <code>int</code>.
 
-Namun untuk meng-assign sebuh nilai bilangan bulat yang tidak berada dalam rentang nilai tipe data <code>int</code>, namun masih dalam rentang nilai tipe data <code>long</code>, kita harus menggunakan literal <code>long</code>. Yaitu dengan menambahkan <code>L</code> atau <code>l</code> di akhir penulisan bilangan.
-<pre><code class="language-java line-numbers">// Memasukkan nilai ke dalam variabel bertipe long menggunakan literal int.
+- Rentang nilai dalam tipe data `int`:
+  Minimal -2.147.483.648
+  Maksimal 2.147.483.647
+
+- Rentang nilai dalam tipe data `long`:
+  Minimal -9.223.372.036.854.775.808
+  Maksimal 9.223.372.036.854.775.807
+
+Untuk meng-*assign* sebuah nilai bilangan bulat dalam rentang nilai dari -2.147.483.648 sampai 2.147.483.647 ke sebuah variabel bertipe `long`, kita dapat menggunakan literal `int`.
+
+Namun untuk meng-assign sebuh nilai bilangan bulat yang tidak berada dalam rentang nilai tipe data `int`, namun masih dalam rentang nilai tipe data `long`, kita harus menggunakan literal `long`. Yaitu dengan menambahkan `L` atau `l` di akhir penulisan bilangan.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-java .line-numbers}
+// Memasukkan nilai ke dalam variabel bertipe long menggunakan literal int.
 // Selama nilai tersebut masih dalam rentang nilai tipe data int, 
 // maka tidak terjadi error.
 long longNumber  = 1000;
@@ -49,11 +52,11 @@ long longNumber  = 2147483648;
 // Memasukkan nilai ke dalam variabel bertipe long menggunakan literal long.
 // Karena 2147483648 masih berada di dalam rentang nilai tipe data long, 
 // maka tidak terjadi error.
-long longNumberL = 2147483648L;</code></pre>
-Baik <code>L</code> maupun <code>l</code> dapat digunakan dalam literal <code>long</code>, keduanya sama saja. Namun, untuk <em>readibility</em> alias supaya mudah dibaca, sebaiknya gunakan kapital <code>L</code>. Bilangan 313 ditulis dengan literal <code>long</code> menggunakan <code>313L</code> lebih mudah dikenali sebagai 313 daripada jika dituliskan <code>313l</code>. Gampang terbaca salah, dikira angka 3131.
+long longNumberL = 2147483648L;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-&nbsp;
+Baik `L` maupun `l` dapat digunakan dalam literal `long`, keduanya sama saja. Namun, untuk *readibility* alias supaya mudah dibaca, sebaiknya gunakan kapital `L`. Bilangan 313 ditulis dengan literal `long` menggunakan `313L` lebih mudah dikenali sebagai 313 daripada jika dituliskan `313l`. Gampang terbaca salah, dikira angka 3131.
 
-<hr />
+------------------------------------------------------------------------------
 
-<em>Featured image</em> dimodifikasi dari gambar di <a href="http://maxpixel.freegreatpicture.com/Question-Hatena-The-Trouble-Think-About-Annoying-1184896" target="_blank" rel="noopener">http://maxpixel.freegreatpicture.com/Question-Hatena-The-Trouble-Think-About-Annoying-1184896</a>
+*Featured image* dimodifikasi dari gambar di <http://maxpixel.freegreatpicture.com/Question-Hatena-The-Trouble-Think-About-Annoying-1184896>
