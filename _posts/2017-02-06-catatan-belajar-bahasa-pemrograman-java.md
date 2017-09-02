@@ -84,7 +84,7 @@ Komentar tidak akan diproses oleh `compiler`.
 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     /* Hanya tulisan yg terapit inilah yg merupakan komentar */
-    
+
     /**
      * Ini juga merupakan sebuah komentar,
      * karena pada dasarnya, tulisan ini juga diapit oleh /* dan */
