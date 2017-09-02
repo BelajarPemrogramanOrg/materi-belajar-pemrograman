@@ -43,12 +43,12 @@ Namun untuk meng-assign sebuh nilai bilangan bulat yang tidak berada dalam renta
 // Selama nilai tersebut masih dalam rentang nilai tipe data int,
 // maka tidak terjadi error.
 long longNumber = 1000;
-
+&nbsp;
 // Memasukkan nilai ke dalam variabel bertipe long menggunakan literal int.
 // Karena rentang nilai tipe data int maksimal 2147483647,
 // maka akan terjadi error saat kompilasi.
 long longNumber = 2147483648;
-
+&nbsp;
 // Memasukkan nilai ke dalam variabel bertipe long menggunakan literal long.
 // Karena 2147483648 masih berada di dalam rentang nilai tipe data long,
 // maka tidak terjadi error.
