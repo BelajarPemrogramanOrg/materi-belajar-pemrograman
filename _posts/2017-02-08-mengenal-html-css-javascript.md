@@ -51,7 +51,7 @@ Berikut merupakan *source code* dari contoh di atas.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-markup .line-numbers}
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-&nbsp;
+ 
 &lt;head&gt;
     &lt;style class=&quot;cp-pen-styles&quot;&gt;
         .container {
@@ -59,7 +59,7 @@ Berikut merupakan *source code* dari contoh di atas.
         }
     &lt;/style&gt;
 &lt;/head&gt;
-&nbsp;
+ 
 &lt;body&gt;
     &lt;label for=&quot;message&quot;&gt;Message&lt;/label&gt;&lt;br&gt;
     &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;message&quot; /&gt;&lt;br&gt;
@@ -68,7 +68,7 @@ Berikut merupakan *source code* dari contoh di atas.
         var messageTextBox = document.getElementById(&quot;message&quot;);
         var charCountText = document.getElementById(&quot;char-count&quot;);
         var nCharMax = 255;
-&nbsp;
+ 
         var displayNCharLeft = function (event) {
             var nCharLeft = nCharMax - messageTextBox.value.length;
             if (nCharLeft &gt;= 0) {
@@ -78,12 +78,12 @@ Berikut merupakan *source code* dari contoh di atas.
                 messageTextBox.value = messageTextBox.value.substr(0, nCharMax);
             }
         };
-&nbsp;
-        messageTextBox.addEventListener(&#039;keypress&#039;, displayNCharLeft);
-        messageTextBox.addEventListener(&#039;keyup&#039;, displayNCharLeft);
+ 
+        messageTextBox.addEventListener(&quot;keypress&quot;, displayNCharLeft);
+        messageTextBox.addEventListener(&quot;keyup&quot;, displayNCharLeft);
     &lt;/script&gt;
 &lt;/body&gt;
-&nbsp;
+ 
 &lt;/html&gt;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
