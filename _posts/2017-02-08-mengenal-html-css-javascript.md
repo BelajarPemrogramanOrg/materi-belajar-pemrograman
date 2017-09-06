@@ -5,13 +5,13 @@ post_title: >
   Standar Web)
 author: Muhammad Ikhsan
 post_excerpt: |
-  **Model Standar Website**
-  
   Komponen dasar untuk membangun sebuah website adalah HTML, CSS, dan JavaScript. Masing-masing memiliki peran yang berbeda.
   
-  -   **HTML** HTML *(Hypertext Markup Language)* digunakan untuk membentuk struktur dan memasukkan konten dari sebuah halaman website, seperti judul halaman website, header, paragraf, form, tombol, link, dan lain sebagainya.
-  -   **CSS** CSS *(Cascading Stylesheet)* digunakan untuk memberikan *style* pada halaman website sehingga website tampak menarik dan mudah digunakan. Dengan menggunakan CSS, kita dapat mengatur warna teks dalam paragraf pada halaman website, atau ukuran font teks pada konten tabel, mengatur jarak antar beberapa tombol, dan lain sebagainya.
-  -   **JavaScript** JavaScript merupakan bahasa pemrograman yg dapat dimengerti dan dieksekusi oleh browser. Dengan menggunakan JavaScript, kita dapat membuat website menjadi interaktif dan dinamis. Misalnya, Anda dapat membuat slideshow foto, membuat popup notifikasi, atau menampilkan dan menyembunyikan sebuah blok tulisan.
+  <ul>
+  <li><strong>HTML</strong> HTML <em>(Hypertext Markup Language)</em> digunakan untuk membentuk struktur dan memasukkan konten dari sebuah halaman website, seperti judul halaman website, header, paragraf, form, tombol, link, dan lain sebagainya</li>
+  <li><strong>CSS</strong> CSS <em>(Cascading Stylesheet)</em> digunakan untuk memberikan <em>style</em> pada halaman website sehingga website tampak menarik dan mudah digunakan.</li>
+  <li><strong>JavaScript</strong> JavaScript merupakan bahasa pemrograman yg dapat dimengerti dan dieksekusi oleh browser. Dengan menggunakan JavaScript, kita dapat membuat website menjadi interaktif dan dinamis.</li>
+  </ul>
 layout: post
 permalink: >
   http://belajarpemrograman.org/mengenal-html-css-javascript/
