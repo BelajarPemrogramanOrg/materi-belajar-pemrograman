@@ -1,12 +1,12 @@
 ---
 ID: 362
 post_title: Daftar Materi Belajar Pemrograman
-author: Muhammad Ikhsan
-post_date: 2017-02-20 07:46:12
+author: Administrator
 post_excerpt: ""
 layout: page
 permalink: >
-  https://belajarpemrograman.org/materi-belajar-pemrograman/
+  http://belajarpemrograman.org/materi-belajar-pemrograman/
 published: true
+post_date: 2017-02-20 07:46:12
 ---
 [pt_view id="9396982va6"]
