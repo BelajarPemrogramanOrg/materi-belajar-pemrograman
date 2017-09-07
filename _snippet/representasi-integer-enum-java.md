@@ -1,8 +1,6 @@
 ---
 ID: 452
-post_title: >
-  Menambahkan Representasi Integer pada
-  Enum di Java
+post_title: Representasi Integer pada Enum di Java
 author: Muhammad Ikhsan
 post_excerpt: |
   <pre><code class="language-java line-numbers">public enum Difficulty {
@@ -22,7 +20,7 @@ post_excerpt: |
   }</code><div class="open-snippet">Lihat Snippet</div></pre>
 layout: snippet
 permalink: >
-  http://belajarpemrograman.org/snippet/java/menambahkan-representasi-integer-enum-java/
+  http://belajarpemrograman.org/snippet/java/representasi-integer-enum-java/
 published: true
 post_date: 2017-02-10 05:06:52
 ---
