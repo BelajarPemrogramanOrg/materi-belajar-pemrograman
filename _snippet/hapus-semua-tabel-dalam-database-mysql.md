@@ -30,8 +30,8 @@ Namun jika Anda di Windows dan tidak memiliki `grep`, Anda dapat gunakan:
 mysqldump -u[username] -p[password] --add-drop-table --no-data [databasename] | findstr ^DROP | mysql -u[username] -p[password] [databasename]
 ```
 
-**Penggunaan**
+## Penggunaan
 
-Ganti `[username]`, `[password]`, dan `[databasename]` dengan username, password, dan nama database yang akan dihapus.
+- Ganti `[username]`, `[password]`, dan `[databasename]` dengan username, password, dan nama database yang akan dihapus.
 
-Terutama jika Anda menggunakan Windows, pastikan `mysqldump` dan `mysql` telah berada di *variable environment* `PATH`. Atau, jalankan perintah di atas dengan direktori aktif di lokasi di mana `mysql` terinstal.
+- Terutama jika Anda menggunakan Windows, pastikan `mysqldump` dan `mysql` telah berada di *variable environment* `PATH`. Atau, jalankan perintah di atas dengan direktori aktif di lokasi di mana `mysql` terinstal.
