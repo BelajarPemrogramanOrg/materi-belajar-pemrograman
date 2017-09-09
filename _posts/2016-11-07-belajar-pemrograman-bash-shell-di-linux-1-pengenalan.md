@@ -79,7 +79,7 @@ Hello World!
 Anda sedang berada di direktori /home/user/Documents/Writing/Code/bash
 ```
 
-#### **Catatan untuk script `hello`:** {#catatan-untuk-script-hello}
+#### Penjelasan untuk script `hello`: {#catatan-untuk-script-hello}
 
 -   `#!/bin/bash` menyatakan bahwa script tersebut harus dijalankan di bash shell. `/bin/bash` merupakan lokasi dari bash interpreter yang akan menerjemahkan dan menjalankan bash script. Anda dapat mendapatkan lokasi ini dengan menjalankan perintah:
 
@@ -129,7 +129,7 @@ Berikut merupakan beberapa file yang terdapat pada direktori aktif:
 hello  tampilkaninfo
 ```
 
-#### Catatan untuk script `tampilkaninfo`: {#catatan-untuk-script-tampilkaninfo}
+#### Penjelasan untuk script `tampilkaninfo`: {#catatan-untuk-script-tampilkaninfo}
 
 -   Baris yang diawali dengan `#`, selain baris `#!/bin/bash`, merupakan komentar dan akan diabaikan oleh shell
 -   Variabel `$USER` menyimpan nama *user*. `$USER` merupakan salah satu variabel lingkungan *(environment variable)* yang telah didefinisikan nilainya oleh sistem, dan perubahan terhadap nilai variabel lingkungan mempengaruhi kerja sistem.
