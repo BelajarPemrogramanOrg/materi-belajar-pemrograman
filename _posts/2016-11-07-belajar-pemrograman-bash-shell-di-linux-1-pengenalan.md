@@ -67,13 +67,17 @@ echo &quot;Anda sedang berada di direktori $PWD&quot;
 
 Simpan file, kemudian rubah hak akses file tersebut agar dapat dieksekusi:
 
+```
 $ chmod 755 hello
+```
 
 Jalankan shell script pertama kita:
 
+```
 $ ./hello
 Hello World!
 Anda sedang berada di direktori /home/user/Documents/Writing/Code/bash
+```
 
 #### **Catatan untuk script `hello`:** {#catatan-untuk-script-hello}
 
