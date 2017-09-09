@@ -9,46 +9,61 @@ permalink: >
 published: true
 post_date: 2016-11-07 07:23:15
 ---
-Dalam materi belajar ini Anda akan mengenal pemrograman bash shell di Linux. Dimulai dengan pengertian bash, memeriksa shell yang aktif sebagai langkah persiapan sebelum memulai pemrograman bash, dan akhirnya Anda akan membuat dua <em>bash script</em> sederhana dan menjalankannya.
+Dalam materi belajar ini Anda akan mengenal pemrograman bash shell di Linux. Dimulai dengan pengertian bash, memeriksa shell yang aktif sebagai langkah persiapan sebelum memulai pemrograman bash, dan akhirnya Anda akan membuat dua *bash script* sederhana dan menjalankannya.
 
-<h2 id="apa-itu-bash">Apa Itu bash?</h2>
+Apa Itu bash? {#apa-itu-bash}
+-------------
 
-Singkatnya, <code>bash</code> merupakan sebuah program komputer seperti halnya program-program lain pada komputer, namun bash didesain agar Anda dapat berkomunikasi dengannya melalui perintah yang Anda berikan dan respon yang Anda terima.
+Singkatnya, `bash` merupakan sebuah program komputer seperti halnya program-program lain pada komputer, namun bash didesain agar Anda dapat berkomunikasi dengannya melalui perintah yang Anda berikan dan respon yang Anda terima.
 
-Setiap program di komputer memiliki kemampuan untuk dapat mengerjakan tugas-tugas spesifik yang membantu memudahkan pekerjaan <em>user</em>, antara lain memutar lagu, mengakses website, melakukan penghitungan, dan lain sebagainya. Akan tetapi, bash tidak melakukan tugas-tugas tersebut. Bash berperan untuk menerima perintah dari Anda sebagai <em>user</em> dan mengerjakan perintah tersebut. Sehingga, agar Anda dapat memberikan perintah yang dapat dimengerti oleh bash dengan baik, diciptakanlah bahasa untuk komunikasi tersebut. Bahasa itulah yang disebut bahasa bash shell.
+Setiap program di komputer memiliki kemampuan untuk dapat mengerjakan tugas-tugas spesifik yang membantu memudahkan pekerjaan *user*, antara lain memutar lagu, mengakses website, melakukan penghitungan, dan lain sebagainya. Akan tetapi, bash tidak melakukan tugas-tugas tersebut. Bash berperan untuk menerima perintah dari Anda sebagai *user* dan mengerjakan perintah tersebut. Sehingga, agar Anda dapat memberikan perintah yang dapat dimengerti oleh bash dengan baik, diciptakanlah bahasa untuk komunikasi tersebut. Bahasa itulah yang disebut bahasa bash shell.
 
-<em>Bash (Bourne Again shell)</em> hanya merupakan salah satu dari beberapa program yang bertindak untuk menerima perintah dari <em>user</em> untuk berinteraksi dengan program lain. Program seperti ini dikenal sebagai program <strong><em>shell</em></strong>. Beberapa program shell yang terkemuka selain bash antarai lain C shell (<code>csh</code>), Bourne shell (<code>sh</code>), Korn shell (<code>ksh</code>), dan Zshell (<code>zsh</code>). Masing-masing shell memiliki bahasa yang berbeda, meskipun dijumpai banyak kesamaan perintah-perintah yang digunakan. Perlu diingat bahwa artikel ini akan membahas mengenai pemrograman bash shell, sehingga pastikan bahwa Anda mengeksekusi kode bash shell pada bash shell, bukan shell yang lain.
+*Bash (Bourne Again shell)* hanya merupakan salah satu dari beberapa program yang bertindak untuk menerima perintah dari *user* untuk berinteraksi dengan program lain. Program seperti ini dikenal sebagai program ***shell***. Beberapa program shell yang terkemuka selain bash antarai lain C shell (`csh`), Bourne shell (`sh`), Korn shell (`ksh`), dan Zshell (`zsh`). Masing-masing shell memiliki bahasa yang berbeda, meskipun dijumpai banyak kesamaan perintah-perintah yang digunakan. Perlu diingat bahwa artikel ini akan membahas mengenai pemrograman bash shell, sehingga pastikan bahwa Anda mengeksekusi kode bash shell pada bash shell, bukan shell yang lain.
 
-<h2 id="memeriksa-shell-aktif">Memeriksa Shell Aktif</h2>
+Memeriksa Shell Aktif {#memeriksa-shell-aktif}
+---------------------
 
 Untuk memastikan bahwa Anda sedang menggunakan bash, coba jalankan perintah berikut:
 
-<pre><code>$ echo "$BASH_VERSION"
+```
+$ echo &quot;$BASH_VERSION&quot;
 4.3.46(1)-release
-</code></pre>
+```
 
-Jika Anda tidak memperoleh output apa-apa atau memperoleh peringatan undefined variable, maka kemungkinkan Anda sedang tidak menggunakan bash. Anda dapat menjalankan bash dengan memanggil perintah <code>bash</code>.
+Jika Anda tidak memperoleh output apa-apa atau memperoleh peringatan undefined variable, maka kemungkinkan Anda sedang tidak menggunakan bash. Anda dapat menjalankan bash dengan memanggil perintah `bash`.
 
 Perintah <code>echo</code> yang digunakan di atas merupakan salah satu perintah bawaan bash yang bertugas untuk menampilkan informasi ke standard output, yang defaultnya adalah monitor. <code>$BASH_VERSION</code> merupakan sebuah variabel internal bash yang menunjukkan informasi mengenai versi bash.
 
 Cara lain untuk memeriksa shell yang sedang aktif, Anda dapat menjalankan perintah berikut:
 
-<pre><code>$ echo $0
+```
+$ echo $0
 bash
-</code></pre>
+```
 
-<code>$0</code> akan memberikan nilai balik berupa nama dari proses yang sedang dijalankan. Jika dijalankan melalui shell, maka akan berisi nama shell yang sedang aktif, pada kasus ini bash. Dan jika digunakan di shell script, maka berisi nama script yang sedang dijalankan.
+`$0` akan memberikan nilai balik berupa nama dari proses yang sedang dijalankan. Jika dijalankan melalui shell, maka akan berisi nama shell yang sedang aktif, pada kasus ini bash. Dan jika digunakan di shell script, maka berisi nama script yang sedang dijalankan.
 
-<h2 id="membuat-shell-script">Membuat Shell Script</h2>
+Membuat Shell Script {#membuat-shell-script}
+--------------------
 
-<h3 id="contoh-1">Contoh 1</h3>
+Bash dapat dijalankan dalam 2 mode:
 
-Buat sebuah file dengan nama <code>hello</code>. Anda dapat menggunakan editor apa saja yang Anda kehendaki, <code>vi</code>, <code>vim</code>, <code>emacs</code>, <code>nano</code>, <code>gedit</code>, atau yang lainnya. Kemudian ketikkan script berikut:
+-   Mode Interaktif
+    Anda telah menggunakan mode ini ketika menjalankan `echo $0` di atas untuk memeriksa shell yang sedang aktif. Bash shell menunggu perintah dari Anda, dan seketika setelah Anda menekan tombol <kbd>Enter</kbd>, perintah tersebut dikerjakan oleh bash. Setelah selesai, bash kembali siap menerima perintah dari Anda.
+-   Mode non-interaktif
+    Anda dapat menuliskan rentetan perintah dalam sebuah file *script* untuk dieksekusi oleh bash. Anda cukup menyebutkan nama file yang berisikan *script* tersebut.
 
-<pre><code class="language-bash line-numbers">#!/bin/bash
-echo "Hello World!"
-echo "Anda sedang berada di direktori $PWD"
-</code></pre>
+Pada bagian ini kita akan belajar menggunakan mode non-interaktif, yaitu dengan membuat dan menjalankan dua bash script sederhana.
+
+### Contoh 1 {#contoh-1}
+
+Buat sebuah file dengan nama `hello`. Anda dapat menggunakan editor apa saja yang Anda kehendaki, `vi`, `vim`, `emacs`, `nano`, `gedit`, atau yang lainnya. Kemudian ketikkan script berikut:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-bash .line-numbers}
+#!/bin/bash
+echo &quot;Hello World!&quot;
+echo &quot;Anda sedang berada di direktori $PWD&quot;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Simpan file, kemudian rubah hak akses file tersebut agar dapat dieksekusi:
 
@@ -60,60 +75,60 @@ $ ./hello
 Hello World!
 Anda sedang berada di direktori /home/user/Documents/Writing/Code/bash
 
-<h4 id="catatan-untuk-script-hello"><strong>Catatan untuk script <code>hello</code>:</strong></h4>
+#### **Catatan untuk script `hello`:** {#catatan-untuk-script-hello}
 
-<ul>
-<li><code>#!/bin/bash</code> menyatakan bahwa script tersebut harus dijalankan di bash shell. <code>/bin/bash</code> merupakan lokasi dari bash interpreter yang akan menerjemahkan dan menjalankan bash script. Anda dapat mendapatkan lokasi ini dengan menjalankan perintah:
+-   `#!/bin/bash` menyatakan bahwa script tersebut harus dijalankan di bash shell. `/bin/bash` merupakan lokasi dari bash interpreter yang akan menerjemahkan dan menjalankan bash script. Anda dapat mendapatkan lokasi ini dengan menjalankan perintah:
 
-<pre><code>$ which bash
-/bin/bash
-</code></pre></li>
-<li><code>$PWD</code> merupakan sebuah variabel yang sudah didefinisikan oleh bash. Dengan meletakkan variabel dalam tanda petik dua ("), bash akan mengganti pernyataan variabel tersebut dengan nilainya, kemudian barulah perintah (dalam kasus ini perintah <code>echo</code>) dijalankan. Nilai variabel <code>$PWD</code> adalah path direktori aktif, layaknya output dari perintah <code>pwd</code>.</p></li>
-</ul>
+    ```
+    $ which bash
+    /bin/bash
+    ```
 
-<h3 id="contoh-2">Contoh 2</h3>
+-   `$PWD` merupakan sebuah variabel yang sudah didefinisikan oleh bash. Dengan meletakkan variabel dalam tanda petik dua ("), bash akan mengganti pernyataan variabel tersebut dengan nilainya, kemudian barulah perintah (dalam kasus ini perintah `echo`) dijalankan. Nilai variabel `$PWD` adalah path direktori aktif, layaknya output dari perintah `pwd`.
 
-<p>Berikut merupakan sebuah contoh lain:
+### Contoh 2 {#contoh-2}
 
-<pre><code class="language-bash line-numbers">#!/bin/bash
+Berikut merupakan sebuah contoh lain:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-bash .line-numbers}
+#!/bin/bash
 # Menampilkan beberapa informasi
  
 # Menampilkan nama user
-echo "Halo $USER!"
+echo &quot;Halo $USER!&quot;
  
 # Menampilkan nama file shell script yang sedang dijalankan
-echo "Anda sedang menjalankan file bash script '$0'"
+echo &quot;Anda sedang menjalankan file bash script &#039;$0&#039;&quot;
  
 # Menampilkan tanggal lokal
-echo -n "Hari ini tanggal "; date +"%d %B %Y"
+echo -n &quot;Hari ini tanggal &quot;; date +&quot;%d %B %Y&quot;
  
 # Menampilkan nama direktori aktif
-echo -n "Anda sedang berada di lokasi "; pwd
+echo -n &quot;Anda sedang berada di lokasi &quot;; pwd
  
 # Menampilkan isi direktori aktif
-echo "Berikut merupakan beberapa file yang terdapat pada direktori aktif:";
+echo &quot;Berikut merupakan beberapa file yang terdapat pada direktori aktif:&quot;;
 ls
-</code></pre>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Simpan file tersebut dengan nama <code>tampilkaninfo</code>, kemudian rubah hak
+Simpan file tersebut dengan nama `tampilkaninfo`, kemudian rubah hak
 akses file agar dapat dieksekusi, dan jalankan.
 
-<pre><code>$ chmod 755 tampilkaninfo
+```
+$ chmod 755 tampilkaninfo
 $ ./tampilkaninfo
 Halo user!
-Anda sedang menjalankan file bash script './tampilkaninfo'
+Anda sedang menjalankan file bash script &#039;./tampilkaninfo&#039;
 Hari ini tanggal 06 November 2016
 Anda sedang berada di lokasi /home/user/Documents/Writing/Code/bash
 Berikut merupakan beberapa file yang terdapat pada direktori aktif:
 hello  tampilkaninfo
-</code></pre>
+```
 
-<h4 id="catatan-untuk-script-tampilkaninfo">Catatan untuk script <code>tampilkaninfo</code>:</h4>
+#### Catatan untuk script `tampilkaninfo`: {#catatan-untuk-script-tampilkaninfo}
 
-<ul>
-<li>Baris yang diawali dengan <code>#</code>, selain baris <code>#!/bin/bash</code>, merupakan komentar dan akan diabaikan oleh shell</li>
-<li>Variabel <code>$USER</code> menyimpan nama <em>user</em>. <code>$USER</code> merupakan salah satu variabel lingkungan <em>(environment variable)</em> yang telah didefinisikan nilainya oleh sistem, dan perubahan terhadap nilai variabel lingkungan mempengaruhi kerja sistem.</li>
-<li>Telah dijelaskan sebelumnya, jika variabel <code>$0</code> digunakan di shell script, maka akan memiliki nilai nama file script tersebut.</li>
-<li>Dengan menggunakan argumen <code>-n</code> pada <code>echo</code>, teks tidak diakhiri dengan <em>newline</em> (ganti baris). Sehingga tulisan <code>Hari ini tanggal</code> dan hasil pemanggilan perintah <code>date +"%d %B %Y"</code> (untuk menampilkan tanggal lokal saat script dijalankan dengan format tanggal “tanggal namabulan tahun”) dapat ditampilkan dalam baris yang sama.</li>
-<li>Tulisan <code>Anda sedang berada di lokasi</code> dengan hasil pemanggilan perintah <code>pwd</code> juga dapat ditampilkan pada baris yang sama dengan meniadakan newline pada akhir output pemanggilan echo.</li>
-</ul>
+-   Baris yang diawali dengan `#`, selain baris `#!/bin/bash`, merupakan komentar dan akan diabaikan oleh shell
+-   Variabel `$USER` menyimpan nama *user*. `$USER` merupakan salah satu variabel lingkungan *(environment variable)* yang telah didefinisikan nilainya oleh sistem, dan perubahan terhadap nilai variabel lingkungan mempengaruhi kerja sistem.
+-   Telah dijelaskan sebelumnya, jika variabel `$0` digunakan di shell script, maka akan memiliki nilai nama file script tersebut.
+-   Dengan menggunakan argumen `-n` pada `echo`, teks tidak diakhiri dengan *newline* (ganti baris). Sehingga tulisan `Hari ini tanggal ` dan hasil pemanggilan perintah `date +"%d %B %Y"` (untuk menampilkan tanggal lokal saat script dijalankan dengan format tanggal “tanggal namabulan tahun”) dapat ditampilkan dalam baris yang sama.
+-   Tulisan `Anda sedang berada di lokasi ` dengan hasil pemanggilan perintah `pwd` juga dapat ditampilkan pada baris yang sama dengan meniadakan newline pada akhir output pemanggilan echo.
