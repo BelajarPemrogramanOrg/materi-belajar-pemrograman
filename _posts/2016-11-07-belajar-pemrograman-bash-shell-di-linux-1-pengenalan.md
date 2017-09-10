@@ -136,3 +136,10 @@ hello  tampilkaninfo
 -   Telah dijelaskan sebelumnya, jika variabel `$0` digunakan di shell script, maka akan memiliki nilai nama file script tersebut.
 -   Dengan menggunakan argumen `-n` pada `echo`, teks tidak diakhiri dengan *newline* (ganti baris). Sehingga tulisan `Hari ini tanggal ` dan hasil pemanggilan perintah `date +"%d %B %Y"` (untuk menampilkan tanggal lokal saat script dijalankan dengan format tanggal “tanggal namabulan tahun”) dapat ditampilkan dalam baris yang sama.
 -   Tulisan `Anda sedang berada di lokasi ` dengan hasil pemanggilan perintah `pwd` juga dapat ditampilkan pada baris yang sama dengan meniadakan newline pada akhir output pemanggilan echo.
+
+------------------------------------------------------------------------
+
+#### Referensi: {#referensi}
+
+-   [Pengantar Pemrograman Bash Shell di Linux](https://pemula.linux.or.id/programming/bash-shell.html)
+-   [Bash Academy Inception - What is bash, and where does it live?](http://guide.bash.academy/inception/)
