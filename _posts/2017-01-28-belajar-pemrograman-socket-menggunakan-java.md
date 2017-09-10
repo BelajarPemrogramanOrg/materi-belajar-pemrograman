@@ -175,7 +175,8 @@ Demikian materi belajar ini. Sebenarnya, masih banyak yang dapat kita pelajari t
 
 ------------------------------------------------------------------------
 
-#### Referensi: {#referensi}
+Referensi: {#referensi}
+----------
 
 -   Penjelasan dan gambar tentang socket: [What is a Socket?]
 -   Penjelasan tentang pemrograman socket di Java: [Sockets programming
