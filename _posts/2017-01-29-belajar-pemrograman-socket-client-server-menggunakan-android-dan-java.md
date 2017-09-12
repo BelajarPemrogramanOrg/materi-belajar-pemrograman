@@ -66,9 +66,9 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-&nbsp;
+ 
 class PanggilSayaServer {
-&nbsp;
+ 
     public static void main(String[] args) {
         ServerSocket serverSocket = null;
         try {
@@ -78,11 +78,11 @@ class PanggilSayaServer {
             while (true) {
                 // Menerima request dari client. Gunakan socket baru untuk menangani request dari client
                 Socket socket = serverSocket.accept();
-&nbsp;
+ 
                 // Membaca stream input dari client
                 DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
                 String input = dataInputStream.readUTF();
-&nbsp;
+ 
                 // Membuat stream output untuk memberikan respon kepada client
                 DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
                 String output = &quot;Halo, &quot; + input + &quot;!&quot;;
@@ -137,12 +137,12 @@ Mari kita buat sebuah project Android baru dengan nama **Panggil Saya**. Saya me
     android:paddingTop=&quot;@dimen/activity_vertical_margin&quot;
     android:orientation=&quot;vertical&quot;
     tools:context=&quot;com.mikhsan.practice.panggilsaya.MainActivity&quot;&gt;
-&nbsp;
+ 
     &lt;LinearLayout
         android:layout_width=&quot;match_parent&quot;
         android:layout_height=&quot;wrap_content&quot;
         android:orientation=&quot;horizontal&quot;&gt;
-&nbsp;
+ 
         &lt;EditText
             android:id=&quot;@+id/textIpAddress&quot;
             android:layout_width=&quot;0dp&quot;
@@ -150,7 +150,7 @@ Mari kita buat sebuah project Android baru dengan nama **Panggil Saya**. Saya me
             android:layout_weight=&quot;5&quot;
             android:inputType=&quot;textUri&quot;
             android:hint=&quot;Alamat IP Server&quot; /&gt;
-&nbsp;
+ 
         &lt;EditText
             android:id=&quot;@+id/textPort&quot;
             android:layout_width=&quot;0dp&quot;
@@ -159,25 +159,25 @@ Mari kita buat sebuah project Android baru dengan nama **Panggil Saya**. Saya me
             android:inputType=&quot;number&quot;
             android:hint=&quot;Port&quot; /&gt;
     &lt;/LinearLayout&gt;
-&nbsp;
+ 
     &lt;EditText
         android:id=&quot;@+id/textRequest&quot;
         android:layout_width=&quot;match_parent&quot;
         android:layout_height=&quot;wrap_content&quot;
         android:inputType=&quot;textPersonName&quot;
         android:hint=&quot;Nama Saya&quot; /&gt;
-&nbsp;
+ 
     &lt;Button
         android:id=&quot;@+id/buttonSend&quot;
         android:layout_width=&quot;match_parent&quot;
         android:layout_height=&quot;wrap_content&quot;
         android:text=&quot;Panggil Saya!&quot; /&gt;
-&nbsp;
+ 
     &lt;ScrollView
         android:layout_width=&quot;match_parent&quot;
         android:layout_height=&quot;wrap_content&quot;
         android:layout_marginTop=&quot;20dp&quot;&gt;
-&nbsp;
+ 
         &lt;TextView
             android:id=&quot;@+id/textResponse&quot;
             android:layout_width=&quot;match_parent&quot;
@@ -194,7 +194,7 @@ Untuk menangani masalah pembuatan request ke server dan menerima respon dari ser
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-java .line-numbers}
 package com.mikhsan.practice.panggilsaya;
-&nbsp;
+ 
 import android.os.AsyncTask;
 import android.widget.TextView;
 import java.io.DataInputStream;
@@ -202,32 +202,32 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
-&nbsp;
+ 
 public class Communication extends AsyncTask&lt;Void, Void, Void&gt; {
-&nbsp;
+ 
     String destAddress;
     int destPort;
     TextView textViewResponse;
     String textRequest;
     String message = &quot;&quot;;
-&nbsp;
+ 
     public Communication(String destAddress, int destPort, String textRequest, TextView textViewResponse) {
         this.destAddress = destAddress;
         this.destPort = destPort;
         this.textRequest = textRequest;
         this.textViewResponse = textViewResponse;
     }
-&nbsp;
+ 
     @Override
     protected Void doInBackground(Void... voids) {
         Socket socket = null;
-&nbsp;
+ 
         try {
             socket = new Socket(destAddress, destPort);
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
             dataOutputStream.writeUTF(textRequest);
             dataOutputStream.flush();
-&nbsp;
+ 
             DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
             message = dataInputStream.readUTF();
             dataInputStream.close();
@@ -246,10 +246,10 @@ public class Communication extends AsyncTask&lt;Void, Void, Void&gt; {
                 }
             }
         }
-&nbsp;
+ 
         return null;
     }
-&nbsp;
+ 
     @Override
     protected void onPostExecute (Void result) {
         String existingMessage = textViewResponse.getText().toString();
@@ -266,21 +266,21 @@ Selanjutnya, kita akan menginisialisasi objek `Communication` setiap kali tombol
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-java .line-numbers}
 package com.mikhsan.practice.panggilsaya;
-&nbsp;
+ 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-&nbsp;
+ 
 public class MainActivity extends Activity {
-&nbsp;
+ 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-&nbsp;
+ 
         ((Button) findViewById(R.id.buttonSend)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -288,7 +288,7 @@ public class MainActivity extends Activity {
                 int destPort = Integer.parseInt(((EditText) findViewById(R.id.textPort)).getText().toString());
                 String textRequest = ((EditText) findViewById(R.id.textRequest)).getText().toString();
                 TextView textViewResponse = (TextView) findViewById(R.id.textResponse);
-&nbsp;
+ 
                 Communication communication = new Communication(destAddress, destPort, textRequest, textViewResponse);
                 communication.execute();
             }
@@ -305,9 +305,9 @@ Dan yang terakhir, karena kita melakukan komunikasi jaringan, maka kita perlu me
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;manifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
     package=&quot;com.mikhsan.practice.panggilsaya&quot;&gt;
-&nbsp;
+ 
     &lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
-&nbsp;
+ 
     &lt;application
         android:allowBackup=&quot;true&quot;
         android:icon=&quot;@mipmap/ic_launcher&quot;
@@ -322,15 +322,17 @@ Dan yang terakhir, karena kita melakukan komunikasi jaringan, maka kita perlu me
             &lt;/intent-filter&gt;
         &lt;/activity&gt;
     &lt;/application&gt;
-&nbsp;
+ 
 &lt;/manifest&gt;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Download Source Code {#download-source-code}
 --------------------
 
-[su_button url="http://belajarpemrograman.org/wp-content/uploads/2017/02/PanggilSayaServer.zip" background="#909090" icon="icon: cloud-download"]Download Server Source Code[/su_button] [su_button url="http://belajarpemrograman.org/wp-content/uploads/2017/02/AndroidPanggilSaya.zip" background="#909090" icon="icon: cloud-download"]Download Client Source Code[/su_button]
+<a class="btn btn-danger" href="http://belajarpemrograman.org/wp-content/uploads/2017/02/PanggilSayaServer.zip">Download Server Source Code</a>
 
-[pada bagian akhir dari tulisan ini]: http://belajarpemrograman.org/belajar-pemrograman-socket-client-server-menggunakan-android-dan-java/#download-source-code
+<a class="btn btn-danger" href="http://belajarpemrograman.org/wp-content/uploads/2017/02/AndroidPanggilSaya.zip">Download Client (Android) Source Code</a>
+
+[pada bagian akhir dari tulisan ini]: #download-source-code
 [Belajar Pemrograman Socket Menggunakan Java]: http://belajarpemrograman.app/pemrograman-jaringan/belajar-pemrograman-socket-menggunakan-java/
 [example.com]: http://example.com
