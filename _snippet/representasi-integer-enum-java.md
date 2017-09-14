@@ -17,7 +17,7 @@ post_excerpt: |
   public int getDifficultyValue() {
   return this.difficultyValue;
   }
-  }</code><div class="open-snippet">Lihat Snippet</div></pre>
+  }</code></pre>
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/java/representasi-integer-enum-java/
