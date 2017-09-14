@@ -12,10 +12,22 @@ post_excerpt: |
   function bp_tutorial_snippet_link( $post_link, $id = 0 ){
   $post = get_post( $id );
   
-  if ( is_object( $post ) &amp;&amp; $post-&gt;post_type == 'snippet' ) {
+  if ( is_object( $post ) && $post-&gt;post_type == 'snippet' ) {
   $terms = wp_get_object_terms( $post-&gt;ID, 'snippet_tag' );
   if ( $terms ) {
-  foreach ( $terms as $term ){ ...</code></pre>
+  foreach ( $terms as $term ){
+  if ( 0 == $term-&gt;parent ){
+  return str_replace( '%snippet_tag%' , $term-&gt;slug , $post_link );
+  }
+  }
+  } else {
+  // Jika tidak ditemukan, gunakan default nama tag `uncategorized`
+  return str_replace( '%snippet_tag%' , 'uncategorized', $post_link );
+  }
+  }
+  
+  return $post_link;
+  }</code></pre>
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/wordpress/menambah-taxonomy-url-post-wordpress/
