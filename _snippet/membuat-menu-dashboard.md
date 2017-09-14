@@ -37,28 +37,28 @@ post_excerpt: |
   * Konten halaman pengaturan materi BP
   */
   function bp_tutorial_material_setting_page() {
-  ?>
+  ?&gt;
   
-  <div class="wrap">
-  <h1><?php _e( 'Pengaturan Materi BP', 'belajar-pemrograman' ); ?></h1>
-  <p><?php _e( 'Ini merupakan halaman pengaturan materi BP', 'belajar-pemrograman' ); ?></p>
-  </div>
+  &lt;div class="wrap"&gt;
+  &lt;h1&gt;&lt;?php _e( 'Pengaturan Materi BP', 'belajar-pemrograman' ); ?&gt;&lt;/h1&gt;
+  &lt;p&gt;&lt;?php _e( 'Ini merupakan halaman pengaturan materi BP', 'belajar-pemrograman' ); ?&gt;&lt;/p&gt;
+  &lt;/div&gt;
   
-  <?php
+  &lt;?php
   }
   
   /**
   * Konten halaman pengaturan snippet BP
   */
   function bp_tutorial_snippet_setting_page() {
-  ?>
+  ?&gt;
   
-  <div class="wrap">
-  <h1><?php _e( 'Pengaturan Snippet BP', 'belajar-pemrograman' ); ?></h1>
-  <p><?php _e( 'Ini merupakan halaman pengaturan snippet BP', 'belajar-pemrograman' ); ?></p>
-  </div>
+  &lt;div class="wrap"&gt;
+  &lt;h1&gt;&lt;?php _e( 'Pengaturan Snippet BP', 'belajar-pemrograman' ); ?&gt;&lt;/h1&gt;
+  &lt;p&gt;&lt;?php _e( 'Ini merupakan halaman pengaturan snippet BP', 'belajar-pemrograman' ); ?&gt;&lt;/p&gt;
+  &lt;/div&gt;
   
-  <?php
+  &lt;?php
   }</code></pre>
 layout: snippet
 permalink: >
