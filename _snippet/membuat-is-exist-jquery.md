@@ -6,7 +6,7 @@ post_excerpt: |
   Memeriksa apakah sebuah elemen DOM element exist atau tidak:
   <pre class="language-javascript line-numbers"><code>$.fn.exists = function() {
   return this.length &gt; 0
-  };</code></pre>
+  };</code><div class="open-snippet">Lihat Snippet</div></pre>
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/jquery/membuat-is-exist-jquery/
