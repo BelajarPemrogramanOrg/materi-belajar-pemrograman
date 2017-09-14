@@ -15,7 +15,7 @@ post_excerpt: |
   if ( is_object( $post ) &amp;&amp; $post-&gt;post_type == 'snippet' ) {
   $terms = wp_get_object_terms( $post-&gt;ID, 'snippet_tag' );
   if ( $terms ) {
-  foreach ( $terms as $term ){ ...</code><div class="open-snippet">Lihat Snippet</div></pre>
+  foreach ( $terms as $term ){ ...</code></pre>
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/wordpress/menambah-taxonomy-url-post-wordpress/
