@@ -35,11 +35,11 @@ public enum Difficulty {
     private final int difficultyValue;
 
     Level(int difficultyValue) {
-    this.difficultyValue = difficultyValue;
+        this.difficultyValue = difficultyValue;
     }
 
     public int getDifficultyValue() {
-    return this.difficultyValue;
+        return this.difficultyValue;
     }
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
