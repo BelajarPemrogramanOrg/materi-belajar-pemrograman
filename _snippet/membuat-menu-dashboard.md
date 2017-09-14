@@ -6,7 +6,6 @@ post_title: >
 author: Muhammad Ikhsan
 post_excerpt: |
   <pre><code class="language-php line-numbers">/**
-  /**
   * Menambahkan menu dan submenu plugin
   */
   add_action( 'admin_menu', 'bp_tutorial_main_menu' );
