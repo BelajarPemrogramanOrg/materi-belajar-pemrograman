@@ -6,18 +6,60 @@ post_title: >
 author: Muhammad Ikhsan
 post_excerpt: |
   <pre><code class="language-php line-numbers">/**
-  * Menambahkan submenu pengaturan materi BP
+  /**
+  * Menambahkan menu dan submenu plugin
   */
-  add_action( 'admin_menu', 'bp_tutorial_setting_submenu' );
-  function bp_tutorial_setting_submenu() {
-  add_submenu_page(
-  'options-general.php',
+  add_action( 'admin_menu', 'bp_tutorial_main_menu' );
+  function bp_tutorial_main_menu() {
+  $parent_slug = 'bp-tutorial';
+  
+  add_menu_page(
   __( 'Pengaturan Materi BP', 'belajar-pemrograman' ),
   __( 'Materi BP', 'belajar-pemrograman' ),
   'manage_options',
-  'bp-tutorial-setting',
-  bp_tutorial_setting_page
-  ); ...</code></pre>
+  $parent_slug,
+  'bp_tutorial_material_setting_page',
+  'dashicons-book-alt',
+  81
+  );
+  
+  add_submenu_page(
+  $parent_slug,
+  __( 'Pengaturan Snippet BP', 'belajar-pemrograman' ),
+  __( 'Snippet BP', 'belajar-pemrograman' ),
+  'manage_options',
+  $parent_slug . '-snippet',
+  bp_tutorial_snippet_setting_page
+  );
+  }
+  
+  /**
+  * Konten halaman pengaturan materi BP
+  */
+  function bp_tutorial_material_setting_page() {
+  ?>
+  
+  <div class="wrap">
+  <h1><?php _e( 'Pengaturan Materi BP', 'belajar-pemrograman' ); ?></h1>
+  <p><?php _e( 'Ini merupakan halaman pengaturan materi BP', 'belajar-pemrograman' ); ?></p>
+  </div>
+  
+  <?php
+  }
+  
+  /**
+  * Konten halaman pengaturan snippet BP
+  */
+  function bp_tutorial_snippet_setting_page() {
+  ?>
+  
+  <div class="wrap">
+  <h1><?php _e( 'Pengaturan Snippet BP', 'belajar-pemrograman' ); ?></h1>
+  <p><?php _e( 'Ini merupakan halaman pengaturan snippet BP', 'belajar-pemrograman' ); ?></p>
+  </div>
+  
+  <?php
+  }</code></pre>
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/wordpress/membuat-menu-dashboard/
