@@ -5,8 +5,6 @@ post_title: >
   MySQL
 author: Muhammad Ikhsan
 post_excerpt: |
-  Seringkali pas mau import hasil dump sebuah database, kita perlu mengosongkan database. Atau dengan kata lain, perlu menghapus semua tabel di sebuah database. Oke, kalau kita memiliki <em>privilege</em> untuk <code>CREATE</code> dan <code>DROP</code> database, kita menghapus databasenya dulu, kemudian kita buat lagi. Sayangnya, kondisinya tidak selalu begitu.
-  
   Jika Anda memiliki <code>grep</code>, maka Anda dapat gunakan snippet berikut:
   
   <pre class="language-bash"><code>mysqldump -u[username] -p[password] --add-drop-table --no-data [databasename] | grep ^DROP | mysql -u[username] -p[password] [databasename]</code></pre>
