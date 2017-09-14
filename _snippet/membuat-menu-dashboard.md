@@ -17,7 +17,7 @@ post_excerpt: |
   'manage_options',
   'bp-tutorial-setting',
   bp_tutorial_setting_page
-  ); ...</code><div class="open-snippet">Lihat Snippet</div></pre>
+  ); ...</code></pre>
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/wordpress/membuat-menu-dashboard/
