@@ -10,6 +10,12 @@ post_excerpt: |
   Jika Anda memiliki <code>grep</code>, maka Anda dapat gunakan snippet berikut:
   
   <pre class="language-bash"><code>mysqldump -u[username] -p[password] --add-drop-table --no-data [databasename] | grep ^DROP | mysql -u[username] -p[password] [databasename]</code></pre>
+  
+  
+  Namun jika Anda di Windows dan tidak memiliki `grep`, Anda dapat gunakan:
+  
+  
+  <pre class="language-bash"><code>mysqldump -u[username] -p[password] --add-drop-table --no-data [databasename] | findstr ^DROP | mysql -u[username] -p[password] [databasename]</code></pre>
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/mysql/hapus-semua-tabel-dalam-database-mysql/
