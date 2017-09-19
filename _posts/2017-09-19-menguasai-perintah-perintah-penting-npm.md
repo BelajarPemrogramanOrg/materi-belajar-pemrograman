@@ -227,4 +227,6 @@ Dokumentasi akan dibuka melalui browser.
 
 &nbsp;
 
-Gambar diambil dari [anpsthemes](https://anpsthemes.com/building-first-npm-module/).
+--------------------------------------------------------
+
+*Gambar diambil dari [anpsthemes](https://anpsthemes.com/building-first-npm-module/)*
