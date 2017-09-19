@@ -9,7 +9,7 @@ permalink: >
 published: true
 post_date: 2017-09-19 00:45:19
 ---
-[npm (Node Package Manager)](https://www.npmjs.com) merupakan *package manager* untuk JavaScript. Dalam PHP kita mengenal Composer, di Ruby ada RubyGems, di Python kita mengenal pip, dan seterusnya. Dengan menggunakan npm, developer dapat mencari, mendapatkan, menggunakan dan berbagi package-package JavaScript. Dalam materi belajar ini akan dibahas beberapa perintah `npm` yang menurut saya penting, mulai dari inisialisasi `package.json` hingga untuk membuka dokumentasi package.
+[npm (Node Package Manager)](https://www.npmjs.com) merupakan *package manager* untuk JavaScript. Seperti dalam PHP kita mengenal Composer, di Ruby ada RubyGems, di Python kita mengenal pip, dan seterusnya. Dengan menggunakan npm, developer dapat mencari, mendapatkan, menggunakan dan berbagi package-package JavaScript. Dalam materi belajar ini akan dibahas beberapa perintah `npm` yang menurut saya penting, mulai dari inisialisasi `package.json` hingga untuk membuka dokumentasi package.
 
 &nbsp;
 
