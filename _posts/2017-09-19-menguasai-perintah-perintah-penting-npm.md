@@ -2,97 +2,86 @@
 ID: 705
 post_title: Menguasai Perintah-Perintah Penting npm
 author: Muhammad Ikhsan
-post_excerpt: >
-  Materi ini berisi daftar penggunaan
-  perintah-perintah npm yang (menurut
-  saya) penting dan sering diperlukan.
+post_excerpt: 'npm (Node Package Manager) merupakan <em>package manager</em> untuk JavaScript. Dengan menggunakan npm, developer dapat mencari, mendapatkan, menggunakan dan berbagi package-package JavaScript. Dalam materi belajar ini akan dibahas beberapa perintah <code>npm</code> yang menurut saya penting, mulai dari inisialisasi <code>package.json</code> hingga untuk membuka dokumentasi package.'
 layout: post
 permalink: >
   http://belajarpemrograman.org/menguasai-perintah-perintah-penting-npm/
 published: true
 post_date: 2017-09-19 00:45:19
 ---
-Pendahuluan {.no-mar-top}
--------------------------
+npm (Node Package Manager) merupakan <em>package manager</em> untuk JavaScript. Dengan menggunakan npm, developer dapat mencari, mendapatkan, menggunakan dan berbagi package-package JavaScript. Dalam materi belajar ini akan dibahas beberapa perintah <code>npm</code> yang menurut saya penting, mulai dari inisialisasi <code>package.json</code> hingga untuk membuka dokumentasi package.
 
-npm merupakan *package manager* untuk JavaScript. Dengan menggunakan npm, developer dapat mencari, mendapatkan, menggunakan dan berbagi package-package JavaScript. Dalam materi belajar ini akan dibahas beberapa perintah `npm` yang sering digunakan oleh *JavaScript developer* dalam pekerjaannya.
+&nbsp;
 
-Inisialisasi `package.json`
----------------------------
+<h2>Inisialisasi <code>package.json</code></h2>
 
-File `package.json` merupakan sebuah dokumen yang berisikan informasi mengenai sebuah modul. Informasi tersebut antar lain nama, versi, deskripsi, keyword, license, dan lain-lain. Ketika Anda membuat modul baru, Anda dapat menjalankan perintah berikut untuk membuat file `package.json`.
+File <code>package.json</code> merupakan sebuah dokumen yang berisikan informasi mengenai sebuah modul. Informasi tersebut antar lain nama, versi, deskripsi, keyword, license, dan lain-lain. Ketika Anda membuat modul baru, Anda dapat menjalankan perintah berikut untuk membuat file <code>package.json</code>.
 
-```
-npm init
-```
+<pre><code class="language-bash">npm init
+</code></pre>
 
-Anda akan diminta memberikan nama modul yang Anda buat, versi, deskripsi, dll untuk dimasukkan ke dalam file `package.json`.
+Anda akan diminta memberikan nama modul yang Anda buat, versi, deskripsi, dll untuk dimasukkan ke dalam file <code>package.json</code>.
 
-Instalasi Package
----------------------------------
+&nbsp;
 
-##### Instal *dependency* modul
+<h2>Instalasi Package</h2>
 
-File `package.json` dalam folder modul Anda biasanya menyertakan informasi mengenai *dependency* yang dibutuhkan. *Dependency* merupakan package yang harus terinstal agar project Anda bisa dijalankan. Gunakan perintah berikut untuk menginstal dependency-dependency tersebut.
+<h3>Instal <em>dependency</em> modul</h3>
 
-```
-npm install
-```
+File <code>package.json</code> dalam folder modul Anda biasanya menyertakan informasi mengenai <em>dependency</em> yang dibutuhkan. <em>Dependency</em> merupakan package yang harus terinstal agar project Anda bisa dijalankan. Gunakan perintah berikut untuk menginstal dependency-dependency tersebut.
 
-Dengan menjalankan perintah tersebut, package-package yang menjadi *dependency* akan disimpan ke dalam folder `node_modules`.
+<pre><code class="language-bash">npm install
+</code></pre>
 
-##### Instal package untuk digunakan secara global
+Dengan menjalankan perintah tersebut, package-package yang menjadi <em>dependency</em> akan disimpan ke dalam folder <code>node_modules</code>.
 
-Yang dimaksud dengan global adalah bahwa package dapat diakses dari lokasi mana saja di komputer, seperti halnya menginstal sebuah program. Biasanya, package yang diinstal secara global adalah package yang hendak digunakan sebagai *command line tool*.
+<h3>Instal package untuk digunakan secara global</h3>
 
-```
-# Format perintah:
+Yang dimaksud dengan global adalah bahwa package dapat diakses dari lokasi mana saja di komputer, seperti halnya menginstal sebuah program. Biasanya, package yang diinstal secara global adalah package yang hendak digunakan sebagai <em>command line tool</em>.
+
+<pre><code class="language-bash"># Format perintah:
 npm install -g &lt;nama package&gt;
 # Contoh penggunaan:
 npm install -g webpack
 # Setelah terinstall, dapat coba dijalankan:
 webpack -v
-```
+</code></pre>
 
-##### Instal package untuk digunakan secara lokal
+<h3>Instal package untuk digunakan secara lokal</h3>
 
-Untuk menggunakan sebuah package pada modul Anda, Anda bisa memanggilnya dengan menggunakan perintah `require("namaPackage")`. Sebelum Anda dapat me-`require` package tersebut, tentu saja Anda perlu menginstalnya terlebih dahulu.
+Untuk menggunakan sebuah package pada modul Anda, Anda bisa memanggilnya dengan menggunakan perintah <code>require("namaPackage")</code>. Sebelum Anda dapat me-<code>require</code> package tersebut, tentu saja Anda perlu menginstalnya terlebih dahulu.
 
-```
-# Format perintah:
+<pre><code class="language-bash"># Format perintah:
 npm install &lt;nama package&gt;
 # Contoh:
 npm install express
-```
+</code></pre>
 
-Package yang diinstal akan dimasukkan ke dalam folder `<folder project>/node_modules`. Perintah di atas tidak turut menambahkan nama serta package yang diinstal ke dalam file `package.json` sebagai *dependency*.
+Package yang diinstal akan dimasukkan ke dalam folder <code>&lt;folder project&gt;/node_modules</code>. Perintah di atas tidak turut menambahkan nama serta package yang diinstal ke dalam file <code>package.json</code> sebagai <em>dependency</em>.
 
-##### Instal package sekaligus update informasi `dependencies` di `package.json`
+<h3>Instal package sekaligus update informasi <code>dependencies</code> di <code>package.json</code></h3>
 
-Di sini, kita ingin menginstal sebuah package sekaligus memasukkan informasi nama dan versi package ke dalam file `package.json` sebagai *dependency*.
+Di sini, kita ingin menginstal sebuah package sekaligus memasukkan informasi nama dan versi package ke dalam file <code>package.json</code> sebagai <em>dependency</em>.
 
-```
-# Format perintah:
+<pre><code class="language-bash"># Format perintah:
 npm install --save &lt;nama package&gt;
 # Contoh:
 npm install --save express
-```
+</code></pre>
 
-##### Instal package sekaligus update informasi `devDependencies` di `package.json`
+<h3>Instal package sekaligus update informasi <code>devDependencies</code> di <code>package.json</code></h3>
 
-Setelah menginstal semua *dependency* yang tercantum pada bagian `dependencies` dalam file `package.json`, modul yang Anda buat seharusnya dapat dijalankan. Namun, bisa jadi Anda membutuhkan dependency tambahan yang Anda gunakan sebagai bagian dari development environment, misalnya untuk testing. *Dependency* tersebut dapat Anda tambahkan ke dalam file `package.json` dalam item `devDependencies`.
+Setelah menginstal semua <em>dependency</em> yang tercantum pada bagian <code>dependencies</code> dalam file <code>package.json</code>, modul yang Anda buat seharusnya dapat dijalankan. Namun, bisa jadi Anda membutuhkan dependency tambahan yang Anda gunakan sebagai bagian dari development environment, misalnya untuk testing. <em>Dependency</em> tersebut dapat Anda tambahkan ke dalam file <code>package.json</code> dalam item <code>devDependencies</code>.
 
-```
-# Format perintah:
+<pre><code class="language-bash"># Format perintah:
 npm install --save-dev &lt;nama package&gt;
 # Contoh:
 npm install --save-dev gulp
-```
+</code></pre>
 
-##### Install package lokal dari sebuah repositori git
+<h3>Install package lokal dari sebuah repositori git</h3>
 
-```
-# Format perintah:
+<pre><code class="language-bash"># Format perintah:
 npm install &lt;url repo&gt;
 # Contoh 1:
 npm install git+https://github.com/bendrucker/smallest.git
@@ -102,15 +91,15 @@ npm install git://github.com/bendrucker/smallest.git
 npm install https://github.com/bendrucker/smallest.git
 # Contoh 4:
 npm install --save git+https://github.com/bendrucker/smallest.git
-```
+</code></pre>
 
-Penghapusan Package
--------------------
+&nbsp;
 
-Untuk menghapus package, kurang lebih caranya sama seperti dengan penginstalannya. Bedanya, kita menggunakan perintah `uninstall`.
+<h2>Penghapusan Package</h2>
 
-```
-# Menghapus package global:
+Untuk menghapus package, kurang lebih caranya sama seperti dengan penginstalannya. Bedanya, kita menggunakan perintah <code>uninstall</code>.
+
+<pre><code class="language-bash"># Menghapus package global:
 npm uninstall -g webpack
 # Menghapus package lokal:
 npm uninstall express
@@ -118,49 +107,47 @@ npm uninstall express
 npm uninstall --save express
 # Menghapus package sekaligus update informasi devDependencies di package.json:
 npm uninstall --save-dev gulp
-```
+</code></pre>
 
-Memperbarui Package
--------------------
+&nbsp;
 
-##### Memperbarui package global
+<h2>Memperbarui Package</h2>
 
-```
-npm update -g
-```
+<h3>Memperbarui package global</h3>
 
-##### Memperbarui package lokal
+<pre><code class="language-bash">npm update -g
+</code></pre>
 
-```
-npm update
-```
+<h3>Memperbarui package lokal</h3>
 
-Melihat Daftar Package
-----------------------
+<pre><code class="language-bash">npm update
+</code></pre>
 
-##### Melihat daftar package global
+&nbsp;
 
-```
-# Hanya daftar:
+<h2>Melihat Daftar Package</h2>
+
+<h4>Melihat daftar package global</h4>
+
+<pre><code class="language-bash"># Hanya daftar:
 npm ls -g
 # Daftar disertai detail:
 npm ls -gl
-```
+</code></pre>
 
-##### Melihat daftar package lokal
+<h3>Melihat daftar package lokal</h3>
 
-```
-# Hanya daftar:
+<pre><code class="language-bash"># Hanya daftar:
 npm ls
 # Daftar disertai detail
 npm ls -l
-```
+</code></pre>
 
-##### Melihat daftar package dengan informasi versi yang *outdated*
+<h3>Melihat daftar package dengan informasi versi yang <em>outdated</em></h3>
 
-Anda dapat melihat daftar package-package yang menjadi *dependency* modul Anda beserta informasi versinya dengan menjalankan perintah berikut.
+Anda dapat melihat daftar package-package yang menjadi <em>dependency</em> modul Anda beserta informasi versinya dengan menjalankan perintah berikut.
 
-<pre class="command-line" data-user="mikhsan" data-host="belajarpemrograman" data-output="2-7"><code class="language-bash">npm outdated
+<pre class="command-line" data-user="mi" data-host="localhost" data-output="2-7"><code class="language-bash">npm outdated
 Package       Current  Wanted  Latest  Location
 chai            2.3.0   2.3.0   4.1.2  prismjs
 gulp-replace    0.5.4   0.5.4   0.6.1  prismjs
@@ -168,51 +155,51 @@ gulp-uglify     0.3.2   0.3.2   3.0.0  prismjs
 mocha           2.5.3   2.5.3   3.5.3  prismjs
 yargs          3.32.0  3.32.0   9.0.1  prismjs</code></pre>
 
--   Kolom `Current` menunjukkan versi yang modul Anda gunakan.
--   Kolom `Wanted` menunjukkan versi yang dikehendaki modul Anda.
--   Kolom `Latest` menunjukkan versi terbaru yang tersedia untuk diinstal.
+<ul>
+<li>Kolom <code>Current</code> menunjukkan versi yang modul Anda gunakan.</li>
+<li>Kolom <code>Wanted</code> menunjukkan versi yang dikehendaki modul Anda.</li>
+<li>Kolom <code>Latest</code> menunjukkan versi terbaru yang tersedia untuk diinstal.</li>
+</ul>
 
-Konfigurasi npm
----------------
+&nbsp;
 
-##### Melihat daftar semua flag konfigurasi npm
+<h2>Konfigurasi npm</h2>
 
-```
-npm config ls -l
-```
+<h3>Melihat daftar semua flag konfigurasi npm</h3>
 
-##### Mengatur nilai flag konfigurasi npm
+<pre><code class="language-bash">npm config ls -l
+</code></pre>
 
-Misalnya Anda ingin merubah nilai flag konfigurasi `save` menjadi `true` (defaultnya `false`).
+<h3>Mengatur nilai flag konfigurasi npm</h3>
 
-```
-npm config set save true
-```
+Misalnya Anda ingin merubah nilai flag konfigurasi <code>save</code> menjadi <code>true</code> (defaultnya <code>false</code>).
 
-Dengan nilai flag konfigurasi `save` diubah menjadi `true`, kini parameter `--save` secara default akan digunakan untuk setiap pemanggilan `npm install`.
+<pre><code class="language-bash">npm config set save true
+</code></pre>
 
-##### Mengatur nilai default untuk `npm init`
+Dengan nilai flag konfigurasi <code>save</code> diubah menjadi <code>true</code>, kini parameter <code>--save</code> secara default akan digunakan untuk setiap pemanggilan <code>npm install</code>.
 
-```
-npm config set init-author-name &quot;Muhammad Ikhsan&quot;
-npm config set init-author-email &quot;muhikhsan101@gmail.com&quot;
-npm config set init-author-url &quot;https://belajarpemrograman/author/mikhsan&quot;
-npm config set init-license &quot;MIT&quot;
-npm config set init-version &quot;0.1.0&quot;
-```
+<h3>Mengatur nilai default untuk <code>npm init</code></h3>
 
-Dokumentasi Package
--------------------
+<pre><code class="language-bash">npm config set init-author-name "Muhammad Ikhsan"
+npm config set init-author-email "muhikhsan101@gmail.com"
+npm config set init-author-url "https://belajarpemrograman/author/mikhsan"
+npm config set init-license "MIT"
+npm config set init-version "0.1.0"
+</code></pre>
+
+&nbsp;
+
+<h2>Membuka Dokumentasi Package</h2>
 
 Anda bisa membuka dokumentasi dari sebuah package dengan menjalankan perintah berikut.
 
-```
-# Format perintah
+<pre><code class="language-bash"># Format perintah
 npm docs &lt;nama package&gt;
 # Contoh 1:
 npm docs express
 # Contoh 2 (membuka lebih dari satu dokumentasi package):
 npm docs webpack browserify
-```
+</code></pre>
 
 Dokumentasi akan dibuka melalui browser.
