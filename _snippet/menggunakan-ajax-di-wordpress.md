@@ -50,7 +50,8 @@ post_date: 2017-09-20 08:01:19
 3.  Buat kode PHP untuk menangani request dan mengirimkan respon dari client/browser.
 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-php .line-numbers}
-    add_action( 'wp_ajax_my_action', 'my_action' );
+    add_action( 'wp_ajax_my_action', 'my_action' );        // Untuk user yg sudah login
+    add_action( 'wp_ajax_nopriv_my_action', 'my_action' ); // Untuk pengunjung yg belum login
     function my_action() {
     	$var1 = $_POST['var1'];
 
