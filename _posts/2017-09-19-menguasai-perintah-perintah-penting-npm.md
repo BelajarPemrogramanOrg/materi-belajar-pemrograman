@@ -1,6 +1,8 @@
 ---
 ID: 705
-post_title: Perintah-Perintah Penting npm
+post_title: >
+  Mempelajar Beberapa Perintah Penting NPM
+  (Node Package Manager)
 author: Muhammad Ikhsan
 post_excerpt: '<a href="https://www.npmjs.com">npm (Node Package Manager)</a> merupakan <em>package manager</em> untuk JavaScript. alam PHP kita mengenal Composer, di Ruby ada RubyGems, di Python kita mengenal pip, dan seterusnya. Dengan menggunakan npm, developer dapat mencari, mendapatkan, menggunakan dan berbagi package-package JavaScript. Dalam materi belajar ini akan dibahas beberapa perintah <code>npm</code> yang menurut saya penting, mulai dari inisialisasi <code>package.json</code> hingga untuk membuka dokumentasi package.'
 layout: post
