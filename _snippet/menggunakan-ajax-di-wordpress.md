@@ -5,7 +5,7 @@ author: Muhammad Ikhsan
 post_excerpt: |
   Pertama, <em>enqueue</em> file JavaScript yang digunakan untuk melakukan request dan menerima respon menggunakan AJAX. (Misal, nama file-nya <code>my-script.js</code>)
   
-  <pre class="language-javascript line-numbers"><code>add_action( 'wp_enqueue_scripts', 'my_enqueue_ajax_script' );
+  <pre class="language-php line-numbers"><code>add_action( 'wp_enqueue_scripts', 'my_enqueue_ajax_script' );
   function my_enqueue_ajax_script() {
   wp_enqueue_script( 'my-script', WP_PLUGIN_URL . '/my_plugin/assets/my-script.js', array( 'jquery' ) );
   wp_localize_script( 'my-script', 'my_script', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
