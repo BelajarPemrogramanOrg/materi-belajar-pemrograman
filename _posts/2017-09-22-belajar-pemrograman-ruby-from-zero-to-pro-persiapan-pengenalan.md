@@ -165,12 +165,12 @@ Hmmm, namun, Anda tetap harus berhati-hati dengan adanya kesalahpahaman antara A
     <pre class="interactive-ruby" data-output="2"><code class="language-ruby">23 / 46 * 808 + 1
     => 405.0</code></pre>
 
--   Awalnya, karena belum tahu banyak tentang Ruby, jadi hanya ingin ngetes. Apakah memang benar seperti ini cara menghitung persenan di Ruby.
+-   Awalnya, karena belum tahu banyak tentang Ruby, jadi hanya ingin ngetes. Apakah memang benar seperti ini cara menghitung persenan di Ruby. Misalnya, 10% dari 100.
 
     <pre class="interactive-ruby" data-output="2"><code class="language-ruby">10%(100)
     => 10</code></pre>
 
-    Yup, benar...! Oke, kalau begitu sekarang mulai menghitung yang beneran. Ini kebetulan sedang ada diskon 10% di Tokopedia. Dihitung dulu, biar bisa kira-kira.
+    Yup, benar...! Oke, kalau begitu sekarang mulai menghitung yang beneran. Ini kebetulan sedang ada diskon 10% di Tokopedia. Dihitung dulu, biar bisa kira-kira, 10% dari 4.560.000.
 
     <pre class="interactive-ruby" data-output="2"><code class="language-ruby">10%(4560000)
     => 10</code></pre>
