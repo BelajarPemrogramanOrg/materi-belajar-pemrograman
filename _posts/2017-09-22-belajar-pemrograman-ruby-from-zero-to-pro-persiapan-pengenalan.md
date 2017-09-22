@@ -1,6 +1,6 @@
 ---
 ID: 613
-post_title: 'Belajar Pemrograman Ruby from Zero to Pro 1 &#8211; Persiapan &#038; Pengenalan'
+post_title: 'Belajar Pemrograman Ruby from Zero to Pro &#8211; Bagian 1 Persiapan &#038; Pengenalan'
 author: Muhammad Ikhsan
 post_excerpt: 'Bagian pertama dari seri materi belajar pemrograman Ruby: <em>from Zero to Pro</em>, yaitu persiapan dan pengenalan. Materi belajar ini memperkenalkan Anda pada bahasa pemrograman Ruby, yang mana GitHub, Airbnb, dan BukaLapak gunakan untuk website mereka. Setelah pengenalan, materi dilanjutkan dengan penginstalan Ruby dan penggunaan modul Interactive Ruby (<code>irb</code>). Dan tentu saja, karena ini bagian pertama, kita akan membuat <code>hello-world.rb</code>.'
 layout: post
