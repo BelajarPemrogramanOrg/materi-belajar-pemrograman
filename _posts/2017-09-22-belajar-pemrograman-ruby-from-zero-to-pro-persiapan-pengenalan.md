@@ -156,9 +156,9 @@ Hmmm, namun, Anda tetap harus berhati-hati dengan adanya kesalahpahaman antara A
     <pre class="interactive-ruby" data-output="2"><code class="language-ruby">23 / 46 * 808 + 1
     => 1</code></pre>
 
-    Loh, kok yang nomor dua gak masuk akal jawabannya? Masak, cuman `1` jawabannya? Hmm, jadi ragu-ragu. Jangan-jangan yang nomor 1 juga salah. Tapi, kok Ruby gak ngasih tahu apa-apa sih kalau misalnya ada error di kode yang dimasukkan.
+    Loh, kok yang nomor dua gak masuk akal jawabannya? Masak, cuman `1`? Hmm, jadi ragu-ragu. Jangan-jangan yang nomor 1 juga salah. Tapi, kok Ruby gak ngasih tahu apa-apa sih kalau da error.
 
-    Inti masalahnya, jika penghitungan Anda melibatkan _koma-komaan_, Anda harus memberitahukannya pada Ruby. Karena <code>23 / 46 = <strong>0</strong>.5</code> dan Anda tidak meminta Ruby untuk melibatkan _koma-komaan_, jadi dia hanya mengambil `0`-nya saja. Dan tentu saja, `0 * 808 + 1 = 1`. Seolah-olah Ruby berkata, "Jadi, saya gak salah dong..!"
+    Ternyata, jika penghitungan melibatkan _koma-komaan_, kita harus memberitahukannya pada Ruby. Karena <code>23 / 46 = <strong>0</strong>.5</code> dan Anda tidak meminta Ruby untuk melibatkan _koma-komaan_, jadi dia hanya mengambil `0`-nya saja. Dan tentu saja, `0 * 808 + 1 = 1`. "Jadi, saya gak salah dong..!", kata Ruby.
 
     Gunakan kode berikut untuk melibatkan _koma-komaan_:
 
