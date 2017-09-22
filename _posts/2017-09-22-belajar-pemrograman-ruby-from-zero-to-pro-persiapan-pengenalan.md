@@ -78,7 +78,7 @@ Belajar Ruby Menggunakan Shell Interactive Ruby `irb`
 
 `irb` merupakan sebuah modul Ruby yang mengijinkan Anda memasukkan kode program Ruby secara interaktif. Anda dapat langsung melihat output dari kode tersebut. Sama seperti ketika Anda menggunakan console di browser, Python command line, Node.js CLI, Laravel Tinker. *Programming environment* yang seperti ini disebut sebagai __REPL (Read-Eval-Print Loop)__. 
 
-Kenapa kok namanya REPL? Karena memang cara kerjanya program-program itu memang begitu: 
+Kenapa kok namanya REPL? Karena cara kerjanya program-program itu memang begitu: 
 
 1.  __Read__ (baca) kode program yang Anda inputkan,
 2.  **Eval**uate atau kerjakan kode, 
