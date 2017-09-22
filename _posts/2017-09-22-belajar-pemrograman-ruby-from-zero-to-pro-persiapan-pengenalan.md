@@ -76,7 +76,9 @@ Apabila Ruby sudah terinstal, seharusnya muncul informasi versi ruby seperti di 
 Belajar Ruby Menggunakan Shell Interactive Ruby `irb`
 -----------------------------------------------------
 
-`irb` merupakan sebuah modul Ruby yang mengijinkan Anda memasukkan kode program Ruby secara interaktif. Anda dapat langsung melihat output dari kode tersebut. Sama seperti ketika Anda menggunakan console di browser, Python command line, Node.js CLI, Laravel Tinker. *Programming environment* yang seperti ini disebut sebagai __REPL (Read-Eval-Print Loop)__. 
+`irb` merupakan sebuah modul Ruby yang mengijinkan Anda memasukkan kode program Ruby secara interaktif. `irb` merupakan modul bawaan. Jadi, dengan Anda menginstal Ruby, Anda juga telah menginstal `irb`. 
+
+Dengan menggunakan `irb`, Anda dapat langsung melihat output dari kode yang Anda masukkan. Sama seperti ketika Anda menggunakan console di browser, Python command line, Node.js CLI, Laravel Tinker. *Programming environment* yang seperti ini disebut sebagai __REPL (Read-Eval-Print Loop)__. 
 
 Kenapa kok namanya REPL? Karena cara kerjanya program-program itu memang begitu: 
 
