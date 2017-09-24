@@ -5,7 +5,7 @@ author: Muhammad Ikhsan
 post_excerpt: 'Program <code>bash</code> beroperasi pada antarmuka berbasis teks (<em>text-based interface</em>), misalnya melalui program terminal. Beberapa contoh program terminal antara lain <code>gnome-terminal</code> dan <code>konsole</code> di Linux, <code>Terminal</code> di Mac OS, dan <code>cmd.exe</code> pada Windows. Bentuk interaksi dasar antara user dan program adalah dengan memberikan/menerima input dan output. Secara default, output ditampilkan di layar melalui program <em>terminal</em>. Selain itu, output juga dapat disimpan ke dalam file atau dikirimkan menjadi input untuk perintah yang lain. Pada materi belajar ini, Anda akan belajar untuk membuat output pada pemrograman bash shell dengan menggunakan perintah <code>echo</code> dan <code>printf</code>.'
 layout: post
 permalink: >
-  http://belajarpemrograman.org/belajar-pemrograman-bash-shell-di-linux-2-output-input/
+  http://belajarpemrograman.org/belajar-pemrograman-bash-shell-di-linux-2-output/
 published: true
 post_date: 2017-09-24 12:40:12
 ---
@@ -15,7 +15,7 @@ Pada materi berjudul [Belajar Pemrograman Bash Shell di Linux 1: Pengenalan], An
 
 __Daftar Materi Belajar Pemrograman Bash Shell di Linux:__
 1.  [Pengenalan](https://belajarpemrograman.org/belajar-pemrograman-bash-shell-di-linux-1-pengenalan/)
-2.  Output
+2.  Output _(Materi Ini)_
 
 ------------------------------------------------------------------------
 
