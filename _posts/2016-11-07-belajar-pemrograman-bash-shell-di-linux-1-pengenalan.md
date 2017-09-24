@@ -11,6 +11,14 @@ post_date: 2016-11-07 07:23:15
 ---
 Dalam materi belajar ini Anda akan mengenal pemrograman bash shell di Linux. Dimulai dengan pengertian bash, memeriksa shell yang aktif sebagai langkah persiapan sebelum memulai pemrograman bash, dan akhirnya Anda akan membuat dua *bash script* sederhana dan menjalankannya.
 
+------------------------------------------------------------------------
+
+__Daftar Materi Belajar Pemrograman Bash Shell di Linux:__
+1.  Pengenalan
+2.  [Output](https://belajarpemrograman.org/belajar-pemrograman-bash-shell-di-linux-2-output-input/)
+
+------------------------------------------------------------------------
+
 Apa Itu bash? {#apa-itu-bash}
 -------------
 
