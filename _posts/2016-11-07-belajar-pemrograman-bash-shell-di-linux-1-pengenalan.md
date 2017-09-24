@@ -14,8 +14,8 @@ Dalam materi belajar ini Anda akan mengenal pemrograman bash shell di Linux. Dim
 ------------------------------------------------------------------------
 
 __Daftar Materi Belajar Pemrograman Bash Shell di Linux:__
-1.  Pengenalan
-2.  [Output](https://belajarpemrograman.org/belajar-pemrograman-bash-shell-di-linux-2-output-input/)
+1.  Pengenalan _(Materi Ini)_
+2.  [Output](https://belajarpemrograman.org/belajar-pemrograman-bash-shell-di-linux-2-output/)
 
 ------------------------------------------------------------------------
 
