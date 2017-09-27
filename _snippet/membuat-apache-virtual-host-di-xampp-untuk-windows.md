@@ -1,8 +1,8 @@
 ---
 ID: 909
 post_title: >
-  Membuat Virtual Host di XAMPP untuk
-  Windows
+  Membuat Apache Virtual Host di XAMPP
+  untuk Windows
 author: Muhammad Ikhsan
 post_excerpt: |
   <h2 class="no-mar-top">Contoh Kasus</h2>
@@ -26,7 +26,7 @@ post_excerpt: |
   &lt;/VirtualHost&gt;</pre></li></ol>
 layout: snippet
 permalink: >
-  http://belajarpemrograman.org/snippet/apache/membuat-virtual-host-di-xampp-untuk-windows/
+  http://belajarpemrograman.org/snippet/apache/membuat-apache-virtual-host-di-xampp-untuk-windows/
 published: true
 post_date: 2017-09-27 09:18:23
 ---
