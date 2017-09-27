@@ -5,7 +5,7 @@ post_title: >
   Windows
 author: Muhammad Ikhsan
 post_excerpt: |
-  <h2>Contoh Kasus</h2>
+  <h2 class="no-mar-top">Contoh Kasus</h2>
   
   Saya ingin membuat virtual host di komputer saya dengan domain <code>belajarpemrograman.dev</code> untuk digunakan selama development. File-file kodingan saya simpan di lokasi <code>C:\xampp\htdocs\belajarpemrograman</code>. Jadi, untuk mengaksesnya melalui browser, saya dapat menggunakan <code>http://belajarpemrograman.dev</code>. Tidak perlu panjang-panjang <code>http://localhost/belajarpemrograman</code>. Selain itu, kelihatan lebih keren, kan!
   
