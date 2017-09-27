@@ -23,8 +23,7 @@ post_excerpt: |
   AllowOverride All
   Require all granted
   &lt;/Directory&gt;
-  &lt;/VirtualHost&gt;
-  </pre></li></ol>
+  &lt;/VirtualHost&gt;</pre></li></ol>
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/apache/membuat-virtual-host-di-xampp-untuk-windows/
