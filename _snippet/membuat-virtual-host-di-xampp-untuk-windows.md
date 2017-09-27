@@ -15,15 +15,15 @@ post_excerpt: |
   <li>Pada bagian akhir dari file, tambahkan konfigurasi berikut
   
   <pre>
-  <VirtualHost belajarpemrograman.dev:80>
+  &gt;VirtualHost belajarpemrograman.dev:80&lt;
   DocumentRoot "C:/xampp/htdocs/belajarpemrograman"
   ServerAdmin belajarpemrograman.dev
-  <Directory "C:/xampp/htdocs/belajarpemrograman">
+  &gt;Directory "C:/xampp/htdocs/belajarpemrograman"&lt;
   Options Indexes FollowSymLinks
   AllowOverride All
   Require all granted
-  </Directory>
-  </VirtualHost>
+  &gt;/Directory&lt;
+  &gt;/VirtualHost&lt;
   </pre></li></ol>
 layout: snippet
 permalink: >
