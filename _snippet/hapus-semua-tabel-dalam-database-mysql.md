@@ -17,7 +17,7 @@ post_excerpt: |
 layout: snippet
 permalink: >
   http://belajarpemrograman.org/snippet/mysql/hapus-semua-tabel-dalam-database-mysql/
-published: false
+published: true
 post_date: 2017-09-07 08:36:26
 ---
 Karena alasan tertentu, kadang kala kita perlu mengosongkan sebuah database. Dengan kata lain menghapus semua tabel di sebuah database. Kalau kita memiliki *privilege* untuk `CREATE` dan `DROP` database, kita bisa menghapus database dulu, kemudian dibuat lagi. Ambil amannya saja, saya anggap kita tidak memilikinya.
