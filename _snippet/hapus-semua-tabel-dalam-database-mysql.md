@@ -9,7 +9,7 @@ post_excerpt: |
   
   <pre class="language-bash"><code>mysqldump -u[username] -p[password] --add-drop-table --no-data [databasename] | grep ^DROP | mysql -u[username] -p[password] [databasename]</code></pre>
   
-  
+
   Namun jika Anda di Windows dan tidak memiliki `grep`, Anda dapat gunakan:
   
   
@@ -20,7 +20,7 @@ permalink: >
 published: true
 post_date: 2017-09-07 08:36:26
 ---
-Seringkali pas mau import hasil dump sebuah database atau karena hal-hal lainnya, kita perlu mengosongkan database. Atau dengan kata lain, perlu menghapus semua tabel di sebuah database. Oke, kalau kita memiliki *privilege* untuk `CREATE` dan `DROP` database, kita menghapus databasenya dulu, kemudian kita buat lagi. Sayangnya, kondisinya tidak selalu begitu.
+Karena alasan tertentu, kadang kala kita perlu mengosongkan sebuah database. Dengan kata lain menghapus semua tabel di sebuah database. Kalau kita memiliki *privilege* untuk `CREATE` dan `DROP` database, kita bisa menghapus database dulu, kemudian dibuat lagi. Ambil amannya saja, saya anggap kita tidak memilikinya.
 
 Jika Anda memiliki `grep`, maka Anda dapat gunakan snippet berikut:
 
