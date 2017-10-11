@@ -33,7 +33,7 @@ post_date: 2017-09-27 09:18:23
 Contoh Kasus {.no-mar-top}
 --------------------------
 
-Saya ingin membuat virtual host di komputer saya dengan domain `belajarpemrograman.dev` untuk digunakan selama development. File-file kodingan saya simpan di lokasi `C:\xampp\htdocs\belajarpemrograman`. Jadi, untuk mengaksesnya melalui browser, saya dapat menggunakan `http://belajarpemrograman.dev`. Tidak perlu panjang-panjang `http://localhost/belajarpemrograman`. Selain itu, kelihatan lebih keren, kan!
+Saya ingin membuat _virtual host_ dengan domain `belajarpemrograman.dev` untuk digunakan selama development. File-file kodingan disimpan di `C:\xampp\htdocs\belajarpemrograman`. Dengan menggunakan _virtual host_, saya dapat mengaksesnya malalui browser dengan URL`http://belajarpemrograman.dev`. Tidak perlu panjang-panjang menuliskan `http://localhost/belajarpemrograman`. Selain itu, supaya kelihatan lebih keren juga.
 
 Langkah-Langkah
 ---------------
