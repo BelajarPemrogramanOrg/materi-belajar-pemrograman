@@ -2,10 +2,12 @@
 ID: 948
 post_title: 'Jelajah Open Source: PrismJS'
 author: Muhammad Ikhsan
-post_excerpt: ""
+post_excerpt: '<a href="http://prismjs.com/index.html">PrismJS</a> merupakan sebuah library open source <em>syntax highligher</em>. <em>Syntax highlighter</em> digunakan untuk men-<em>style</em> source code agar lebih mudah dan nyaman dibaca. Selain PrismJS, terdapat beberapa <em>syntax highlighter</em> lainnya seperti <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a> dan <a href="https://highlightjs.org/">highlight.js</a>. <em>Syntax highlighter</em> yang digunakan oleh BelajarPemrograman adalah PrismJS. Oleh karena itu, pada kesempatan ini kita akan membahas PrismJS.'
 layout: post
-permalink: http://belajarpemrograman.org/?p=948
-published: false
+permalink: >
+  http://belajarpemrograman.org/jelajah-open-source-prismjs/
+published: true
+post_date: 2017-11-12 22:35:12
 ---
 Mengenal PrismJS {.no-mar-top}
 ------------------------------
@@ -69,27 +71,27 @@ Langsung saja kita mulai. Coba kita lihat sebagian kode pada file _language defi
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-javascript .line-numbers}
 Prism.languages.css = {
-	'comment': /\\/\\*[\\s\\S]*?\\*\\//,
-	'atrule': {
-		pattern: /@[\\w-]+?.*?(?:;|(?=\\s*\\{))/i,
+	&#039;comment&#039;: /\/\*[\s\S]*?\*\//,
+	&#039;atrule&#039;: {
+		pattern: /@[\w-]+?.*?(?:;|(?=\s*\{))/i,
 		inside: {
-			'rule': /@[\\w-]+/
+			&#039;rule&#039;: /@[\w-]+/
 			// See rest below
 		}
 	},
-	'url': /url\\((?:(["'])(?:\\\\(?:\\r\\n|[\\s\\S])|(?!\\1)[^\\\\\\r\\n])*\\1|.*?)\\)/i,
-	'selector': /[^{}\\s][^{};]*?(?=\\s*\\{)/,
-	'string': {
-		pattern: /("|')(?:\\\\(?:\\r\\n|[\\s\\S])|(?!\\1)[^\\\\\\r\\n])*\\1/,
+	&#039;url&#039;: /url\((?:([&quot;&#039;])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1|.*?)\)/i,
+	&#039;selector&#039;: /[^{}\s][^{};]*?(?=\s*\{)/,
+	&#039;string&#039;: {
+		pattern: /(&quot;|&#039;)(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
 		greedy: true
 	},
-	'property': /[\\w-]+(?=\\s*:)/i,
-	'important': /\\B!important\\b/i,
-	'function': /[-a-z0-9]+(?=\\()/i,
-	'punctuation': /[(){};:]/
+	&#039;property&#039;: /[\w-]+(?=\s*:)/i,
+	&#039;important&#039;: /\B!important\b/i,
+	&#039;function&#039;: /[-a-z0-9]+(?=\()/i,
+	&#039;punctuation&#039;: /[(){};:]/
 };
 
-Prism.languages.css['atrule'].inside.rest = Prism.util.clone(Prism.languages.css);
+Prism.languages.css[&#039;atrule&#039;].inside.rest = Prism.util.clone(Prism.languages.css);
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Kode di atas mendefinisikan token-token untuk `language` CSS.
@@ -111,22 +113,23 @@ Kode di atas mendefinisikan token-token untuk `language` CSS.
 
     Dengan menggunakan cara panjang, objek yang mendefinisikan token dapat memiliki atribut-atribut tambahan seperti `inside`, `greedy`, [dan lain-lain](http://prismjs.com/extending.html). Contohnya dapat dilihat pada definisi token `string`:
 
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-javascript .line-numbers}
-	'string': {
-		pattern: /("|')(?:\\\\(?:\\r\\n|[\\s\\S])|(?!\\1)[^\\\\\\r\\n])*\\1/,
-		greedy: true
-	},
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ```
+    'string': {
+        pattern: /("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
+	greedy: true
+    },
+    ```
 
 -   Komentar di CSS diekspresikan dengan format `/* Sebuah komentar */`, yaitu diawali dengan `/*` dan diakhiri dengan `*/`. Token untuk komentar didefinisikan sebagai berikut:
 
     ```
-    'comment': /\\/\\*[\\s\\S]*?\\*\\//
+    'comment': /\/\*[\s\S]*?\*\//
     ```
 
     *Wow*, itu regex bacanya gimana? Intinya, karakter apa saja (baik _white space_ atau bukan) sebanyak apapun (boleh sepanjang 0, 1, 2, ... karakter) yang diapit oleh `/*` dan `*/`. [regexper](https://regexper.com/#%2F%5C%2F%5C*%5B%5Cs%5CS%5D*%3F%5C*%5C%2F%2F) menghasilkan diagram cantik lagi mudah dimengerti berikut:
 
-    ![Regex untuk token comment di CSS](images/regex-css-comment.svg)
+    ![Regex untuk token comment di CSS](http://belajarpemrograman.org/wp-content/uploads/2017/11/regex-css-comment.png)
+
 
 Dengan menggunakan _language definition_, PrismJS dapat menentukan token-token pada source code. Selanjutnya, setiap token dapat memiliki style yang diatur oleh file CSS di tema PrismJS.
 
