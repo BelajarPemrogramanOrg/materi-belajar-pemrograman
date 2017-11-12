@@ -1,6 +1,10 @@
 ---
-post_title: "Menjadi Jagoan Emacs"
+ID: 950
+post_title: Menjadi Jagoan Emacs
+author: Muhammad Ikhsan
+post_excerpt: ""
 layout: post
+permalink: http://belajarpemrograman.org/?p=950
 published: false
 ---
 ## Pendahuluan {.no-mar-top}

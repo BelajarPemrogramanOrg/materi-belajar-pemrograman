@@ -1,6 +1,10 @@
 ---
-post_title: "Sublime Text untuk Semua"
+ID: 952
+post_title: Sublime Text untuk Semua
+author: Muhammad Ikhsan
+post_excerpt: ""
 layout: post
+permalink: http://belajarpemrograman.org/?p=952
 published: false
 ---
 ## Pendahuluan
@@ -31,23 +35,23 @@ Di bawah ini merupakan pengaturan dasar level user yang saya pakai:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-json .line-numbers}
 {
-	"bold_folder_labels": true,
-	"caret_extra_bottom": 2,
-	"caret_extra_top": 2,
-	"caret_style": "phase",
-	"default_line_ending": "unix",
-	"detect_indentation": false,
-	"ensure_newline_at_eof_on_save": true,
-	"findreplace_small": true,
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
-	"line_padding_bottom": 4,
-	"line_padding_top": 4,
-	"show_encoding": true,
-	"show_line_endings": true,
-	"show_panel_on_build": false,
-	"tabs_medium": true,
-	"trim_trailing_white_space_on_save": true
+	&quot;bold_folder_labels&quot;: true,
+	&quot;caret_extra_bottom&quot;: 2,
+	&quot;caret_extra_top&quot;: 2,
+	&quot;caret_style&quot;: &quot;phase&quot;,
+	&quot;default_line_ending&quot;: &quot;unix&quot;,
+	&quot;detect_indentation&quot;: false,
+	&quot;ensure_newline_at_eof_on_save&quot;: true,
+	&quot;findreplace_small&quot;: true,
+	&quot;highlight_line&quot;: true,
+	&quot;highlight_modified_tabs&quot;: true,
+	&quot;line_padding_bottom&quot;: 4,
+	&quot;line_padding_top&quot;: 4,
+	&quot;show_encoding&quot;: true,
+	&quot;show_line_endings&quot;: true,
+	&quot;show_panel_on_build&quot;: false,
+	&quot;tabs_medium&quot;: true,
+	&quot;trim_trailing_white_space_on_save&quot;: true
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

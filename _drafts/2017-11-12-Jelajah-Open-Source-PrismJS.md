@@ -1,6 +1,10 @@
 ---
-post_title: "Jelajah Open Source: PrismJS"
+ID: 948
+post_title: 'Jelajah Open Source: PrismJS'
+author: Muhammad Ikhsan
+post_excerpt: ""
 layout: post
+permalink: http://belajarpemrograman.org/?p=948
 published: false
 ---
 Mengenal PrismJS {.no-mar-top}
@@ -65,27 +69,27 @@ Langsung saja kita mulai. Coba kita lihat sebagian kode pada file _language defi
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-javascript .line-numbers}
 Prism.languages.css = {
-	'comment': /\/\*[\s\S]*?\*\//,
-	'atrule': {
-		pattern: /@[\w-]+?.*?(?:;|(?=\s*\{))/i,
+	&#039;comment&#039;: //*[sS]*?*//,
+	&#039;atrule&#039;: {
+		pattern: /@[w-]+?.*?(?:;|(?=s*{))/i,
 		inside: {
-			'rule': /@[\w-]+/
+			&#039;rule&#039;: /@[w-]+/
 			// See rest below
 		}
 	},
-	'url': /url\((?:(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1|.*?)\)/i,
-	'selector': /[^{}\s][^{};]*?(?=\s*\{)/,
-	'string': {
-		pattern: /("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
+	&#039;url&#039;: /url((?:([&quot;&#039;])(?:\(?:rn|[sS])|(?!1)[^\rn])*1|.*?))/i,
+	&#039;selector&#039;: /[^{}s][^{};]*?(?=s*{)/,
+	&#039;string&#039;: {
+		pattern: /(&quot;|&#039;)(?:\(?:rn|[sS])|(?!1)[^\rn])*1/,
 		greedy: true
 	},
-	'property': /[\w-]+(?=\s*:)/i,
-	'important': /\B!important\b/i,
-	'function': /[-a-z0-9]+(?=\()/i,
-	'punctuation': /[(){};:]/
+	&#039;property&#039;: /[w-]+(?=s*:)/i,
+	&#039;important&#039;: /B!importantb/i,
+	&#039;function&#039;: /[-a-z0-9]+(?=()/i,
+	&#039;punctuation&#039;: /[(){};:]/
 };
 
-Prism.languages.css['atrule'].inside.rest = Prism.util.clone(Prism.languages.css);
+Prism.languages.css[&#039;atrule&#039;].inside.rest = Prism.util.clone(Prism.languages.css);
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Kode di atas mendefinisikan token-token untuk `language` CSS.
@@ -109,7 +113,7 @@ Kode di atas mendefinisikan token-token untuk `language` CSS.
 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-javascript .line-numbers}
 	'string': {
-		pattern: /("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
+		pattern: /("|')(?:\(?:rn|[sS])|(?!1)[^\rn])*1/,
 		greedy: true
 	}
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,7 +121,7 @@ Kode di atas mendefinisikan token-token untuk `language` CSS.
 -   Komentar di CSS diekspresikan dengan format `/* Sebuah komentar */`, yaitu diawali dengan `/*` dan diakhiri dengan `*/`. Token untuk komentar didefinisikan sebagai berikut:
 
     ```
-    'comment': /\/\*[\s\S]*?\*\//
+    'comment': //*[sS]*?*//
     ```
 
     *Wow*, itu regex bacanya gimana? Intinya, karakter apa saja (baik _white space_ atau bukan) sebanyak apapun (boleh sepanjang 0, 1, 2, ... karakter) yang diapit oleh `/*` dan `*/`. [regexper](https://regexper.com/#%2F%5C%2F%5C*%5B%5Cs%5CS%5D*%3F%5C*%5C%2F%2F) menghasilkan diagram cantik lagi mudah dimengerti berikut:
