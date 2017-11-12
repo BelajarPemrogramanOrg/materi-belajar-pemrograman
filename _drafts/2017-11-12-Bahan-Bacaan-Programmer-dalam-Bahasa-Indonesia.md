@@ -1,6 +1,12 @@
 ---
-post_title: "Bahan Bacaan Programmer dalam Bahasa Indonesia"
+ID: 942
+post_title: >
+  Bahan Bacaan Programmer dalam Bahasa
+  Indonesia
+author: Muhammad Ikhsan
+post_excerpt: ""
 layout: post
+permalink: http://belajarpemrograman.org/?p=942
 published: false
 ---
 Pendahuluan

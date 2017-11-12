@@ -1,6 +1,12 @@
 ---
-post_title: "Belajar Menggunakan WP-CLI, Command Line Tool untuk WordPress"
+ID: 944
+post_title: >
+  Belajar Menggunakan WP-CLI, Command Line
+  Tool untuk WordPress
+author: Muhammad Ikhsan
+post_excerpt: ""
 layout: post
+permalink: http://belajarpemrograman.org/?p=944
 published: false
 ---
 Pendahuluan {.no-mar-top}

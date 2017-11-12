@@ -1,6 +1,10 @@
 ---
-post_title: "Jelajah Open Source: PrismJS - Membuat Plugin Interactive Ruby"
+ID: 946
+post_title: 'Jelajah Open Source: PrismJS &#8211; Membuat Plugin Interactive Ruby'
+author: Muhammad Ikhsan
+post_excerpt: ""
 layout: post
+permalink: http://belajarpemrograman.org/?p=946
 published: false
 ---
 Pendahuluan {.no-mar-top}
@@ -16,11 +20,11 @@ Demo
 Gambar di atas menunjukkan hasil dari penggunaan PrismJS dengan kode berikut:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ {.language-markup .line-numbers}
-<pre class="interactive-ruby" data-output="2,4,5"><code class="language-ruby">"Hello World!"
-=> "Hello World!"
-puts "Hello World!"
-"Hello World!"
-=> nil</code></pre>
+&lt;pre class=&quot;interactive-ruby&quot; data-output=&quot;2,4,5&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&quot;Hello World!&quot;
+=&gt; &quot;Hello World!&quot;
+puts &quot;Hello World!&quot;
+&quot;Hello World!&quot;
+=&gt; nil&lt;/code&gt;&lt;/pre&gt;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Langkah-Langkah
@@ -49,7 +53,7 @@ Berikut di bawah ini langkah-langkah yang saya lakukan:
     &nbsp;
     	// Hanya bisa digunakan untuk tag &lt;code&gt; yang diletakkan di dalam tag &lt;pre&gt; (bukan penggunaan inline).
     	var pre = env.element.parentNode;
-    	var clsReg = /\s*\binteractive-ruby\b\s*/;
+    	var clsReg = /s*binteractive-rubybs*/;
     	if (
     		!pre || !/pre/i.test(pre.nodeName) ||
     			// Hentikan jika baik &lt;pre&gt; maupun &lt;code&gt; tidak memiliki class 
@@ -77,8 +81,8 @@ Berikut di bawah ini langkah-langkah yang saya lakukan:
     	};
     &nbsp;
     	// Mendata semua nomor baris yang menunjukkan output dari perintah Ruby. -- cwells
-    	var totalLines = env.code.split('\n').length;
-    	console.log(env.code.split('\n'));
+    	var totalLines = env.code.split('n').length;
+    	console.log(env.code.split('n'));
     	var outputLineNums = new Array();
     	var outputSections = pre.getAttribute('data-output') || '';
     	outputSections = outputSections.split(',');
