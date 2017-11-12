@@ -1,7 +1,7 @@
 ---
 post_title: "Jelajah Open Source: PrismJS"
 layout: post
-published: false
+published: true
 ---
 Mengenal PrismJS {.no-mar-top}
 ------------------------------
