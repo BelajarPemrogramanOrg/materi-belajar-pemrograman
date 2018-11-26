@@ -361,7 +361,7 @@ Gabungan
 
 Baik, demikianlah penggunaan `for` _looping_ untuk nge-`print()` beberapa bentuk berpola `*`. Diharapkan, setelah nyaman menggunakan `for` loop pada contoh-contoh di atas, sekarang kita bisa menyelesaikan soal yg serupa entah bagaimanapun bentuk yg diminta. Lebih dari itu, kita sudah bisa menentukan kapan dan bagaimana cara menggunakannya untuk menyelesaikan persoalan yg dihadapi.
 
-Seperti yg dijanjikan sebelumnya, berikut merupakan kode lengkap, yg meliput semua bentuk-bentuk di atas.
+Seperti yg dijanjikan sebelumnya, berikut merupakan kode program Java, yg meliput semua bentuk-bentuk di atas.
 
 ```java
 import java.util.Scanner;
